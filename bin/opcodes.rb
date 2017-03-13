@@ -46,7 +46,7 @@ def table_extractor(table)
   opcodes
 end
 
-puts File.open('opcodes.html', encoding: 'UTF-8').read
+# puts File.open('opcodes.html', encoding: 'UTF-8').read
 html = Oga.parse_html File.open('opcodes.html').read
 tables = html.css('table')
 opcodes = {
