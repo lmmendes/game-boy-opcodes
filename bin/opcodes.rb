@@ -27,7 +27,7 @@ def table_extractor(table)
         op_index+=1
         next
       end
-      operator1, operator2 = operators.to_s.split(',')
+      operand1, operand2 = operators.to_s.split(',')
       length, cycles = td.children[2].text.split(/[[:space:]]+/)
       flags = td.children[4].text.split(/[[:space:]]+/)
       addr  = "0x#{op_index.to_s(16)}"
@@ -38,8 +38,8 @@ def table_extractor(table)
         "flags"    => flags,
         "addr"     => addr
       }
-      opcodes[ addr ]["operator1"] = operator1.to_s if operator1
-      opcodes[ addr ]["operator2"] = operator2.to_s if operator2
+      opcodes[ addr ]["operand1"] = operand1.to_s if operand1
+      opcodes[ addr ]["operand2"] = operand2.to_s if operand2
       op_index+=1
     end
   end
