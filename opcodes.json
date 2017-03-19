@@ -27,8 +27,8 @@
         "-"
       ],
       "addr": "0x1",
-      "operator1": "BC",
-      "operator2": "d16"
+      "operand1": "BC",
+      "operand2": "d16"
     },
     "0x2": {
       "mnemonic": "LD",
@@ -43,8 +43,8 @@
         "-"
       ],
       "addr": "0x2",
-      "operator1": "(BC)",
-      "operator2": "A"
+      "operand1": "(BC)",
+      "operand2": "A"
     },
     "0x3": {
       "mnemonic": "INC",
@@ -59,7 +59,7 @@
         "-"
       ],
       "addr": "0x3",
-      "operator1": "BC"
+      "operand1": "BC"
     },
     "0x4": {
       "mnemonic": "INC",
@@ -74,7 +74,7 @@
         "-"
       ],
       "addr": "0x4",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x5": {
       "mnemonic": "DEC",
@@ -89,7 +89,7 @@
         "-"
       ],
       "addr": "0x5",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x6": {
       "mnemonic": "LD",
@@ -104,8 +104,8 @@
         "-"
       ],
       "addr": "0x6",
-      "operator1": "B",
-      "operator2": "d8"
+      "operand1": "B",
+      "operand2": "d8"
     },
     "0x7": {
       "mnemonic": "RLCA",
@@ -134,8 +134,8 @@
         "-"
       ],
       "addr": "0x8",
-      "operator1": "(a16)",
-      "operator2": "SP"
+      "operand1": "(a16)",
+      "operand2": "SP"
     },
     "0x9": {
       "mnemonic": "ADD",
@@ -150,8 +150,8 @@
         "C"
       ],
       "addr": "0x9",
-      "operator1": "HL",
-      "operator2": "BC"
+      "operand1": "HL",
+      "operand2": "BC"
     },
     "0xa": {
       "mnemonic": "LD",
@@ -166,8 +166,8 @@
         "-"
       ],
       "addr": "0xa",
-      "operator1": "A",
-      "operator2": "(BC)"
+      "operand1": "A",
+      "operand2": "(BC)"
     },
     "0xb": {
       "mnemonic": "DEC",
@@ -182,7 +182,7 @@
         "-"
       ],
       "addr": "0xb",
-      "operator1": "BC"
+      "operand1": "BC"
     },
     "0xc": {
       "mnemonic": "INC",
@@ -197,7 +197,7 @@
         "-"
       ],
       "addr": "0xc",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xd": {
       "mnemonic": "DEC",
@@ -212,7 +212,7 @@
         "-"
       ],
       "addr": "0xd",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xe": {
       "mnemonic": "LD",
@@ -227,8 +227,8 @@
         "-"
       ],
       "addr": "0xe",
-      "operator1": "C",
-      "operator2": "d8"
+      "operand1": "C",
+      "operand2": "d8"
     },
     "0xf": {
       "mnemonic": "RRCA",
@@ -257,7 +257,7 @@
         "-"
       ],
       "addr": "0x10",
-      "operator1": "0"
+      "operand1": "0"
     },
     "0x11": {
       "mnemonic": "LD",
@@ -272,8 +272,8 @@
         "-"
       ],
       "addr": "0x11",
-      "operator1": "DE",
-      "operator2": "d16"
+      "operand1": "DE",
+      "operand2": "d16"
     },
     "0x12": {
       "mnemonic": "LD",
@@ -288,8 +288,8 @@
         "-"
       ],
       "addr": "0x12",
-      "operator1": "(DE)",
-      "operator2": "A"
+      "operand1": "(DE)",
+      "operand2": "A"
     },
     "0x13": {
       "mnemonic": "INC",
@@ -304,7 +304,7 @@
         "-"
       ],
       "addr": "0x13",
-      "operator1": "DE"
+      "operand1": "DE"
     },
     "0x14": {
       "mnemonic": "INC",
@@ -319,7 +319,7 @@
         "-"
       ],
       "addr": "0x14",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x15": {
       "mnemonic": "DEC",
@@ -334,7 +334,7 @@
         "-"
       ],
       "addr": "0x15",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x16": {
       "mnemonic": "LD",
@@ -349,8 +349,8 @@
         "-"
       ],
       "addr": "0x16",
-      "operator1": "D",
-      "operator2": "d8"
+      "operand1": "D",
+      "operand2": "d8"
     },
     "0x17": {
       "mnemonic": "RLA",
@@ -379,7 +379,7 @@
         "-"
       ],
       "addr": "0x18",
-      "operator1": "r8"
+      "operand1": "r8"
     },
     "0x19": {
       "mnemonic": "ADD",
@@ -394,8 +394,8 @@
         "C"
       ],
       "addr": "0x19",
-      "operator1": "HL",
-      "operator2": "DE"
+      "operand1": "HL",
+      "operand2": "DE"
     },
     "0x1a": {
       "mnemonic": "LD",
@@ -410,8 +410,8 @@
         "-"
       ],
       "addr": "0x1a",
-      "operator1": "A",
-      "operator2": "(DE)"
+      "operand1": "A",
+      "operand2": "(DE)"
     },
     "0x1b": {
       "mnemonic": "DEC",
@@ -426,7 +426,7 @@
         "-"
       ],
       "addr": "0x1b",
-      "operator1": "DE"
+      "operand1": "DE"
     },
     "0x1c": {
       "mnemonic": "INC",
@@ -441,7 +441,7 @@
         "-"
       ],
       "addr": "0x1c",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x1d": {
       "mnemonic": "DEC",
@@ -456,7 +456,7 @@
         "-"
       ],
       "addr": "0x1d",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x1e": {
       "mnemonic": "LD",
@@ -471,8 +471,8 @@
         "-"
       ],
       "addr": "0x1e",
-      "operator1": "E",
-      "operator2": "d8"
+      "operand1": "E",
+      "operand2": "d8"
     },
     "0x1f": {
       "mnemonic": "RRA",
@@ -502,8 +502,8 @@
         "-"
       ],
       "addr": "0x20",
-      "operator1": "NZ",
-      "operator2": "r8"
+      "operand1": "NZ",
+      "operand2": "r8"
     },
     "0x21": {
       "mnemonic": "LD",
@@ -518,8 +518,8 @@
         "-"
       ],
       "addr": "0x21",
-      "operator1": "HL",
-      "operator2": "d16"
+      "operand1": "HL",
+      "operand2": "d16"
     },
     "0x22": {
       "mnemonic": "LD",
@@ -534,8 +534,8 @@
         "-"
       ],
       "addr": "0x22",
-      "operator1": "(HL+)",
-      "operator2": "A"
+      "operand1": "(HL+)",
+      "operand2": "A"
     },
     "0x23": {
       "mnemonic": "INC",
@@ -550,7 +550,7 @@
         "-"
       ],
       "addr": "0x23",
-      "operator1": "HL"
+      "operand1": "HL"
     },
     "0x24": {
       "mnemonic": "INC",
@@ -565,7 +565,7 @@
         "-"
       ],
       "addr": "0x24",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x25": {
       "mnemonic": "DEC",
@@ -580,7 +580,7 @@
         "-"
       ],
       "addr": "0x25",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x26": {
       "mnemonic": "LD",
@@ -595,8 +595,8 @@
         "-"
       ],
       "addr": "0x26",
-      "operator1": "H",
-      "operator2": "d8"
+      "operand1": "H",
+      "operand2": "d8"
     },
     "0x27": {
       "mnemonic": "DAA",
@@ -626,8 +626,8 @@
         "-"
       ],
       "addr": "0x28",
-      "operator1": "Z",
-      "operator2": "r8"
+      "operand1": "Z",
+      "operand2": "r8"
     },
     "0x29": {
       "mnemonic": "ADD",
@@ -642,8 +642,8 @@
         "C"
       ],
       "addr": "0x29",
-      "operator1": "HL",
-      "operator2": "HL"
+      "operand1": "HL",
+      "operand2": "HL"
     },
     "0x2a": {
       "mnemonic": "LD",
@@ -658,8 +658,8 @@
         "-"
       ],
       "addr": "0x2a",
-      "operator1": "A",
-      "operator2": "(HL+)"
+      "operand1": "A",
+      "operand2": "(HL+)"
     },
     "0x2b": {
       "mnemonic": "DEC",
@@ -674,7 +674,7 @@
         "-"
       ],
       "addr": "0x2b",
-      "operator1": "HL"
+      "operand1": "HL"
     },
     "0x2c": {
       "mnemonic": "INC",
@@ -689,7 +689,7 @@
         "-"
       ],
       "addr": "0x2c",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x2d": {
       "mnemonic": "DEC",
@@ -704,7 +704,7 @@
         "-"
       ],
       "addr": "0x2d",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x2e": {
       "mnemonic": "LD",
@@ -719,8 +719,8 @@
         "-"
       ],
       "addr": "0x2e",
-      "operator1": "L",
-      "operator2": "d8"
+      "operand1": "L",
+      "operand2": "d8"
     },
     "0x2f": {
       "mnemonic": "CPL",
@@ -750,8 +750,8 @@
         "-"
       ],
       "addr": "0x30",
-      "operator1": "NC",
-      "operator2": "r8"
+      "operand1": "NC",
+      "operand2": "r8"
     },
     "0x31": {
       "mnemonic": "LD",
@@ -766,8 +766,8 @@
         "-"
       ],
       "addr": "0x31",
-      "operator1": "SP",
-      "operator2": "d16"
+      "operand1": "SP",
+      "operand2": "d16"
     },
     "0x32": {
       "mnemonic": "LD",
@@ -782,8 +782,8 @@
         "-"
       ],
       "addr": "0x32",
-      "operator1": "(HL-)",
-      "operator2": "A"
+      "operand1": "(HL-)",
+      "operand2": "A"
     },
     "0x33": {
       "mnemonic": "INC",
@@ -798,7 +798,7 @@
         "-"
       ],
       "addr": "0x33",
-      "operator1": "SP"
+      "operand1": "SP"
     },
     "0x34": {
       "mnemonic": "INC",
@@ -813,7 +813,7 @@
         "-"
       ],
       "addr": "0x34",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x35": {
       "mnemonic": "DEC",
@@ -828,7 +828,7 @@
         "-"
       ],
       "addr": "0x35",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x36": {
       "mnemonic": "LD",
@@ -843,8 +843,8 @@
         "-"
       ],
       "addr": "0x36",
-      "operator1": "(HL)",
-      "operator2": "d8"
+      "operand1": "(HL)",
+      "operand2": "d8"
     },
     "0x37": {
       "mnemonic": "SCF",
@@ -874,8 +874,8 @@
         "-"
       ],
       "addr": "0x38",
-      "operator1": "C",
-      "operator2": "r8"
+      "operand1": "C",
+      "operand2": "r8"
     },
     "0x39": {
       "mnemonic": "ADD",
@@ -890,8 +890,8 @@
         "C"
       ],
       "addr": "0x39",
-      "operator1": "HL",
-      "operator2": "SP"
+      "operand1": "HL",
+      "operand2": "SP"
     },
     "0x3a": {
       "mnemonic": "LD",
@@ -906,8 +906,8 @@
         "-"
       ],
       "addr": "0x3a",
-      "operator1": "A",
-      "operator2": "(HL-)"
+      "operand1": "A",
+      "operand2": "(HL-)"
     },
     "0x3b": {
       "mnemonic": "DEC",
@@ -922,7 +922,7 @@
         "-"
       ],
       "addr": "0x3b",
-      "operator1": "SP"
+      "operand1": "SP"
     },
     "0x3c": {
       "mnemonic": "INC",
@@ -937,7 +937,7 @@
         "-"
       ],
       "addr": "0x3c",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x3d": {
       "mnemonic": "DEC",
@@ -952,7 +952,7 @@
         "-"
       ],
       "addr": "0x3d",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x3e": {
       "mnemonic": "LD",
@@ -967,8 +967,8 @@
         "-"
       ],
       "addr": "0x3e",
-      "operator1": "A",
-      "operator2": "d8"
+      "operand1": "A",
+      "operand2": "d8"
     },
     "0x3f": {
       "mnemonic": "CCF",
@@ -997,8 +997,8 @@
         "-"
       ],
       "addr": "0x40",
-      "operator1": "B",
-      "operator2": "B"
+      "operand1": "B",
+      "operand2": "B"
     },
     "0x41": {
       "mnemonic": "LD",
@@ -1013,8 +1013,8 @@
         "-"
       ],
       "addr": "0x41",
-      "operator1": "B",
-      "operator2": "C"
+      "operand1": "B",
+      "operand2": "C"
     },
     "0x42": {
       "mnemonic": "LD",
@@ -1029,8 +1029,8 @@
         "-"
       ],
       "addr": "0x42",
-      "operator1": "B",
-      "operator2": "D"
+      "operand1": "B",
+      "operand2": "D"
     },
     "0x43": {
       "mnemonic": "LD",
@@ -1045,8 +1045,8 @@
         "-"
       ],
       "addr": "0x43",
-      "operator1": "B",
-      "operator2": "E"
+      "operand1": "B",
+      "operand2": "E"
     },
     "0x44": {
       "mnemonic": "LD",
@@ -1061,8 +1061,8 @@
         "-"
       ],
       "addr": "0x44",
-      "operator1": "B",
-      "operator2": "H"
+      "operand1": "B",
+      "operand2": "H"
     },
     "0x45": {
       "mnemonic": "LD",
@@ -1077,8 +1077,8 @@
         "-"
       ],
       "addr": "0x45",
-      "operator1": "B",
-      "operator2": "L"
+      "operand1": "B",
+      "operand2": "L"
     },
     "0x46": {
       "mnemonic": "LD",
@@ -1093,8 +1093,8 @@
         "-"
       ],
       "addr": "0x46",
-      "operator1": "B",
-      "operator2": "(HL)"
+      "operand1": "B",
+      "operand2": "(HL)"
     },
     "0x47": {
       "mnemonic": "LD",
@@ -1109,8 +1109,8 @@
         "-"
       ],
       "addr": "0x47",
-      "operator1": "B",
-      "operator2": "A"
+      "operand1": "B",
+      "operand2": "A"
     },
     "0x48": {
       "mnemonic": "LD",
@@ -1125,8 +1125,8 @@
         "-"
       ],
       "addr": "0x48",
-      "operator1": "C",
-      "operator2": "B"
+      "operand1": "C",
+      "operand2": "B"
     },
     "0x49": {
       "mnemonic": "LD",
@@ -1141,8 +1141,8 @@
         "-"
       ],
       "addr": "0x49",
-      "operator1": "C",
-      "operator2": "C"
+      "operand1": "C",
+      "operand2": "C"
     },
     "0x4a": {
       "mnemonic": "LD",
@@ -1157,8 +1157,8 @@
         "-"
       ],
       "addr": "0x4a",
-      "operator1": "C",
-      "operator2": "D"
+      "operand1": "C",
+      "operand2": "D"
     },
     "0x4b": {
       "mnemonic": "LD",
@@ -1173,8 +1173,8 @@
         "-"
       ],
       "addr": "0x4b",
-      "operator1": "C",
-      "operator2": "E"
+      "operand1": "C",
+      "operand2": "E"
     },
     "0x4c": {
       "mnemonic": "LD",
@@ -1189,8 +1189,8 @@
         "-"
       ],
       "addr": "0x4c",
-      "operator1": "C",
-      "operator2": "H"
+      "operand1": "C",
+      "operand2": "H"
     },
     "0x4d": {
       "mnemonic": "LD",
@@ -1205,8 +1205,8 @@
         "-"
       ],
       "addr": "0x4d",
-      "operator1": "C",
-      "operator2": "L"
+      "operand1": "C",
+      "operand2": "L"
     },
     "0x4e": {
       "mnemonic": "LD",
@@ -1221,8 +1221,8 @@
         "-"
       ],
       "addr": "0x4e",
-      "operator1": "C",
-      "operator2": "(HL)"
+      "operand1": "C",
+      "operand2": "(HL)"
     },
     "0x4f": {
       "mnemonic": "LD",
@@ -1237,8 +1237,8 @@
         "-"
       ],
       "addr": "0x4f",
-      "operator1": "C",
-      "operator2": "A"
+      "operand1": "C",
+      "operand2": "A"
     },
     "0x50": {
       "mnemonic": "LD",
@@ -1253,8 +1253,8 @@
         "-"
       ],
       "addr": "0x50",
-      "operator1": "D",
-      "operator2": "B"
+      "operand1": "D",
+      "operand2": "B"
     },
     "0x51": {
       "mnemonic": "LD",
@@ -1269,8 +1269,8 @@
         "-"
       ],
       "addr": "0x51",
-      "operator1": "D",
-      "operator2": "C"
+      "operand1": "D",
+      "operand2": "C"
     },
     "0x52": {
       "mnemonic": "LD",
@@ -1285,8 +1285,8 @@
         "-"
       ],
       "addr": "0x52",
-      "operator1": "D",
-      "operator2": "D"
+      "operand1": "D",
+      "operand2": "D"
     },
     "0x53": {
       "mnemonic": "LD",
@@ -1301,8 +1301,8 @@
         "-"
       ],
       "addr": "0x53",
-      "operator1": "D",
-      "operator2": "E"
+      "operand1": "D",
+      "operand2": "E"
     },
     "0x54": {
       "mnemonic": "LD",
@@ -1317,8 +1317,8 @@
         "-"
       ],
       "addr": "0x54",
-      "operator1": "D",
-      "operator2": "H"
+      "operand1": "D",
+      "operand2": "H"
     },
     "0x55": {
       "mnemonic": "LD",
@@ -1333,8 +1333,8 @@
         "-"
       ],
       "addr": "0x55",
-      "operator1": "D",
-      "operator2": "L"
+      "operand1": "D",
+      "operand2": "L"
     },
     "0x56": {
       "mnemonic": "LD",
@@ -1349,8 +1349,8 @@
         "-"
       ],
       "addr": "0x56",
-      "operator1": "D",
-      "operator2": "(HL)"
+      "operand1": "D",
+      "operand2": "(HL)"
     },
     "0x57": {
       "mnemonic": "LD",
@@ -1365,8 +1365,8 @@
         "-"
       ],
       "addr": "0x57",
-      "operator1": "D",
-      "operator2": "A"
+      "operand1": "D",
+      "operand2": "A"
     },
     "0x58": {
       "mnemonic": "LD",
@@ -1381,8 +1381,8 @@
         "-"
       ],
       "addr": "0x58",
-      "operator1": "E",
-      "operator2": "B"
+      "operand1": "E",
+      "operand2": "B"
     },
     "0x59": {
       "mnemonic": "LD",
@@ -1397,8 +1397,8 @@
         "-"
       ],
       "addr": "0x59",
-      "operator1": "E",
-      "operator2": "C"
+      "operand1": "E",
+      "operand2": "C"
     },
     "0x5a": {
       "mnemonic": "LD",
@@ -1413,8 +1413,8 @@
         "-"
       ],
       "addr": "0x5a",
-      "operator1": "E",
-      "operator2": "D"
+      "operand1": "E",
+      "operand2": "D"
     },
     "0x5b": {
       "mnemonic": "LD",
@@ -1429,8 +1429,8 @@
         "-"
       ],
       "addr": "0x5b",
-      "operator1": "E",
-      "operator2": "E"
+      "operand1": "E",
+      "operand2": "E"
     },
     "0x5c": {
       "mnemonic": "LD",
@@ -1445,8 +1445,8 @@
         "-"
       ],
       "addr": "0x5c",
-      "operator1": "E",
-      "operator2": "H"
+      "operand1": "E",
+      "operand2": "H"
     },
     "0x5d": {
       "mnemonic": "LD",
@@ -1461,8 +1461,8 @@
         "-"
       ],
       "addr": "0x5d",
-      "operator1": "E",
-      "operator2": "L"
+      "operand1": "E",
+      "operand2": "L"
     },
     "0x5e": {
       "mnemonic": "LD",
@@ -1477,8 +1477,8 @@
         "-"
       ],
       "addr": "0x5e",
-      "operator1": "E",
-      "operator2": "(HL)"
+      "operand1": "E",
+      "operand2": "(HL)"
     },
     "0x5f": {
       "mnemonic": "LD",
@@ -1493,8 +1493,8 @@
         "-"
       ],
       "addr": "0x5f",
-      "operator1": "E",
-      "operator2": "A"
+      "operand1": "E",
+      "operand2": "A"
     },
     "0x60": {
       "mnemonic": "LD",
@@ -1509,8 +1509,8 @@
         "-"
       ],
       "addr": "0x60",
-      "operator1": "H",
-      "operator2": "B"
+      "operand1": "H",
+      "operand2": "B"
     },
     "0x61": {
       "mnemonic": "LD",
@@ -1525,8 +1525,8 @@
         "-"
       ],
       "addr": "0x61",
-      "operator1": "H",
-      "operator2": "C"
+      "operand1": "H",
+      "operand2": "C"
     },
     "0x62": {
       "mnemonic": "LD",
@@ -1541,8 +1541,8 @@
         "-"
       ],
       "addr": "0x62",
-      "operator1": "H",
-      "operator2": "D"
+      "operand1": "H",
+      "operand2": "D"
     },
     "0x63": {
       "mnemonic": "LD",
@@ -1557,8 +1557,8 @@
         "-"
       ],
       "addr": "0x63",
-      "operator1": "H",
-      "operator2": "E"
+      "operand1": "H",
+      "operand2": "E"
     },
     "0x64": {
       "mnemonic": "LD",
@@ -1573,8 +1573,8 @@
         "-"
       ],
       "addr": "0x64",
-      "operator1": "H",
-      "operator2": "H"
+      "operand1": "H",
+      "operand2": "H"
     },
     "0x65": {
       "mnemonic": "LD",
@@ -1589,8 +1589,8 @@
         "-"
       ],
       "addr": "0x65",
-      "operator1": "H",
-      "operator2": "L"
+      "operand1": "H",
+      "operand2": "L"
     },
     "0x66": {
       "mnemonic": "LD",
@@ -1605,8 +1605,8 @@
         "-"
       ],
       "addr": "0x66",
-      "operator1": "H",
-      "operator2": "(HL)"
+      "operand1": "H",
+      "operand2": "(HL)"
     },
     "0x67": {
       "mnemonic": "LD",
@@ -1621,8 +1621,8 @@
         "-"
       ],
       "addr": "0x67",
-      "operator1": "H",
-      "operator2": "A"
+      "operand1": "H",
+      "operand2": "A"
     },
     "0x68": {
       "mnemonic": "LD",
@@ -1637,8 +1637,8 @@
         "-"
       ],
       "addr": "0x68",
-      "operator1": "L",
-      "operator2": "B"
+      "operand1": "L",
+      "operand2": "B"
     },
     "0x69": {
       "mnemonic": "LD",
@@ -1653,8 +1653,8 @@
         "-"
       ],
       "addr": "0x69",
-      "operator1": "L",
-      "operator2": "C"
+      "operand1": "L",
+      "operand2": "C"
     },
     "0x6a": {
       "mnemonic": "LD",
@@ -1669,8 +1669,8 @@
         "-"
       ],
       "addr": "0x6a",
-      "operator1": "L",
-      "operator2": "D"
+      "operand1": "L",
+      "operand2": "D"
     },
     "0x6b": {
       "mnemonic": "LD",
@@ -1685,8 +1685,8 @@
         "-"
       ],
       "addr": "0x6b",
-      "operator1": "L",
-      "operator2": "E"
+      "operand1": "L",
+      "operand2": "E"
     },
     "0x6c": {
       "mnemonic": "LD",
@@ -1701,8 +1701,8 @@
         "-"
       ],
       "addr": "0x6c",
-      "operator1": "L",
-      "operator2": "H"
+      "operand1": "L",
+      "operand2": "H"
     },
     "0x6d": {
       "mnemonic": "LD",
@@ -1717,8 +1717,8 @@
         "-"
       ],
       "addr": "0x6d",
-      "operator1": "L",
-      "operator2": "L"
+      "operand1": "L",
+      "operand2": "L"
     },
     "0x6e": {
       "mnemonic": "LD",
@@ -1733,8 +1733,8 @@
         "-"
       ],
       "addr": "0x6e",
-      "operator1": "L",
-      "operator2": "(HL)"
+      "operand1": "L",
+      "operand2": "(HL)"
     },
     "0x6f": {
       "mnemonic": "LD",
@@ -1749,8 +1749,8 @@
         "-"
       ],
       "addr": "0x6f",
-      "operator1": "L",
-      "operator2": "A"
+      "operand1": "L",
+      "operand2": "A"
     },
     "0x70": {
       "mnemonic": "LD",
@@ -1765,8 +1765,8 @@
         "-"
       ],
       "addr": "0x70",
-      "operator1": "(HL)",
-      "operator2": "B"
+      "operand1": "(HL)",
+      "operand2": "B"
     },
     "0x71": {
       "mnemonic": "LD",
@@ -1781,8 +1781,8 @@
         "-"
       ],
       "addr": "0x71",
-      "operator1": "(HL)",
-      "operator2": "C"
+      "operand1": "(HL)",
+      "operand2": "C"
     },
     "0x72": {
       "mnemonic": "LD",
@@ -1797,8 +1797,8 @@
         "-"
       ],
       "addr": "0x72",
-      "operator1": "(HL)",
-      "operator2": "D"
+      "operand1": "(HL)",
+      "operand2": "D"
     },
     "0x73": {
       "mnemonic": "LD",
@@ -1813,8 +1813,8 @@
         "-"
       ],
       "addr": "0x73",
-      "operator1": "(HL)",
-      "operator2": "E"
+      "operand1": "(HL)",
+      "operand2": "E"
     },
     "0x74": {
       "mnemonic": "LD",
@@ -1829,8 +1829,8 @@
         "-"
       ],
       "addr": "0x74",
-      "operator1": "(HL)",
-      "operator2": "H"
+      "operand1": "(HL)",
+      "operand2": "H"
     },
     "0x75": {
       "mnemonic": "LD",
@@ -1845,8 +1845,8 @@
         "-"
       ],
       "addr": "0x75",
-      "operator1": "(HL)",
-      "operator2": "L"
+      "operand1": "(HL)",
+      "operand2": "L"
     },
     "0x76": {
       "mnemonic": "HALT",
@@ -1875,8 +1875,8 @@
         "-"
       ],
       "addr": "0x77",
-      "operator1": "(HL)",
-      "operator2": "A"
+      "operand1": "(HL)",
+      "operand2": "A"
     },
     "0x78": {
       "mnemonic": "LD",
@@ -1891,8 +1891,8 @@
         "-"
       ],
       "addr": "0x78",
-      "operator1": "A",
-      "operator2": "B"
+      "operand1": "A",
+      "operand2": "B"
     },
     "0x79": {
       "mnemonic": "LD",
@@ -1907,8 +1907,8 @@
         "-"
       ],
       "addr": "0x79",
-      "operator1": "A",
-      "operator2": "C"
+      "operand1": "A",
+      "operand2": "C"
     },
     "0x7a": {
       "mnemonic": "LD",
@@ -1923,8 +1923,8 @@
         "-"
       ],
       "addr": "0x7a",
-      "operator1": "A",
-      "operator2": "D"
+      "operand1": "A",
+      "operand2": "D"
     },
     "0x7b": {
       "mnemonic": "LD",
@@ -1939,8 +1939,8 @@
         "-"
       ],
       "addr": "0x7b",
-      "operator1": "A",
-      "operator2": "E"
+      "operand1": "A",
+      "operand2": "E"
     },
     "0x7c": {
       "mnemonic": "LD",
@@ -1955,8 +1955,8 @@
         "-"
       ],
       "addr": "0x7c",
-      "operator1": "A",
-      "operator2": "H"
+      "operand1": "A",
+      "operand2": "H"
     },
     "0x7d": {
       "mnemonic": "LD",
@@ -1971,8 +1971,8 @@
         "-"
       ],
       "addr": "0x7d",
-      "operator1": "A",
-      "operator2": "L"
+      "operand1": "A",
+      "operand2": "L"
     },
     "0x7e": {
       "mnemonic": "LD",
@@ -1987,8 +1987,8 @@
         "-"
       ],
       "addr": "0x7e",
-      "operator1": "A",
-      "operator2": "(HL)"
+      "operand1": "A",
+      "operand2": "(HL)"
     },
     "0x7f": {
       "mnemonic": "LD",
@@ -2003,8 +2003,8 @@
         "-"
       ],
       "addr": "0x7f",
-      "operator1": "A",
-      "operator2": "A"
+      "operand1": "A",
+      "operand2": "A"
     },
     "0x80": {
       "mnemonic": "ADD",
@@ -2019,8 +2019,8 @@
         "C"
       ],
       "addr": "0x80",
-      "operator1": "A",
-      "operator2": "B"
+      "operand1": "A",
+      "operand2": "B"
     },
     "0x81": {
       "mnemonic": "ADD",
@@ -2035,8 +2035,8 @@
         "C"
       ],
       "addr": "0x81",
-      "operator1": "A",
-      "operator2": "C"
+      "operand1": "A",
+      "operand2": "C"
     },
     "0x82": {
       "mnemonic": "ADD",
@@ -2051,8 +2051,8 @@
         "C"
       ],
       "addr": "0x82",
-      "operator1": "A",
-      "operator2": "D"
+      "operand1": "A",
+      "operand2": "D"
     },
     "0x83": {
       "mnemonic": "ADD",
@@ -2067,8 +2067,8 @@
         "C"
       ],
       "addr": "0x83",
-      "operator1": "A",
-      "operator2": "E"
+      "operand1": "A",
+      "operand2": "E"
     },
     "0x84": {
       "mnemonic": "ADD",
@@ -2083,8 +2083,8 @@
         "C"
       ],
       "addr": "0x84",
-      "operator1": "A",
-      "operator2": "H"
+      "operand1": "A",
+      "operand2": "H"
     },
     "0x85": {
       "mnemonic": "ADD",
@@ -2099,8 +2099,8 @@
         "C"
       ],
       "addr": "0x85",
-      "operator1": "A",
-      "operator2": "L"
+      "operand1": "A",
+      "operand2": "L"
     },
     "0x86": {
       "mnemonic": "ADD",
@@ -2115,8 +2115,8 @@
         "C"
       ],
       "addr": "0x86",
-      "operator1": "A",
-      "operator2": "(HL)"
+      "operand1": "A",
+      "operand2": "(HL)"
     },
     "0x87": {
       "mnemonic": "ADD",
@@ -2131,8 +2131,8 @@
         "C"
       ],
       "addr": "0x87",
-      "operator1": "A",
-      "operator2": "A"
+      "operand1": "A",
+      "operand2": "A"
     },
     "0x88": {
       "mnemonic": "ADC",
@@ -2147,8 +2147,8 @@
         "C"
       ],
       "addr": "0x88",
-      "operator1": "A",
-      "operator2": "B"
+      "operand1": "A",
+      "operand2": "B"
     },
     "0x89": {
       "mnemonic": "ADC",
@@ -2163,8 +2163,8 @@
         "C"
       ],
       "addr": "0x89",
-      "operator1": "A",
-      "operator2": "C"
+      "operand1": "A",
+      "operand2": "C"
     },
     "0x8a": {
       "mnemonic": "ADC",
@@ -2179,8 +2179,8 @@
         "C"
       ],
       "addr": "0x8a",
-      "operator1": "A",
-      "operator2": "D"
+      "operand1": "A",
+      "operand2": "D"
     },
     "0x8b": {
       "mnemonic": "ADC",
@@ -2195,8 +2195,8 @@
         "C"
       ],
       "addr": "0x8b",
-      "operator1": "A",
-      "operator2": "E"
+      "operand1": "A",
+      "operand2": "E"
     },
     "0x8c": {
       "mnemonic": "ADC",
@@ -2211,8 +2211,8 @@
         "C"
       ],
       "addr": "0x8c",
-      "operator1": "A",
-      "operator2": "H"
+      "operand1": "A",
+      "operand2": "H"
     },
     "0x8d": {
       "mnemonic": "ADC",
@@ -2227,8 +2227,8 @@
         "C"
       ],
       "addr": "0x8d",
-      "operator1": "A",
-      "operator2": "L"
+      "operand1": "A",
+      "operand2": "L"
     },
     "0x8e": {
       "mnemonic": "ADC",
@@ -2243,8 +2243,8 @@
         "C"
       ],
       "addr": "0x8e",
-      "operator1": "A",
-      "operator2": "(HL)"
+      "operand1": "A",
+      "operand2": "(HL)"
     },
     "0x8f": {
       "mnemonic": "ADC",
@@ -2259,8 +2259,8 @@
         "C"
       ],
       "addr": "0x8f",
-      "operator1": "A",
-      "operator2": "A"
+      "operand1": "A",
+      "operand2": "A"
     },
     "0x90": {
       "mnemonic": "SUB",
@@ -2275,7 +2275,7 @@
         "C"
       ],
       "addr": "0x90",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x91": {
       "mnemonic": "SUB",
@@ -2290,7 +2290,7 @@
         "C"
       ],
       "addr": "0x91",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x92": {
       "mnemonic": "SUB",
@@ -2305,7 +2305,7 @@
         "C"
       ],
       "addr": "0x92",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x93": {
       "mnemonic": "SUB",
@@ -2320,7 +2320,7 @@
         "C"
       ],
       "addr": "0x93",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x94": {
       "mnemonic": "SUB",
@@ -2335,7 +2335,7 @@
         "C"
       ],
       "addr": "0x94",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x95": {
       "mnemonic": "SUB",
@@ -2350,7 +2350,7 @@
         "C"
       ],
       "addr": "0x95",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x96": {
       "mnemonic": "SUB",
@@ -2365,7 +2365,7 @@
         "C"
       ],
       "addr": "0x96",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x97": {
       "mnemonic": "SUB",
@@ -2380,7 +2380,7 @@
         "C"
       ],
       "addr": "0x97",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x98": {
       "mnemonic": "SBC",
@@ -2395,8 +2395,8 @@
         "C"
       ],
       "addr": "0x98",
-      "operator1": "A",
-      "operator2": "B"
+      "operand1": "A",
+      "operand2": "B"
     },
     "0x99": {
       "mnemonic": "SBC",
@@ -2411,8 +2411,8 @@
         "C"
       ],
       "addr": "0x99",
-      "operator1": "A",
-      "operator2": "C"
+      "operand1": "A",
+      "operand2": "C"
     },
     "0x9a": {
       "mnemonic": "SBC",
@@ -2427,8 +2427,8 @@
         "C"
       ],
       "addr": "0x9a",
-      "operator1": "A",
-      "operator2": "D"
+      "operand1": "A",
+      "operand2": "D"
     },
     "0x9b": {
       "mnemonic": "SBC",
@@ -2443,8 +2443,8 @@
         "C"
       ],
       "addr": "0x9b",
-      "operator1": "A",
-      "operator2": "E"
+      "operand1": "A",
+      "operand2": "E"
     },
     "0x9c": {
       "mnemonic": "SBC",
@@ -2459,8 +2459,8 @@
         "C"
       ],
       "addr": "0x9c",
-      "operator1": "A",
-      "operator2": "H"
+      "operand1": "A",
+      "operand2": "H"
     },
     "0x9d": {
       "mnemonic": "SBC",
@@ -2475,8 +2475,8 @@
         "C"
       ],
       "addr": "0x9d",
-      "operator1": "A",
-      "operator2": "L"
+      "operand1": "A",
+      "operand2": "L"
     },
     "0x9e": {
       "mnemonic": "SBC",
@@ -2491,8 +2491,8 @@
         "C"
       ],
       "addr": "0x9e",
-      "operator1": "A",
-      "operator2": "(HL)"
+      "operand1": "A",
+      "operand2": "(HL)"
     },
     "0x9f": {
       "mnemonic": "SBC",
@@ -2507,8 +2507,8 @@
         "C"
       ],
       "addr": "0x9f",
-      "operator1": "A",
-      "operator2": "A"
+      "operand1": "A",
+      "operand2": "A"
     },
     "0xa0": {
       "mnemonic": "AND",
@@ -2523,7 +2523,7 @@
         "0"
       ],
       "addr": "0xa0",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0xa1": {
       "mnemonic": "AND",
@@ -2538,7 +2538,7 @@
         "0"
       ],
       "addr": "0xa1",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xa2": {
       "mnemonic": "AND",
@@ -2553,7 +2553,7 @@
         "0"
       ],
       "addr": "0xa2",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0xa3": {
       "mnemonic": "AND",
@@ -2568,7 +2568,7 @@
         "0"
       ],
       "addr": "0xa3",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0xa4": {
       "mnemonic": "AND",
@@ -2583,7 +2583,7 @@
         "0"
       ],
       "addr": "0xa4",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0xa5": {
       "mnemonic": "AND",
@@ -2598,7 +2598,7 @@
         "0"
       ],
       "addr": "0xa5",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0xa6": {
       "mnemonic": "AND",
@@ -2613,7 +2613,7 @@
         "0"
       ],
       "addr": "0xa6",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xa7": {
       "mnemonic": "AND",
@@ -2628,7 +2628,7 @@
         "0"
       ],
       "addr": "0xa7",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0xa8": {
       "mnemonic": "XOR",
@@ -2643,7 +2643,7 @@
         "0"
       ],
       "addr": "0xa8",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0xa9": {
       "mnemonic": "XOR",
@@ -2658,7 +2658,7 @@
         "0"
       ],
       "addr": "0xa9",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xaa": {
       "mnemonic": "XOR",
@@ -2673,7 +2673,7 @@
         "0"
       ],
       "addr": "0xaa",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0xab": {
       "mnemonic": "XOR",
@@ -2688,7 +2688,7 @@
         "0"
       ],
       "addr": "0xab",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0xac": {
       "mnemonic": "XOR",
@@ -2703,7 +2703,7 @@
         "0"
       ],
       "addr": "0xac",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0xad": {
       "mnemonic": "XOR",
@@ -2718,7 +2718,7 @@
         "0"
       ],
       "addr": "0xad",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0xae": {
       "mnemonic": "XOR",
@@ -2733,7 +2733,7 @@
         "0"
       ],
       "addr": "0xae",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xaf": {
       "mnemonic": "XOR",
@@ -2748,7 +2748,7 @@
         "0"
       ],
       "addr": "0xaf",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0xb0": {
       "mnemonic": "OR",
@@ -2763,7 +2763,7 @@
         "0"
       ],
       "addr": "0xb0",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0xb1": {
       "mnemonic": "OR",
@@ -2778,7 +2778,7 @@
         "0"
       ],
       "addr": "0xb1",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xb2": {
       "mnemonic": "OR",
@@ -2793,7 +2793,7 @@
         "0"
       ],
       "addr": "0xb2",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0xb3": {
       "mnemonic": "OR",
@@ -2808,7 +2808,7 @@
         "0"
       ],
       "addr": "0xb3",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0xb4": {
       "mnemonic": "OR",
@@ -2823,7 +2823,7 @@
         "0"
       ],
       "addr": "0xb4",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0xb5": {
       "mnemonic": "OR",
@@ -2838,7 +2838,7 @@
         "0"
       ],
       "addr": "0xb5",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0xb6": {
       "mnemonic": "OR",
@@ -2853,7 +2853,7 @@
         "0"
       ],
       "addr": "0xb6",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xb7": {
       "mnemonic": "OR",
@@ -2868,7 +2868,7 @@
         "0"
       ],
       "addr": "0xb7",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0xb8": {
       "mnemonic": "CP",
@@ -2883,7 +2883,7 @@
         "C"
       ],
       "addr": "0xb8",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0xb9": {
       "mnemonic": "CP",
@@ -2898,7 +2898,7 @@
         "C"
       ],
       "addr": "0xb9",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xba": {
       "mnemonic": "CP",
@@ -2913,7 +2913,7 @@
         "C"
       ],
       "addr": "0xba",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0xbb": {
       "mnemonic": "CP",
@@ -2928,7 +2928,7 @@
         "C"
       ],
       "addr": "0xbb",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0xbc": {
       "mnemonic": "CP",
@@ -2943,7 +2943,7 @@
         "C"
       ],
       "addr": "0xbc",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0xbd": {
       "mnemonic": "CP",
@@ -2958,7 +2958,7 @@
         "C"
       ],
       "addr": "0xbd",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0xbe": {
       "mnemonic": "CP",
@@ -2973,7 +2973,7 @@
         "C"
       ],
       "addr": "0xbe",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xbf": {
       "mnemonic": "CP",
@@ -2988,7 +2988,7 @@
         "C"
       ],
       "addr": "0xbf",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0xc0": {
       "mnemonic": "RET",
@@ -3004,7 +3004,7 @@
         "-"
       ],
       "addr": "0xc0",
-      "operator1": "NZ"
+      "operand1": "NZ"
     },
     "0xc1": {
       "mnemonic": "POP",
@@ -3019,7 +3019,7 @@
         "-"
       ],
       "addr": "0xc1",
-      "operator1": "BC"
+      "operand1": "BC"
     },
     "0xc2": {
       "mnemonic": "JP",
@@ -3035,8 +3035,8 @@
         "-"
       ],
       "addr": "0xc2",
-      "operator1": "NZ",
-      "operator2": "a16"
+      "operand1": "NZ",
+      "operand2": "a16"
     },
     "0xc3": {
       "mnemonic": "JP",
@@ -3051,7 +3051,7 @@
         "-"
       ],
       "addr": "0xc3",
-      "operator1": "a16"
+      "operand1": "a16"
     },
     "0xc4": {
       "mnemonic": "CALL",
@@ -3067,8 +3067,8 @@
         "-"
       ],
       "addr": "0xc4",
-      "operator1": "NZ",
-      "operator2": "a16"
+      "operand1": "NZ",
+      "operand2": "a16"
     },
     "0xc5": {
       "mnemonic": "PUSH",
@@ -3083,7 +3083,7 @@
         "-"
       ],
       "addr": "0xc5",
-      "operator1": "BC"
+      "operand1": "BC"
     },
     "0xc6": {
       "mnemonic": "ADD",
@@ -3098,8 +3098,8 @@
         "C"
       ],
       "addr": "0xc6",
-      "operator1": "A",
-      "operator2": "d8"
+      "operand1": "A",
+      "operand2": "d8"
     },
     "0xc7": {
       "mnemonic": "RST",
@@ -3114,7 +3114,7 @@
         "-"
       ],
       "addr": "0xc7",
-      "operator1": "00H"
+      "operand1": "00H"
     },
     "0xc8": {
       "mnemonic": "RET",
@@ -3130,7 +3130,7 @@
         "-"
       ],
       "addr": "0xc8",
-      "operator1": "Z"
+      "operand1": "Z"
     },
     "0xc9": {
       "mnemonic": "RET",
@@ -3160,8 +3160,8 @@
         "-"
       ],
       "addr": "0xca",
-      "operator1": "Z",
-      "operator2": "a16"
+      "operand1": "Z",
+      "operand2": "a16"
     },
     "0xcb": {
       "mnemonic": "PREFIX",
@@ -3176,7 +3176,7 @@
         "-"
       ],
       "addr": "0xcb",
-      "operator1": "CB"
+      "operand1": "CB"
     },
     "0xcc": {
       "mnemonic": "CALL",
@@ -3192,8 +3192,8 @@
         "-"
       ],
       "addr": "0xcc",
-      "operator1": "Z",
-      "operator2": "a16"
+      "operand1": "Z",
+      "operand2": "a16"
     },
     "0xcd": {
       "mnemonic": "CALL",
@@ -3208,7 +3208,7 @@
         "-"
       ],
       "addr": "0xcd",
-      "operator1": "a16"
+      "operand1": "a16"
     },
     "0xce": {
       "mnemonic": "ADC",
@@ -3223,8 +3223,8 @@
         "C"
       ],
       "addr": "0xce",
-      "operator1": "A",
-      "operator2": "d8"
+      "operand1": "A",
+      "operand2": "d8"
     },
     "0xcf": {
       "mnemonic": "RST",
@@ -3239,7 +3239,7 @@
         "-"
       ],
       "addr": "0xcf",
-      "operator1": "08H"
+      "operand1": "08H"
     },
     "0xd0": {
       "mnemonic": "RET",
@@ -3255,7 +3255,7 @@
         "-"
       ],
       "addr": "0xd0",
-      "operator1": "NC"
+      "operand1": "NC"
     },
     "0xd1": {
       "mnemonic": "POP",
@@ -3270,7 +3270,7 @@
         "-"
       ],
       "addr": "0xd1",
-      "operator1": "DE"
+      "operand1": "DE"
     },
     "0xd2": {
       "mnemonic": "JP",
@@ -3286,8 +3286,8 @@
         "-"
       ],
       "addr": "0xd2",
-      "operator1": "NC",
-      "operator2": "a16"
+      "operand1": "NC",
+      "operand2": "a16"
     },
     "0xd4": {
       "mnemonic": "CALL",
@@ -3303,8 +3303,8 @@
         "-"
       ],
       "addr": "0xd4",
-      "operator1": "NC",
-      "operator2": "a16"
+      "operand1": "NC",
+      "operand2": "a16"
     },
     "0xd5": {
       "mnemonic": "PUSH",
@@ -3319,7 +3319,7 @@
         "-"
       ],
       "addr": "0xd5",
-      "operator1": "DE"
+      "operand1": "DE"
     },
     "0xd6": {
       "mnemonic": "SUB",
@@ -3334,7 +3334,7 @@
         "C"
       ],
       "addr": "0xd6",
-      "operator1": "d8"
+      "operand1": "d8"
     },
     "0xd7": {
       "mnemonic": "RST",
@@ -3349,7 +3349,7 @@
         "-"
       ],
       "addr": "0xd7",
-      "operator1": "10H"
+      "operand1": "10H"
     },
     "0xd8": {
       "mnemonic": "RET",
@@ -3365,7 +3365,7 @@
         "-"
       ],
       "addr": "0xd8",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xd9": {
       "mnemonic": "RETI",
@@ -3395,8 +3395,8 @@
         "-"
       ],
       "addr": "0xda",
-      "operator1": "C",
-      "operator2": "a16"
+      "operand1": "C",
+      "operand2": "a16"
     },
     "0xdc": {
       "mnemonic": "CALL",
@@ -3412,8 +3412,8 @@
         "-"
       ],
       "addr": "0xdc",
-      "operator1": "C",
-      "operator2": "a16"
+      "operand1": "C",
+      "operand2": "a16"
     },
     "0xde": {
       "mnemonic": "SBC",
@@ -3428,8 +3428,8 @@
         "C"
       ],
       "addr": "0xde",
-      "operator1": "A",
-      "operator2": "d8"
+      "operand1": "A",
+      "operand2": "d8"
     },
     "0xdf": {
       "mnemonic": "RST",
@@ -3444,7 +3444,7 @@
         "-"
       ],
       "addr": "0xdf",
-      "operator1": "18H"
+      "operand1": "18H"
     },
     "0xe0": {
       "mnemonic": "LDH",
@@ -3459,8 +3459,8 @@
         "-"
       ],
       "addr": "0xe0",
-      "operator1": "(a8)",
-      "operator2": "A"
+      "operand1": "(a8)",
+      "operand2": "A"
     },
     "0xe1": {
       "mnemonic": "POP",
@@ -3475,7 +3475,7 @@
         "-"
       ],
       "addr": "0xe1",
-      "operator1": "HL"
+      "operand1": "HL"
     },
     "0xe2": {
       "mnemonic": "LD",
@@ -3490,8 +3490,8 @@
         "-"
       ],
       "addr": "0xe2",
-      "operator1": "(C)",
-      "operator2": "A"
+      "operand1": "(C)",
+      "operand2": "A"
     },
     "0xe5": {
       "mnemonic": "PUSH",
@@ -3506,7 +3506,7 @@
         "-"
       ],
       "addr": "0xe5",
-      "operator1": "HL"
+      "operand1": "HL"
     },
     "0xe6": {
       "mnemonic": "AND",
@@ -3521,7 +3521,7 @@
         "0"
       ],
       "addr": "0xe6",
-      "operator1": "d8"
+      "operand1": "d8"
     },
     "0xe7": {
       "mnemonic": "RST",
@@ -3536,7 +3536,7 @@
         "-"
       ],
       "addr": "0xe7",
-      "operator1": "20H"
+      "operand1": "20H"
     },
     "0xe8": {
       "mnemonic": "ADD",
@@ -3551,8 +3551,8 @@
         "C"
       ],
       "addr": "0xe8",
-      "operator1": "SP",
-      "operator2": "r8"
+      "operand1": "SP",
+      "operand2": "r8"
     },
     "0xe9": {
       "mnemonic": "JP",
@@ -3567,7 +3567,7 @@
         "-"
       ],
       "addr": "0xe9",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xea": {
       "mnemonic": "LD",
@@ -3582,8 +3582,8 @@
         "-"
       ],
       "addr": "0xea",
-      "operator1": "(a16)",
-      "operator2": "A"
+      "operand1": "(a16)",
+      "operand2": "A"
     },
     "0xee": {
       "mnemonic": "XOR",
@@ -3598,7 +3598,7 @@
         "0"
       ],
       "addr": "0xee",
-      "operator1": "d8"
+      "operand1": "d8"
     },
     "0xef": {
       "mnemonic": "RST",
@@ -3613,7 +3613,7 @@
         "-"
       ],
       "addr": "0xef",
-      "operator1": "28H"
+      "operand1": "28H"
     },
     "0xf0": {
       "mnemonic": "LDH",
@@ -3628,8 +3628,8 @@
         "-"
       ],
       "addr": "0xf0",
-      "operator1": "A",
-      "operator2": "(a8)"
+      "operand1": "A",
+      "operand2": "(a8)"
     },
     "0xf1": {
       "mnemonic": "POP",
@@ -3644,7 +3644,7 @@
         "C"
       ],
       "addr": "0xf1",
-      "operator1": "AF"
+      "operand1": "AF"
     },
     "0xf2": {
       "mnemonic": "LD",
@@ -3659,8 +3659,8 @@
         "-"
       ],
       "addr": "0xf2",
-      "operator1": "A",
-      "operator2": "(C)"
+      "operand1": "A",
+      "operand2": "(C)"
     },
     "0xf3": {
       "mnemonic": "DI",
@@ -3689,7 +3689,7 @@
         "-"
       ],
       "addr": "0xf5",
-      "operator1": "AF"
+      "operand1": "AF"
     },
     "0xf6": {
       "mnemonic": "OR",
@@ -3704,7 +3704,7 @@
         "0"
       ],
       "addr": "0xf6",
-      "operator1": "d8"
+      "operand1": "d8"
     },
     "0xf7": {
       "mnemonic": "RST",
@@ -3719,7 +3719,7 @@
         "-"
       ],
       "addr": "0xf7",
-      "operator1": "30H"
+      "operand1": "30H"
     },
     "0xf8": {
       "mnemonic": "LD",
@@ -3734,8 +3734,8 @@
         "C"
       ],
       "addr": "0xf8",
-      "operator1": "HL",
-      "operator2": "SP+r8"
+      "operand1": "HL",
+      "operand2": "SP+r8"
     },
     "0xf9": {
       "mnemonic": "LD",
@@ -3750,8 +3750,8 @@
         "-"
       ],
       "addr": "0xf9",
-      "operator1": "SP",
-      "operator2": "HL"
+      "operand1": "SP",
+      "operand2": "HL"
     },
     "0xfa": {
       "mnemonic": "LD",
@@ -3766,8 +3766,8 @@
         "-"
       ],
       "addr": "0xfa",
-      "operator1": "A",
-      "operator2": "(a16)"
+      "operand1": "A",
+      "operand2": "(a16)"
     },
     "0xfb": {
       "mnemonic": "EI",
@@ -3796,7 +3796,7 @@
         "C"
       ],
       "addr": "0xfe",
-      "operator1": "d8"
+      "operand1": "d8"
     },
     "0xff": {
       "mnemonic": "RST",
@@ -3811,7 +3811,7 @@
         "-"
       ],
       "addr": "0xff",
-      "operator1": "38H"
+      "operand1": "38H"
     }
   },
   "cbprefixed": {
@@ -3828,7 +3828,7 @@
         "C"
       ],
       "addr": "0x0",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x1": {
       "mnemonic": "RLC",
@@ -3843,7 +3843,7 @@
         "C"
       ],
       "addr": "0x1",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x2": {
       "mnemonic": "RLC",
@@ -3858,7 +3858,7 @@
         "C"
       ],
       "addr": "0x2",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x3": {
       "mnemonic": "RLC",
@@ -3873,7 +3873,7 @@
         "C"
       ],
       "addr": "0x3",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x4": {
       "mnemonic": "RLC",
@@ -3888,7 +3888,7 @@
         "C"
       ],
       "addr": "0x4",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x5": {
       "mnemonic": "RLC",
@@ -3903,7 +3903,7 @@
         "C"
       ],
       "addr": "0x5",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x6": {
       "mnemonic": "RLC",
@@ -3918,7 +3918,7 @@
         "C"
       ],
       "addr": "0x6",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x7": {
       "mnemonic": "RLC",
@@ -3933,7 +3933,7 @@
         "C"
       ],
       "addr": "0x7",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x8": {
       "mnemonic": "RRC",
@@ -3948,7 +3948,7 @@
         "C"
       ],
       "addr": "0x8",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x9": {
       "mnemonic": "RRC",
@@ -3963,7 +3963,7 @@
         "C"
       ],
       "addr": "0x9",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0xa": {
       "mnemonic": "RRC",
@@ -3978,7 +3978,7 @@
         "C"
       ],
       "addr": "0xa",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0xb": {
       "mnemonic": "RRC",
@@ -3993,7 +3993,7 @@
         "C"
       ],
       "addr": "0xb",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0xc": {
       "mnemonic": "RRC",
@@ -4008,7 +4008,7 @@
         "C"
       ],
       "addr": "0xc",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0xd": {
       "mnemonic": "RRC",
@@ -4023,7 +4023,7 @@
         "C"
       ],
       "addr": "0xd",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0xe": {
       "mnemonic": "RRC",
@@ -4038,7 +4038,7 @@
         "C"
       ],
       "addr": "0xe",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0xf": {
       "mnemonic": "RRC",
@@ -4053,7 +4053,7 @@
         "C"
       ],
       "addr": "0xf",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x10": {
       "mnemonic": "RL",
@@ -4068,7 +4068,7 @@
         "C"
       ],
       "addr": "0x10",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x11": {
       "mnemonic": "RL",
@@ -4083,7 +4083,7 @@
         "C"
       ],
       "addr": "0x11",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x12": {
       "mnemonic": "RL",
@@ -4098,7 +4098,7 @@
         "C"
       ],
       "addr": "0x12",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x13": {
       "mnemonic": "RL",
@@ -4113,7 +4113,7 @@
         "C"
       ],
       "addr": "0x13",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x14": {
       "mnemonic": "RL",
@@ -4128,7 +4128,7 @@
         "C"
       ],
       "addr": "0x14",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x15": {
       "mnemonic": "RL",
@@ -4143,7 +4143,7 @@
         "C"
       ],
       "addr": "0x15",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x16": {
       "mnemonic": "RL",
@@ -4158,7 +4158,7 @@
         "C"
       ],
       "addr": "0x16",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x17": {
       "mnemonic": "RL",
@@ -4173,7 +4173,7 @@
         "C"
       ],
       "addr": "0x17",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x18": {
       "mnemonic": "RR",
@@ -4188,7 +4188,7 @@
         "C"
       ],
       "addr": "0x18",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x19": {
       "mnemonic": "RR",
@@ -4203,7 +4203,7 @@
         "C"
       ],
       "addr": "0x19",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x1a": {
       "mnemonic": "RR",
@@ -4218,7 +4218,7 @@
         "C"
       ],
       "addr": "0x1a",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x1b": {
       "mnemonic": "RR",
@@ -4233,7 +4233,7 @@
         "C"
       ],
       "addr": "0x1b",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x1c": {
       "mnemonic": "RR",
@@ -4248,7 +4248,7 @@
         "C"
       ],
       "addr": "0x1c",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x1d": {
       "mnemonic": "RR",
@@ -4263,7 +4263,7 @@
         "C"
       ],
       "addr": "0x1d",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x1e": {
       "mnemonic": "RR",
@@ -4278,7 +4278,7 @@
         "C"
       ],
       "addr": "0x1e",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x1f": {
       "mnemonic": "RR",
@@ -4293,7 +4293,7 @@
         "C"
       ],
       "addr": "0x1f",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x20": {
       "mnemonic": "SLA",
@@ -4308,7 +4308,7 @@
         "C"
       ],
       "addr": "0x20",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x21": {
       "mnemonic": "SLA",
@@ -4323,7 +4323,7 @@
         "C"
       ],
       "addr": "0x21",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x22": {
       "mnemonic": "SLA",
@@ -4338,7 +4338,7 @@
         "C"
       ],
       "addr": "0x22",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x23": {
       "mnemonic": "SLA",
@@ -4353,7 +4353,7 @@
         "C"
       ],
       "addr": "0x23",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x24": {
       "mnemonic": "SLA",
@@ -4368,7 +4368,7 @@
         "C"
       ],
       "addr": "0x24",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x25": {
       "mnemonic": "SLA",
@@ -4383,7 +4383,7 @@
         "C"
       ],
       "addr": "0x25",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x26": {
       "mnemonic": "SLA",
@@ -4398,7 +4398,7 @@
         "C"
       ],
       "addr": "0x26",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x27": {
       "mnemonic": "SLA",
@@ -4413,7 +4413,7 @@
         "C"
       ],
       "addr": "0x27",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x28": {
       "mnemonic": "SRA",
@@ -4428,7 +4428,7 @@
         "0"
       ],
       "addr": "0x28",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x29": {
       "mnemonic": "SRA",
@@ -4443,7 +4443,7 @@
         "0"
       ],
       "addr": "0x29",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x2a": {
       "mnemonic": "SRA",
@@ -4458,7 +4458,7 @@
         "0"
       ],
       "addr": "0x2a",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x2b": {
       "mnemonic": "SRA",
@@ -4473,7 +4473,7 @@
         "0"
       ],
       "addr": "0x2b",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x2c": {
       "mnemonic": "SRA",
@@ -4488,7 +4488,7 @@
         "0"
       ],
       "addr": "0x2c",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x2d": {
       "mnemonic": "SRA",
@@ -4503,7 +4503,7 @@
         "0"
       ],
       "addr": "0x2d",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x2e": {
       "mnemonic": "SRA",
@@ -4518,7 +4518,7 @@
         "0"
       ],
       "addr": "0x2e",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x2f": {
       "mnemonic": "SRA",
@@ -4533,7 +4533,7 @@
         "0"
       ],
       "addr": "0x2f",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x30": {
       "mnemonic": "SWAP",
@@ -4548,7 +4548,7 @@
         "0"
       ],
       "addr": "0x30",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x31": {
       "mnemonic": "SWAP",
@@ -4563,7 +4563,7 @@
         "0"
       ],
       "addr": "0x31",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x32": {
       "mnemonic": "SWAP",
@@ -4578,7 +4578,7 @@
         "0"
       ],
       "addr": "0x32",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x33": {
       "mnemonic": "SWAP",
@@ -4593,7 +4593,7 @@
         "0"
       ],
       "addr": "0x33",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x34": {
       "mnemonic": "SWAP",
@@ -4608,7 +4608,7 @@
         "0"
       ],
       "addr": "0x34",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x35": {
       "mnemonic": "SWAP",
@@ -4623,7 +4623,7 @@
         "0"
       ],
       "addr": "0x35",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x36": {
       "mnemonic": "SWAP",
@@ -4638,7 +4638,7 @@
         "0"
       ],
       "addr": "0x36",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x37": {
       "mnemonic": "SWAP",
@@ -4653,7 +4653,7 @@
         "0"
       ],
       "addr": "0x37",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x38": {
       "mnemonic": "SRL",
@@ -4668,7 +4668,7 @@
         "C"
       ],
       "addr": "0x38",
-      "operator1": "B"
+      "operand1": "B"
     },
     "0x39": {
       "mnemonic": "SRL",
@@ -4683,7 +4683,7 @@
         "C"
       ],
       "addr": "0x39",
-      "operator1": "C"
+      "operand1": "C"
     },
     "0x3a": {
       "mnemonic": "SRL",
@@ -4698,7 +4698,7 @@
         "C"
       ],
       "addr": "0x3a",
-      "operator1": "D"
+      "operand1": "D"
     },
     "0x3b": {
       "mnemonic": "SRL",
@@ -4713,7 +4713,7 @@
         "C"
       ],
       "addr": "0x3b",
-      "operator1": "E"
+      "operand1": "E"
     },
     "0x3c": {
       "mnemonic": "SRL",
@@ -4728,7 +4728,7 @@
         "C"
       ],
       "addr": "0x3c",
-      "operator1": "H"
+      "operand1": "H"
     },
     "0x3d": {
       "mnemonic": "SRL",
@@ -4743,7 +4743,7 @@
         "C"
       ],
       "addr": "0x3d",
-      "operator1": "L"
+      "operand1": "L"
     },
     "0x3e": {
       "mnemonic": "SRL",
@@ -4758,7 +4758,7 @@
         "C"
       ],
       "addr": "0x3e",
-      "operator1": "(HL)"
+      "operand1": "(HL)"
     },
     "0x3f": {
       "mnemonic": "SRL",
@@ -4773,7 +4773,7 @@
         "C"
       ],
       "addr": "0x3f",
-      "operator1": "A"
+      "operand1": "A"
     },
     "0x40": {
       "mnemonic": "BIT",
@@ -4788,8 +4788,8 @@
         "-"
       ],
       "addr": "0x40",
-      "operator1": "0",
-      "operator2": "B"
+      "operand1": "0",
+      "operand2": "B"
     },
     "0x41": {
       "mnemonic": "BIT",
@@ -4804,8 +4804,8 @@
         "-"
       ],
       "addr": "0x41",
-      "operator1": "0",
-      "operator2": "C"
+      "operand1": "0",
+      "operand2": "C"
     },
     "0x42": {
       "mnemonic": "BIT",
@@ -4820,8 +4820,8 @@
         "-"
       ],
       "addr": "0x42",
-      "operator1": "0",
-      "operator2": "D"
+      "operand1": "0",
+      "operand2": "D"
     },
     "0x43": {
       "mnemonic": "BIT",
@@ -4836,8 +4836,8 @@
         "-"
       ],
       "addr": "0x43",
-      "operator1": "0",
-      "operator2": "E"
+      "operand1": "0",
+      "operand2": "E"
     },
     "0x44": {
       "mnemonic": "BIT",
@@ -4852,8 +4852,8 @@
         "-"
       ],
       "addr": "0x44",
-      "operator1": "0",
-      "operator2": "H"
+      "operand1": "0",
+      "operand2": "H"
     },
     "0x45": {
       "mnemonic": "BIT",
@@ -4868,8 +4868,8 @@
         "-"
       ],
       "addr": "0x45",
-      "operator1": "0",
-      "operator2": "L"
+      "operand1": "0",
+      "operand2": "L"
     },
     "0x46": {
       "mnemonic": "BIT",
@@ -4884,8 +4884,8 @@
         "-"
       ],
       "addr": "0x46",
-      "operator1": "0",
-      "operator2": "(HL)"
+      "operand1": "0",
+      "operand2": "(HL)"
     },
     "0x47": {
       "mnemonic": "BIT",
@@ -4900,8 +4900,8 @@
         "-"
       ],
       "addr": "0x47",
-      "operator1": "0",
-      "operator2": "A"
+      "operand1": "0",
+      "operand2": "A"
     },
     "0x48": {
       "mnemonic": "BIT",
@@ -4916,8 +4916,8 @@
         "-"
       ],
       "addr": "0x48",
-      "operator1": "1",
-      "operator2": "B"
+      "operand1": "1",
+      "operand2": "B"
     },
     "0x49": {
       "mnemonic": "BIT",
@@ -4932,8 +4932,8 @@
         "-"
       ],
       "addr": "0x49",
-      "operator1": "1",
-      "operator2": "C"
+      "operand1": "1",
+      "operand2": "C"
     },
     "0x4a": {
       "mnemonic": "BIT",
@@ -4948,8 +4948,8 @@
         "-"
       ],
       "addr": "0x4a",
-      "operator1": "1",
-      "operator2": "D"
+      "operand1": "1",
+      "operand2": "D"
     },
     "0x4b": {
       "mnemonic": "BIT",
@@ -4964,8 +4964,8 @@
         "-"
       ],
       "addr": "0x4b",
-      "operator1": "1",
-      "operator2": "E"
+      "operand1": "1",
+      "operand2": "E"
     },
     "0x4c": {
       "mnemonic": "BIT",
@@ -4980,8 +4980,8 @@
         "-"
       ],
       "addr": "0x4c",
-      "operator1": "1",
-      "operator2": "H"
+      "operand1": "1",
+      "operand2": "H"
     },
     "0x4d": {
       "mnemonic": "BIT",
@@ -4996,8 +4996,8 @@
         "-"
       ],
       "addr": "0x4d",
-      "operator1": "1",
-      "operator2": "L"
+      "operand1": "1",
+      "operand2": "L"
     },
     "0x4e": {
       "mnemonic": "BIT",
@@ -5012,8 +5012,8 @@
         "-"
       ],
       "addr": "0x4e",
-      "operator1": "1",
-      "operator2": "(HL)"
+      "operand1": "1",
+      "operand2": "(HL)"
     },
     "0x4f": {
       "mnemonic": "BIT",
@@ -5028,8 +5028,8 @@
         "-"
       ],
       "addr": "0x4f",
-      "operator1": "1",
-      "operator2": "A"
+      "operand1": "1",
+      "operand2": "A"
     },
     "0x50": {
       "mnemonic": "BIT",
@@ -5044,8 +5044,8 @@
         "-"
       ],
       "addr": "0x50",
-      "operator1": "2",
-      "operator2": "B"
+      "operand1": "2",
+      "operand2": "B"
     },
     "0x51": {
       "mnemonic": "BIT",
@@ -5060,8 +5060,8 @@
         "-"
       ],
       "addr": "0x51",
-      "operator1": "2",
-      "operator2": "C"
+      "operand1": "2",
+      "operand2": "C"
     },
     "0x52": {
       "mnemonic": "BIT",
@@ -5076,8 +5076,8 @@
         "-"
       ],
       "addr": "0x52",
-      "operator1": "2",
-      "operator2": "D"
+      "operand1": "2",
+      "operand2": "D"
     },
     "0x53": {
       "mnemonic": "BIT",
@@ -5092,8 +5092,8 @@
         "-"
       ],
       "addr": "0x53",
-      "operator1": "2",
-      "operator2": "E"
+      "operand1": "2",
+      "operand2": "E"
     },
     "0x54": {
       "mnemonic": "BIT",
@@ -5108,8 +5108,8 @@
         "-"
       ],
       "addr": "0x54",
-      "operator1": "2",
-      "operator2": "H"
+      "operand1": "2",
+      "operand2": "H"
     },
     "0x55": {
       "mnemonic": "BIT",
@@ -5124,8 +5124,8 @@
         "-"
       ],
       "addr": "0x55",
-      "operator1": "2",
-      "operator2": "L"
+      "operand1": "2",
+      "operand2": "L"
     },
     "0x56": {
       "mnemonic": "BIT",
@@ -5140,8 +5140,8 @@
         "-"
       ],
       "addr": "0x56",
-      "operator1": "2",
-      "operator2": "(HL)"
+      "operand1": "2",
+      "operand2": "(HL)"
     },
     "0x57": {
       "mnemonic": "BIT",
@@ -5156,8 +5156,8 @@
         "-"
       ],
       "addr": "0x57",
-      "operator1": "2",
-      "operator2": "A"
+      "operand1": "2",
+      "operand2": "A"
     },
     "0x58": {
       "mnemonic": "BIT",
@@ -5172,8 +5172,8 @@
         "-"
       ],
       "addr": "0x58",
-      "operator1": "3",
-      "operator2": "B"
+      "operand1": "3",
+      "operand2": "B"
     },
     "0x59": {
       "mnemonic": "BIT",
@@ -5188,8 +5188,8 @@
         "-"
       ],
       "addr": "0x59",
-      "operator1": "3",
-      "operator2": "C"
+      "operand1": "3",
+      "operand2": "C"
     },
     "0x5a": {
       "mnemonic": "BIT",
@@ -5204,8 +5204,8 @@
         "-"
       ],
       "addr": "0x5a",
-      "operator1": "3",
-      "operator2": "D"
+      "operand1": "3",
+      "operand2": "D"
     },
     "0x5b": {
       "mnemonic": "BIT",
@@ -5220,8 +5220,8 @@
         "-"
       ],
       "addr": "0x5b",
-      "operator1": "3",
-      "operator2": "E"
+      "operand1": "3",
+      "operand2": "E"
     },
     "0x5c": {
       "mnemonic": "BIT",
@@ -5236,8 +5236,8 @@
         "-"
       ],
       "addr": "0x5c",
-      "operator1": "3",
-      "operator2": "H"
+      "operand1": "3",
+      "operand2": "H"
     },
     "0x5d": {
       "mnemonic": "BIT",
@@ -5252,8 +5252,8 @@
         "-"
       ],
       "addr": "0x5d",
-      "operator1": "3",
-      "operator2": "L"
+      "operand1": "3",
+      "operand2": "L"
     },
     "0x5e": {
       "mnemonic": "BIT",
@@ -5268,8 +5268,8 @@
         "-"
       ],
       "addr": "0x5e",
-      "operator1": "3",
-      "operator2": "(HL)"
+      "operand1": "3",
+      "operand2": "(HL)"
     },
     "0x5f": {
       "mnemonic": "BIT",
@@ -5284,8 +5284,8 @@
         "-"
       ],
       "addr": "0x5f",
-      "operator1": "3",
-      "operator2": "A"
+      "operand1": "3",
+      "operand2": "A"
     },
     "0x60": {
       "mnemonic": "BIT",
@@ -5300,8 +5300,8 @@
         "-"
       ],
       "addr": "0x60",
-      "operator1": "4",
-      "operator2": "B"
+      "operand1": "4",
+      "operand2": "B"
     },
     "0x61": {
       "mnemonic": "BIT",
@@ -5316,8 +5316,8 @@
         "-"
       ],
       "addr": "0x61",
-      "operator1": "4",
-      "operator2": "C"
+      "operand1": "4",
+      "operand2": "C"
     },
     "0x62": {
       "mnemonic": "BIT",
@@ -5332,8 +5332,8 @@
         "-"
       ],
       "addr": "0x62",
-      "operator1": "4",
-      "operator2": "D"
+      "operand1": "4",
+      "operand2": "D"
     },
     "0x63": {
       "mnemonic": "BIT",
@@ -5348,8 +5348,8 @@
         "-"
       ],
       "addr": "0x63",
-      "operator1": "4",
-      "operator2": "E"
+      "operand1": "4",
+      "operand2": "E"
     },
     "0x64": {
       "mnemonic": "BIT",
@@ -5364,8 +5364,8 @@
         "-"
       ],
       "addr": "0x64",
-      "operator1": "4",
-      "operator2": "H"
+      "operand1": "4",
+      "operand2": "H"
     },
     "0x65": {
       "mnemonic": "BIT",
@@ -5380,8 +5380,8 @@
         "-"
       ],
       "addr": "0x65",
-      "operator1": "4",
-      "operator2": "L"
+      "operand1": "4",
+      "operand2": "L"
     },
     "0x66": {
       "mnemonic": "BIT",
@@ -5396,8 +5396,8 @@
         "-"
       ],
       "addr": "0x66",
-      "operator1": "4",
-      "operator2": "(HL)"
+      "operand1": "4",
+      "operand2": "(HL)"
     },
     "0x67": {
       "mnemonic": "BIT",
@@ -5412,8 +5412,8 @@
         "-"
       ],
       "addr": "0x67",
-      "operator1": "4",
-      "operator2": "A"
+      "operand1": "4",
+      "operand2": "A"
     },
     "0x68": {
       "mnemonic": "BIT",
@@ -5428,8 +5428,8 @@
         "-"
       ],
       "addr": "0x68",
-      "operator1": "5",
-      "operator2": "B"
+      "operand1": "5",
+      "operand2": "B"
     },
     "0x69": {
       "mnemonic": "BIT",
@@ -5444,8 +5444,8 @@
         "-"
       ],
       "addr": "0x69",
-      "operator1": "5",
-      "operator2": "C"
+      "operand1": "5",
+      "operand2": "C"
     },
     "0x6a": {
       "mnemonic": "BIT",
@@ -5460,8 +5460,8 @@
         "-"
       ],
       "addr": "0x6a",
-      "operator1": "5",
-      "operator2": "D"
+      "operand1": "5",
+      "operand2": "D"
     },
     "0x6b": {
       "mnemonic": "BIT",
@@ -5476,8 +5476,8 @@
         "-"
       ],
       "addr": "0x6b",
-      "operator1": "5",
-      "operator2": "E"
+      "operand1": "5",
+      "operand2": "E"
     },
     "0x6c": {
       "mnemonic": "BIT",
@@ -5492,8 +5492,8 @@
         "-"
       ],
       "addr": "0x6c",
-      "operator1": "5",
-      "operator2": "H"
+      "operand1": "5",
+      "operand2": "H"
     },
     "0x6d": {
       "mnemonic": "BIT",
@@ -5508,8 +5508,8 @@
         "-"
       ],
       "addr": "0x6d",
-      "operator1": "5",
-      "operator2": "L"
+      "operand1": "5",
+      "operand2": "L"
     },
     "0x6e": {
       "mnemonic": "BIT",
@@ -5524,8 +5524,8 @@
         "-"
       ],
       "addr": "0x6e",
-      "operator1": "5",
-      "operator2": "(HL)"
+      "operand1": "5",
+      "operand2": "(HL)"
     },
     "0x6f": {
       "mnemonic": "BIT",
@@ -5540,8 +5540,8 @@
         "-"
       ],
       "addr": "0x6f",
-      "operator1": "5",
-      "operator2": "A"
+      "operand1": "5",
+      "operand2": "A"
     },
     "0x70": {
       "mnemonic": "BIT",
@@ -5556,8 +5556,8 @@
         "-"
       ],
       "addr": "0x70",
-      "operator1": "6",
-      "operator2": "B"
+      "operand1": "6",
+      "operand2": "B"
     },
     "0x71": {
       "mnemonic": "BIT",
@@ -5572,8 +5572,8 @@
         "-"
       ],
       "addr": "0x71",
-      "operator1": "6",
-      "operator2": "C"
+      "operand1": "6",
+      "operand2": "C"
     },
     "0x72": {
       "mnemonic": "BIT",
@@ -5588,8 +5588,8 @@
         "-"
       ],
       "addr": "0x72",
-      "operator1": "6",
-      "operator2": "D"
+      "operand1": "6",
+      "operand2": "D"
     },
     "0x73": {
       "mnemonic": "BIT",
@@ -5604,8 +5604,8 @@
         "-"
       ],
       "addr": "0x73",
-      "operator1": "6",
-      "operator2": "E"
+      "operand1": "6",
+      "operand2": "E"
     },
     "0x74": {
       "mnemonic": "BIT",
@@ -5620,8 +5620,8 @@
         "-"
       ],
       "addr": "0x74",
-      "operator1": "6",
-      "operator2": "H"
+      "operand1": "6",
+      "operand2": "H"
     },
     "0x75": {
       "mnemonic": "BIT",
@@ -5636,8 +5636,8 @@
         "-"
       ],
       "addr": "0x75",
-      "operator1": "6",
-      "operator2": "L"
+      "operand1": "6",
+      "operand2": "L"
     },
     "0x76": {
       "mnemonic": "BIT",
@@ -5652,8 +5652,8 @@
         "-"
       ],
       "addr": "0x76",
-      "operator1": "6",
-      "operator2": "(HL)"
+      "operand1": "6",
+      "operand2": "(HL)"
     },
     "0x77": {
       "mnemonic": "BIT",
@@ -5668,8 +5668,8 @@
         "-"
       ],
       "addr": "0x77",
-      "operator1": "6",
-      "operator2": "A"
+      "operand1": "6",
+      "operand2": "A"
     },
     "0x78": {
       "mnemonic": "BIT",
@@ -5684,8 +5684,8 @@
         "-"
       ],
       "addr": "0x78",
-      "operator1": "7",
-      "operator2": "B"
+      "operand1": "7",
+      "operand2": "B"
     },
     "0x79": {
       "mnemonic": "BIT",
@@ -5700,8 +5700,8 @@
         "-"
       ],
       "addr": "0x79",
-      "operator1": "7",
-      "operator2": "C"
+      "operand1": "7",
+      "operand2": "C"
     },
     "0x7a": {
       "mnemonic": "BIT",
@@ -5716,8 +5716,8 @@
         "-"
       ],
       "addr": "0x7a",
-      "operator1": "7",
-      "operator2": "D"
+      "operand1": "7",
+      "operand2": "D"
     },
     "0x7b": {
       "mnemonic": "BIT",
@@ -5732,8 +5732,8 @@
         "-"
       ],
       "addr": "0x7b",
-      "operator1": "7",
-      "operator2": "E"
+      "operand1": "7",
+      "operand2": "E"
     },
     "0x7c": {
       "mnemonic": "BIT",
@@ -5748,8 +5748,8 @@
         "-"
       ],
       "addr": "0x7c",
-      "operator1": "7",
-      "operator2": "H"
+      "operand1": "7",
+      "operand2": "H"
     },
     "0x7d": {
       "mnemonic": "BIT",
@@ -5764,8 +5764,8 @@
         "-"
       ],
       "addr": "0x7d",
-      "operator1": "7",
-      "operator2": "L"
+      "operand1": "7",
+      "operand2": "L"
     },
     "0x7e": {
       "mnemonic": "BIT",
@@ -5780,8 +5780,8 @@
         "-"
       ],
       "addr": "0x7e",
-      "operator1": "7",
-      "operator2": "(HL)"
+      "operand1": "7",
+      "operand2": "(HL)"
     },
     "0x7f": {
       "mnemonic": "BIT",
@@ -5796,8 +5796,8 @@
         "-"
       ],
       "addr": "0x7f",
-      "operator1": "7",
-      "operator2": "A"
+      "operand1": "7",
+      "operand2": "A"
     },
     "0x80": {
       "mnemonic": "RES",
@@ -5812,8 +5812,8 @@
         "-"
       ],
       "addr": "0x80",
-      "operator1": "0",
-      "operator2": "B"
+      "operand1": "0",
+      "operand2": "B"
     },
     "0x81": {
       "mnemonic": "RES",
@@ -5828,8 +5828,8 @@
         "-"
       ],
       "addr": "0x81",
-      "operator1": "0",
-      "operator2": "C"
+      "operand1": "0",
+      "operand2": "C"
     },
     "0x82": {
       "mnemonic": "RES",
@@ -5844,8 +5844,8 @@
         "-"
       ],
       "addr": "0x82",
-      "operator1": "0",
-      "operator2": "D"
+      "operand1": "0",
+      "operand2": "D"
     },
     "0x83": {
       "mnemonic": "RES",
@@ -5860,8 +5860,8 @@
         "-"
       ],
       "addr": "0x83",
-      "operator1": "0",
-      "operator2": "E"
+      "operand1": "0",
+      "operand2": "E"
     },
     "0x84": {
       "mnemonic": "RES",
@@ -5876,8 +5876,8 @@
         "-"
       ],
       "addr": "0x84",
-      "operator1": "0",
-      "operator2": "H"
+      "operand1": "0",
+      "operand2": "H"
     },
     "0x85": {
       "mnemonic": "RES",
@@ -5892,8 +5892,8 @@
         "-"
       ],
       "addr": "0x85",
-      "operator1": "0",
-      "operator2": "L"
+      "operand1": "0",
+      "operand2": "L"
     },
     "0x86": {
       "mnemonic": "RES",
@@ -5908,8 +5908,8 @@
         "-"
       ],
       "addr": "0x86",
-      "operator1": "0",
-      "operator2": "(HL)"
+      "operand1": "0",
+      "operand2": "(HL)"
     },
     "0x87": {
       "mnemonic": "RES",
@@ -5924,8 +5924,8 @@
         "-"
       ],
       "addr": "0x87",
-      "operator1": "0",
-      "operator2": "A"
+      "operand1": "0",
+      "operand2": "A"
     },
     "0x88": {
       "mnemonic": "RES",
@@ -5940,8 +5940,8 @@
         "-"
       ],
       "addr": "0x88",
-      "operator1": "1",
-      "operator2": "B"
+      "operand1": "1",
+      "operand2": "B"
     },
     "0x89": {
       "mnemonic": "RES",
@@ -5956,8 +5956,8 @@
         "-"
       ],
       "addr": "0x89",
-      "operator1": "1",
-      "operator2": "C"
+      "operand1": "1",
+      "operand2": "C"
     },
     "0x8a": {
       "mnemonic": "RES",
@@ -5972,8 +5972,8 @@
         "-"
       ],
       "addr": "0x8a",
-      "operator1": "1",
-      "operator2": "D"
+      "operand1": "1",
+      "operand2": "D"
     },
     "0x8b": {
       "mnemonic": "RES",
@@ -5988,8 +5988,8 @@
         "-"
       ],
       "addr": "0x8b",
-      "operator1": "1",
-      "operator2": "E"
+      "operand1": "1",
+      "operand2": "E"
     },
     "0x8c": {
       "mnemonic": "RES",
@@ -6004,8 +6004,8 @@
         "-"
       ],
       "addr": "0x8c",
-      "operator1": "1",
-      "operator2": "H"
+      "operand1": "1",
+      "operand2": "H"
     },
     "0x8d": {
       "mnemonic": "RES",
@@ -6020,8 +6020,8 @@
         "-"
       ],
       "addr": "0x8d",
-      "operator1": "1",
-      "operator2": "L"
+      "operand1": "1",
+      "operand2": "L"
     },
     "0x8e": {
       "mnemonic": "RES",
@@ -6036,8 +6036,8 @@
         "-"
       ],
       "addr": "0x8e",
-      "operator1": "1",
-      "operator2": "(HL)"
+      "operand1": "1",
+      "operand2": "(HL)"
     },
     "0x8f": {
       "mnemonic": "RES",
@@ -6052,8 +6052,8 @@
         "-"
       ],
       "addr": "0x8f",
-      "operator1": "1",
-      "operator2": "A"
+      "operand1": "1",
+      "operand2": "A"
     },
     "0x90": {
       "mnemonic": "RES",
@@ -6068,8 +6068,8 @@
         "-"
       ],
       "addr": "0x90",
-      "operator1": "2",
-      "operator2": "B"
+      "operand1": "2",
+      "operand2": "B"
     },
     "0x91": {
       "mnemonic": "RES",
@@ -6084,8 +6084,8 @@
         "-"
       ],
       "addr": "0x91",
-      "operator1": "2",
-      "operator2": "C"
+      "operand1": "2",
+      "operand2": "C"
     },
     "0x92": {
       "mnemonic": "RES",
@@ -6100,8 +6100,8 @@
         "-"
       ],
       "addr": "0x92",
-      "operator1": "2",
-      "operator2": "D"
+      "operand1": "2",
+      "operand2": "D"
     },
     "0x93": {
       "mnemonic": "RES",
@@ -6116,8 +6116,8 @@
         "-"
       ],
       "addr": "0x93",
-      "operator1": "2",
-      "operator2": "E"
+      "operand1": "2",
+      "operand2": "E"
     },
     "0x94": {
       "mnemonic": "RES",
@@ -6132,8 +6132,8 @@
         "-"
       ],
       "addr": "0x94",
-      "operator1": "2",
-      "operator2": "H"
+      "operand1": "2",
+      "operand2": "H"
     },
     "0x95": {
       "mnemonic": "RES",
@@ -6148,8 +6148,8 @@
         "-"
       ],
       "addr": "0x95",
-      "operator1": "2",
-      "operator2": "L"
+      "operand1": "2",
+      "operand2": "L"
     },
     "0x96": {
       "mnemonic": "RES",
@@ -6164,8 +6164,8 @@
         "-"
       ],
       "addr": "0x96",
-      "operator1": "2",
-      "operator2": "(HL)"
+      "operand1": "2",
+      "operand2": "(HL)"
     },
     "0x97": {
       "mnemonic": "RES",
@@ -6180,8 +6180,8 @@
         "-"
       ],
       "addr": "0x97",
-      "operator1": "2",
-      "operator2": "A"
+      "operand1": "2",
+      "operand2": "A"
     },
     "0x98": {
       "mnemonic": "RES",
@@ -6196,8 +6196,8 @@
         "-"
       ],
       "addr": "0x98",
-      "operator1": "3",
-      "operator2": "B"
+      "operand1": "3",
+      "operand2": "B"
     },
     "0x99": {
       "mnemonic": "RES",
@@ -6212,8 +6212,8 @@
         "-"
       ],
       "addr": "0x99",
-      "operator1": "3",
-      "operator2": "C"
+      "operand1": "3",
+      "operand2": "C"
     },
     "0x9a": {
       "mnemonic": "RES",
@@ -6228,8 +6228,8 @@
         "-"
       ],
       "addr": "0x9a",
-      "operator1": "3",
-      "operator2": "D"
+      "operand1": "3",
+      "operand2": "D"
     },
     "0x9b": {
       "mnemonic": "RES",
@@ -6244,8 +6244,8 @@
         "-"
       ],
       "addr": "0x9b",
-      "operator1": "3",
-      "operator2": "E"
+      "operand1": "3",
+      "operand2": "E"
     },
     "0x9c": {
       "mnemonic": "RES",
@@ -6260,8 +6260,8 @@
         "-"
       ],
       "addr": "0x9c",
-      "operator1": "3",
-      "operator2": "H"
+      "operand1": "3",
+      "operand2": "H"
     },
     "0x9d": {
       "mnemonic": "RES",
@@ -6276,8 +6276,8 @@
         "-"
       ],
       "addr": "0x9d",
-      "operator1": "3",
-      "operator2": "L"
+      "operand1": "3",
+      "operand2": "L"
     },
     "0x9e": {
       "mnemonic": "RES",
@@ -6292,8 +6292,8 @@
         "-"
       ],
       "addr": "0x9e",
-      "operator1": "3",
-      "operator2": "(HL)"
+      "operand1": "3",
+      "operand2": "(HL)"
     },
     "0x9f": {
       "mnemonic": "RES",
@@ -6308,8 +6308,8 @@
         "-"
       ],
       "addr": "0x9f",
-      "operator1": "3",
-      "operator2": "A"
+      "operand1": "3",
+      "operand2": "A"
     },
     "0xa0": {
       "mnemonic": "RES",
@@ -6324,8 +6324,8 @@
         "-"
       ],
       "addr": "0xa0",
-      "operator1": "4",
-      "operator2": "B"
+      "operand1": "4",
+      "operand2": "B"
     },
     "0xa1": {
       "mnemonic": "RES",
@@ -6340,8 +6340,8 @@
         "-"
       ],
       "addr": "0xa1",
-      "operator1": "4",
-      "operator2": "C"
+      "operand1": "4",
+      "operand2": "C"
     },
     "0xa2": {
       "mnemonic": "RES",
@@ -6356,8 +6356,8 @@
         "-"
       ],
       "addr": "0xa2",
-      "operator1": "4",
-      "operator2": "D"
+      "operand1": "4",
+      "operand2": "D"
     },
     "0xa3": {
       "mnemonic": "RES",
@@ -6372,8 +6372,8 @@
         "-"
       ],
       "addr": "0xa3",
-      "operator1": "4",
-      "operator2": "E"
+      "operand1": "4",
+      "operand2": "E"
     },
     "0xa4": {
       "mnemonic": "RES",
@@ -6388,8 +6388,8 @@
         "-"
       ],
       "addr": "0xa4",
-      "operator1": "4",
-      "operator2": "H"
+      "operand1": "4",
+      "operand2": "H"
     },
     "0xa5": {
       "mnemonic": "RES",
@@ -6404,8 +6404,8 @@
         "-"
       ],
       "addr": "0xa5",
-      "operator1": "4",
-      "operator2": "L"
+      "operand1": "4",
+      "operand2": "L"
     },
     "0xa6": {
       "mnemonic": "RES",
@@ -6420,8 +6420,8 @@
         "-"
       ],
       "addr": "0xa6",
-      "operator1": "4",
-      "operator2": "(HL)"
+      "operand1": "4",
+      "operand2": "(HL)"
     },
     "0xa7": {
       "mnemonic": "RES",
@@ -6436,8 +6436,8 @@
         "-"
       ],
       "addr": "0xa7",
-      "operator1": "4",
-      "operator2": "A"
+      "operand1": "4",
+      "operand2": "A"
     },
     "0xa8": {
       "mnemonic": "RES",
@@ -6452,8 +6452,8 @@
         "-"
       ],
       "addr": "0xa8",
-      "operator1": "5",
-      "operator2": "B"
+      "operand1": "5",
+      "operand2": "B"
     },
     "0xa9": {
       "mnemonic": "RES",
@@ -6468,8 +6468,8 @@
         "-"
       ],
       "addr": "0xa9",
-      "operator1": "5",
-      "operator2": "C"
+      "operand1": "5",
+      "operand2": "C"
     },
     "0xaa": {
       "mnemonic": "RES",
@@ -6484,8 +6484,8 @@
         "-"
       ],
       "addr": "0xaa",
-      "operator1": "5",
-      "operator2": "D"
+      "operand1": "5",
+      "operand2": "D"
     },
     "0xab": {
       "mnemonic": "RES",
@@ -6500,8 +6500,8 @@
         "-"
       ],
       "addr": "0xab",
-      "operator1": "5",
-      "operator2": "E"
+      "operand1": "5",
+      "operand2": "E"
     },
     "0xac": {
       "mnemonic": "RES",
@@ -6516,8 +6516,8 @@
         "-"
       ],
       "addr": "0xac",
-      "operator1": "5",
-      "operator2": "H"
+      "operand1": "5",
+      "operand2": "H"
     },
     "0xad": {
       "mnemonic": "RES",
@@ -6532,8 +6532,8 @@
         "-"
       ],
       "addr": "0xad",
-      "operator1": "5",
-      "operator2": "L"
+      "operand1": "5",
+      "operand2": "L"
     },
     "0xae": {
       "mnemonic": "RES",
@@ -6548,8 +6548,8 @@
         "-"
       ],
       "addr": "0xae",
-      "operator1": "5",
-      "operator2": "(HL)"
+      "operand1": "5",
+      "operand2": "(HL)"
     },
     "0xaf": {
       "mnemonic": "RES",
@@ -6564,8 +6564,8 @@
         "-"
       ],
       "addr": "0xaf",
-      "operator1": "5",
-      "operator2": "A"
+      "operand1": "5",
+      "operand2": "A"
     },
     "0xb0": {
       "mnemonic": "RES",
@@ -6580,8 +6580,8 @@
         "-"
       ],
       "addr": "0xb0",
-      "operator1": "6",
-      "operator2": "B"
+      "operand1": "6",
+      "operand2": "B"
     },
     "0xb1": {
       "mnemonic": "RES",
@@ -6596,8 +6596,8 @@
         "-"
       ],
       "addr": "0xb1",
-      "operator1": "6",
-      "operator2": "C"
+      "operand1": "6",
+      "operand2": "C"
     },
     "0xb2": {
       "mnemonic": "RES",
@@ -6612,8 +6612,8 @@
         "-"
       ],
       "addr": "0xb2",
-      "operator1": "6",
-      "operator2": "D"
+      "operand1": "6",
+      "operand2": "D"
     },
     "0xb3": {
       "mnemonic": "RES",
@@ -6628,8 +6628,8 @@
         "-"
       ],
       "addr": "0xb3",
-      "operator1": "6",
-      "operator2": "E"
+      "operand1": "6",
+      "operand2": "E"
     },
     "0xb4": {
       "mnemonic": "RES",
@@ -6644,8 +6644,8 @@
         "-"
       ],
       "addr": "0xb4",
-      "operator1": "6",
-      "operator2": "H"
+      "operand1": "6",
+      "operand2": "H"
     },
     "0xb5": {
       "mnemonic": "RES",
@@ -6660,8 +6660,8 @@
         "-"
       ],
       "addr": "0xb5",
-      "operator1": "6",
-      "operator2": "L"
+      "operand1": "6",
+      "operand2": "L"
     },
     "0xb6": {
       "mnemonic": "RES",
@@ -6676,8 +6676,8 @@
         "-"
       ],
       "addr": "0xb6",
-      "operator1": "6",
-      "operator2": "(HL)"
+      "operand1": "6",
+      "operand2": "(HL)"
     },
     "0xb7": {
       "mnemonic": "RES",
@@ -6692,8 +6692,8 @@
         "-"
       ],
       "addr": "0xb7",
-      "operator1": "6",
-      "operator2": "A"
+      "operand1": "6",
+      "operand2": "A"
     },
     "0xb8": {
       "mnemonic": "RES",
@@ -6708,8 +6708,8 @@
         "-"
       ],
       "addr": "0xb8",
-      "operator1": "7",
-      "operator2": "B"
+      "operand1": "7",
+      "operand2": "B"
     },
     "0xb9": {
       "mnemonic": "RES",
@@ -6724,8 +6724,8 @@
         "-"
       ],
       "addr": "0xb9",
-      "operator1": "7",
-      "operator2": "C"
+      "operand1": "7",
+      "operand2": "C"
     },
     "0xba": {
       "mnemonic": "RES",
@@ -6740,8 +6740,8 @@
         "-"
       ],
       "addr": "0xba",
-      "operator1": "7",
-      "operator2": "D"
+      "operand1": "7",
+      "operand2": "D"
     },
     "0xbb": {
       "mnemonic": "RES",
@@ -6756,8 +6756,8 @@
         "-"
       ],
       "addr": "0xbb",
-      "operator1": "7",
-      "operator2": "E"
+      "operand1": "7",
+      "operand2": "E"
     },
     "0xbc": {
       "mnemonic": "RES",
@@ -6772,8 +6772,8 @@
         "-"
       ],
       "addr": "0xbc",
-      "operator1": "7",
-      "operator2": "H"
+      "operand1": "7",
+      "operand2": "H"
     },
     "0xbd": {
       "mnemonic": "RES",
@@ -6788,8 +6788,8 @@
         "-"
       ],
       "addr": "0xbd",
-      "operator1": "7",
-      "operator2": "L"
+      "operand1": "7",
+      "operand2": "L"
     },
     "0xbe": {
       "mnemonic": "RES",
@@ -6804,8 +6804,8 @@
         "-"
       ],
       "addr": "0xbe",
-      "operator1": "7",
-      "operator2": "(HL)"
+      "operand1": "7",
+      "operand2": "(HL)"
     },
     "0xbf": {
       "mnemonic": "RES",
@@ -6820,8 +6820,8 @@
         "-"
       ],
       "addr": "0xbf",
-      "operator1": "7",
-      "operator2": "A"
+      "operand1": "7",
+      "operand2": "A"
     },
     "0xc0": {
       "mnemonic": "SET",
@@ -6836,8 +6836,8 @@
         "-"
       ],
       "addr": "0xc0",
-      "operator1": "0",
-      "operator2": "B"
+      "operand1": "0",
+      "operand2": "B"
     },
     "0xc1": {
       "mnemonic": "SET",
@@ -6852,8 +6852,8 @@
         "-"
       ],
       "addr": "0xc1",
-      "operator1": "0",
-      "operator2": "C"
+      "operand1": "0",
+      "operand2": "C"
     },
     "0xc2": {
       "mnemonic": "SET",
@@ -6868,8 +6868,8 @@
         "-"
       ],
       "addr": "0xc2",
-      "operator1": "0",
-      "operator2": "D"
+      "operand1": "0",
+      "operand2": "D"
     },
     "0xc3": {
       "mnemonic": "SET",
@@ -6884,8 +6884,8 @@
         "-"
       ],
       "addr": "0xc3",
-      "operator1": "0",
-      "operator2": "E"
+      "operand1": "0",
+      "operand2": "E"
     },
     "0xc4": {
       "mnemonic": "SET",
@@ -6900,8 +6900,8 @@
         "-"
       ],
       "addr": "0xc4",
-      "operator1": "0",
-      "operator2": "H"
+      "operand1": "0",
+      "operand2": "H"
     },
     "0xc5": {
       "mnemonic": "SET",
@@ -6916,8 +6916,8 @@
         "-"
       ],
       "addr": "0xc5",
-      "operator1": "0",
-      "operator2": "L"
+      "operand1": "0",
+      "operand2": "L"
     },
     "0xc6": {
       "mnemonic": "SET",
@@ -6932,8 +6932,8 @@
         "-"
       ],
       "addr": "0xc6",
-      "operator1": "0",
-      "operator2": "(HL)"
+      "operand1": "0",
+      "operand2": "(HL)"
     },
     "0xc7": {
       "mnemonic": "SET",
@@ -6948,8 +6948,8 @@
         "-"
       ],
       "addr": "0xc7",
-      "operator1": "0",
-      "operator2": "A"
+      "operand1": "0",
+      "operand2": "A"
     },
     "0xc8": {
       "mnemonic": "SET",
@@ -6964,8 +6964,8 @@
         "-"
       ],
       "addr": "0xc8",
-      "operator1": "1",
-      "operator2": "B"
+      "operand1": "1",
+      "operand2": "B"
     },
     "0xc9": {
       "mnemonic": "SET",
@@ -6980,8 +6980,8 @@
         "-"
       ],
       "addr": "0xc9",
-      "operator1": "1",
-      "operator2": "C"
+      "operand1": "1",
+      "operand2": "C"
     },
     "0xca": {
       "mnemonic": "SET",
@@ -6996,8 +6996,8 @@
         "-"
       ],
       "addr": "0xca",
-      "operator1": "1",
-      "operator2": "D"
+      "operand1": "1",
+      "operand2": "D"
     },
     "0xcb": {
       "mnemonic": "SET",
@@ -7012,8 +7012,8 @@
         "-"
       ],
       "addr": "0xcb",
-      "operator1": "1",
-      "operator2": "E"
+      "operand1": "1",
+      "operand2": "E"
     },
     "0xcc": {
       "mnemonic": "SET",
@@ -7028,8 +7028,8 @@
         "-"
       ],
       "addr": "0xcc",
-      "operator1": "1",
-      "operator2": "H"
+      "operand1": "1",
+      "operand2": "H"
     },
     "0xcd": {
       "mnemonic": "SET",
@@ -7044,8 +7044,8 @@
         "-"
       ],
       "addr": "0xcd",
-      "operator1": "1",
-      "operator2": "L"
+      "operand1": "1",
+      "operand2": "L"
     },
     "0xce": {
       "mnemonic": "SET",
@@ -7060,8 +7060,8 @@
         "-"
       ],
       "addr": "0xce",
-      "operator1": "1",
-      "operator2": "(HL)"
+      "operand1": "1",
+      "operand2": "(HL)"
     },
     "0xcf": {
       "mnemonic": "SET",
@@ -7076,8 +7076,8 @@
         "-"
       ],
       "addr": "0xcf",
-      "operator1": "1",
-      "operator2": "A"
+      "operand1": "1",
+      "operand2": "A"
     },
     "0xd0": {
       "mnemonic": "SET",
@@ -7092,8 +7092,8 @@
         "-"
       ],
       "addr": "0xd0",
-      "operator1": "2",
-      "operator2": "B"
+      "operand1": "2",
+      "operand2": "B"
     },
     "0xd1": {
       "mnemonic": "SET",
@@ -7108,8 +7108,8 @@
         "-"
       ],
       "addr": "0xd1",
-      "operator1": "2",
-      "operator2": "C"
+      "operand1": "2",
+      "operand2": "C"
     },
     "0xd2": {
       "mnemonic": "SET",
@@ -7124,8 +7124,8 @@
         "-"
       ],
       "addr": "0xd2",
-      "operator1": "2",
-      "operator2": "D"
+      "operand1": "2",
+      "operand2": "D"
     },
     "0xd3": {
       "mnemonic": "SET",
@@ -7140,8 +7140,8 @@
         "-"
       ],
       "addr": "0xd3",
-      "operator1": "2",
-      "operator2": "E"
+      "operand1": "2",
+      "operand2": "E"
     },
     "0xd4": {
       "mnemonic": "SET",
@@ -7156,8 +7156,8 @@
         "-"
       ],
       "addr": "0xd4",
-      "operator1": "2",
-      "operator2": "H"
+      "operand1": "2",
+      "operand2": "H"
     },
     "0xd5": {
       "mnemonic": "SET",
@@ -7172,8 +7172,8 @@
         "-"
       ],
       "addr": "0xd5",
-      "operator1": "2",
-      "operator2": "L"
+      "operand1": "2",
+      "operand2": "L"
     },
     "0xd6": {
       "mnemonic": "SET",
@@ -7188,8 +7188,8 @@
         "-"
       ],
       "addr": "0xd6",
-      "operator1": "2",
-      "operator2": "(HL)"
+      "operand1": "2",
+      "operand2": "(HL)"
     },
     "0xd7": {
       "mnemonic": "SET",
@@ -7204,8 +7204,8 @@
         "-"
       ],
       "addr": "0xd7",
-      "operator1": "2",
-      "operator2": "A"
+      "operand1": "2",
+      "operand2": "A"
     },
     "0xd8": {
       "mnemonic": "SET",
@@ -7220,8 +7220,8 @@
         "-"
       ],
       "addr": "0xd8",
-      "operator1": "3",
-      "operator2": "B"
+      "operand1": "3",
+      "operand2": "B"
     },
     "0xd9": {
       "mnemonic": "SET",
@@ -7236,8 +7236,8 @@
         "-"
       ],
       "addr": "0xd9",
-      "operator1": "3",
-      "operator2": "C"
+      "operand1": "3",
+      "operand2": "C"
     },
     "0xda": {
       "mnemonic": "SET",
@@ -7252,8 +7252,8 @@
         "-"
       ],
       "addr": "0xda",
-      "operator1": "3",
-      "operator2": "D"
+      "operand1": "3",
+      "operand2": "D"
     },
     "0xdb": {
       "mnemonic": "SET",
@@ -7268,8 +7268,8 @@
         "-"
       ],
       "addr": "0xdb",
-      "operator1": "3",
-      "operator2": "E"
+      "operand1": "3",
+      "operand2": "E"
     },
     "0xdc": {
       "mnemonic": "SET",
@@ -7284,8 +7284,8 @@
         "-"
       ],
       "addr": "0xdc",
-      "operator1": "3",
-      "operator2": "H"
+      "operand1": "3",
+      "operand2": "H"
     },
     "0xdd": {
       "mnemonic": "SET",
@@ -7300,8 +7300,8 @@
         "-"
       ],
       "addr": "0xdd",
-      "operator1": "3",
-      "operator2": "L"
+      "operand1": "3",
+      "operand2": "L"
     },
     "0xde": {
       "mnemonic": "SET",
@@ -7316,8 +7316,8 @@
         "-"
       ],
       "addr": "0xde",
-      "operator1": "3",
-      "operator2": "(HL)"
+      "operand1": "3",
+      "operand2": "(HL)"
     },
     "0xdf": {
       "mnemonic": "SET",
@@ -7332,8 +7332,8 @@
         "-"
       ],
       "addr": "0xdf",
-      "operator1": "3",
-      "operator2": "A"
+      "operand1": "3",
+      "operand2": "A"
     },
     "0xe0": {
       "mnemonic": "SET",
@@ -7348,8 +7348,8 @@
         "-"
       ],
       "addr": "0xe0",
-      "operator1": "4",
-      "operator2": "B"
+      "operand1": "4",
+      "operand2": "B"
     },
     "0xe1": {
       "mnemonic": "SET",
@@ -7364,8 +7364,8 @@
         "-"
       ],
       "addr": "0xe1",
-      "operator1": "4",
-      "operator2": "C"
+      "operand1": "4",
+      "operand2": "C"
     },
     "0xe2": {
       "mnemonic": "SET",
@@ -7380,8 +7380,8 @@
         "-"
       ],
       "addr": "0xe2",
-      "operator1": "4",
-      "operator2": "D"
+      "operand1": "4",
+      "operand2": "D"
     },
     "0xe3": {
       "mnemonic": "SET",
@@ -7396,8 +7396,8 @@
         "-"
       ],
       "addr": "0xe3",
-      "operator1": "4",
-      "operator2": "E"
+      "operand1": "4",
+      "operand2": "E"
     },
     "0xe4": {
       "mnemonic": "SET",
@@ -7412,8 +7412,8 @@
         "-"
       ],
       "addr": "0xe4",
-      "operator1": "4",
-      "operator2": "H"
+      "operand1": "4",
+      "operand2": "H"
     },
     "0xe5": {
       "mnemonic": "SET",
@@ -7428,8 +7428,8 @@
         "-"
       ],
       "addr": "0xe5",
-      "operator1": "4",
-      "operator2": "L"
+      "operand1": "4",
+      "operand2": "L"
     },
     "0xe6": {
       "mnemonic": "SET",
@@ -7444,8 +7444,8 @@
         "-"
       ],
       "addr": "0xe6",
-      "operator1": "4",
-      "operator2": "(HL)"
+      "operand1": "4",
+      "operand2": "(HL)"
     },
     "0xe7": {
       "mnemonic": "SET",
@@ -7460,8 +7460,8 @@
         "-"
       ],
       "addr": "0xe7",
-      "operator1": "4",
-      "operator2": "A"
+      "operand1": "4",
+      "operand2": "A"
     },
     "0xe8": {
       "mnemonic": "SET",
@@ -7476,8 +7476,8 @@
         "-"
       ],
       "addr": "0xe8",
-      "operator1": "5",
-      "operator2": "B"
+      "operand1": "5",
+      "operand2": "B"
     },
     "0xe9": {
       "mnemonic": "SET",
@@ -7492,8 +7492,8 @@
         "-"
       ],
       "addr": "0xe9",
-      "operator1": "5",
-      "operator2": "C"
+      "operand1": "5",
+      "operand2": "C"
     },
     "0xea": {
       "mnemonic": "SET",
@@ -7508,8 +7508,8 @@
         "-"
       ],
       "addr": "0xea",
-      "operator1": "5",
-      "operator2": "D"
+      "operand1": "5",
+      "operand2": "D"
     },
     "0xeb": {
       "mnemonic": "SET",
@@ -7524,8 +7524,8 @@
         "-"
       ],
       "addr": "0xeb",
-      "operator1": "5",
-      "operator2": "E"
+      "operand1": "5",
+      "operand2": "E"
     },
     "0xec": {
       "mnemonic": "SET",
@@ -7540,8 +7540,8 @@
         "-"
       ],
       "addr": "0xec",
-      "operator1": "5",
-      "operator2": "H"
+      "operand1": "5",
+      "operand2": "H"
     },
     "0xed": {
       "mnemonic": "SET",
@@ -7556,8 +7556,8 @@
         "-"
       ],
       "addr": "0xed",
-      "operator1": "5",
-      "operator2": "L"
+      "operand1": "5",
+      "operand2": "L"
     },
     "0xee": {
       "mnemonic": "SET",
@@ -7572,8 +7572,8 @@
         "-"
       ],
       "addr": "0xee",
-      "operator1": "5",
-      "operator2": "(HL)"
+      "operand1": "5",
+      "operand2": "(HL)"
     },
     "0xef": {
       "mnemonic": "SET",
@@ -7588,8 +7588,8 @@
         "-"
       ],
       "addr": "0xef",
-      "operator1": "5",
-      "operator2": "A"
+      "operand1": "5",
+      "operand2": "A"
     },
     "0xf0": {
       "mnemonic": "SET",
@@ -7604,8 +7604,8 @@
         "-"
       ],
       "addr": "0xf0",
-      "operator1": "6",
-      "operator2": "B"
+      "operand1": "6",
+      "operand2": "B"
     },
     "0xf1": {
       "mnemonic": "SET",
@@ -7620,8 +7620,8 @@
         "-"
       ],
       "addr": "0xf1",
-      "operator1": "6",
-      "operator2": "C"
+      "operand1": "6",
+      "operand2": "C"
     },
     "0xf2": {
       "mnemonic": "SET",
@@ -7636,8 +7636,8 @@
         "-"
       ],
       "addr": "0xf2",
-      "operator1": "6",
-      "operator2": "D"
+      "operand1": "6",
+      "operand2": "D"
     },
     "0xf3": {
       "mnemonic": "SET",
@@ -7652,8 +7652,8 @@
         "-"
       ],
       "addr": "0xf3",
-      "operator1": "6",
-      "operator2": "E"
+      "operand1": "6",
+      "operand2": "E"
     },
     "0xf4": {
       "mnemonic": "SET",
@@ -7668,8 +7668,8 @@
         "-"
       ],
       "addr": "0xf4",
-      "operator1": "6",
-      "operator2": "H"
+      "operand1": "6",
+      "operand2": "H"
     },
     "0xf5": {
       "mnemonic": "SET",
@@ -7684,8 +7684,8 @@
         "-"
       ],
       "addr": "0xf5",
-      "operator1": "6",
-      "operator2": "L"
+      "operand1": "6",
+      "operand2": "L"
     },
     "0xf6": {
       "mnemonic": "SET",
@@ -7700,8 +7700,8 @@
         "-"
       ],
       "addr": "0xf6",
-      "operator1": "6",
-      "operator2": "(HL)"
+      "operand1": "6",
+      "operand2": "(HL)"
     },
     "0xf7": {
       "mnemonic": "SET",
@@ -7716,8 +7716,8 @@
         "-"
       ],
       "addr": "0xf7",
-      "operator1": "6",
-      "operator2": "A"
+      "operand1": "6",
+      "operand2": "A"
     },
     "0xf8": {
       "mnemonic": "SET",
@@ -7732,8 +7732,8 @@
         "-"
       ],
       "addr": "0xf8",
-      "operator1": "7",
-      "operator2": "B"
+      "operand1": "7",
+      "operand2": "B"
     },
     "0xf9": {
       "mnemonic": "SET",
@@ -7748,8 +7748,8 @@
         "-"
       ],
       "addr": "0xf9",
-      "operator1": "7",
-      "operator2": "C"
+      "operand1": "7",
+      "operand2": "C"
     },
     "0xfa": {
       "mnemonic": "SET",
@@ -7764,8 +7764,8 @@
         "-"
       ],
       "addr": "0xfa",
-      "operator1": "7",
-      "operator2": "D"
+      "operand1": "7",
+      "operand2": "D"
     },
     "0xfb": {
       "mnemonic": "SET",
@@ -7780,8 +7780,8 @@
         "-"
       ],
       "addr": "0xfb",
-      "operator1": "7",
-      "operator2": "E"
+      "operand1": "7",
+      "operand2": "E"
     },
     "0xfc": {
       "mnemonic": "SET",
@@ -7796,8 +7796,8 @@
         "-"
       ],
       "addr": "0xfc",
-      "operator1": "7",
-      "operator2": "H"
+      "operand1": "7",
+      "operand2": "H"
     },
     "0xfd": {
       "mnemonic": "SET",
@@ -7812,8 +7812,8 @@
         "-"
       ],
       "addr": "0xfd",
-      "operator1": "7",
-      "operator2": "L"
+      "operand1": "7",
+      "operand2": "L"
     },
     "0xfe": {
       "mnemonic": "SET",
@@ -7828,8 +7828,8 @@
         "-"
       ],
       "addr": "0xfe",
-      "operator1": "7",
-      "operator2": "(HL)"
+      "operand1": "7",
+      "operand2": "(HL)"
     },
     "0xff": {
       "mnemonic": "SET",
@@ -7844,8 +7844,8 @@
         "-"
       ],
       "addr": "0xff",
-      "operator1": "7",
-      "operator2": "A"
+      "operand1": "7",
+      "operand2": "A"
     }
   }
 }
