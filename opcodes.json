@@ -246,7 +246,7 @@
     },
     "0x10": {
       "mnemonic": "STOP",
-      "length": 2,
+      "length": 1,
       "cycles": [
         4
       ],
@@ -3479,7 +3479,7 @@
     },
     "0xe2": {
       "mnemonic": "LD",
-      "length": 2,
+      "length": 1,
       "cycles": [
         8
       ],
@@ -3648,7 +3648,7 @@
     },
     "0xf2": {
       "mnemonic": "LD",
-      "length": 2,
+      "length": 1,
       "cycles": [
         8
       ],
