@@ -6,6 +6,31 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
 
 > The opcodes.json file includes some minor fixes in the opcode length and timings not present on the pastraiser.com site.
 
+```
+{
+  "unprefixed": {
+    "0xc0": {                 <-- Address
+      "mnemonic": "SET",      <-- Instruction mnemonic
+      "length": 2,            <-- Length in bytes
+      "cycles": [             <-- Duration in cycles
+        8
+      ],
+      "flags": [              <-- Flags affected
+        "-",                  <-- Z - Zero Flag
+        "-",                  <-- N - Subtract Flag
+        "-",                  <-- H - Half Carry Flag
+        "-"                   <-- C - Carry Flag
+      ],
+      "addr": "0xc0",         <-- Address
+      "operand1": "0",        <-- Operand 1
+      "operand2": "B"         <-- Operand 2
+    },
+    ...
+  },
+  ...
+}
+```
+
 ## Reference documentation
 
 http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html
