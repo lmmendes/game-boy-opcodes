@@ -4,6 +4,8 @@ Game Boy CPU (Sharp LR35902) instruction set (opcodes)
 
 The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/master/opcodes.json) contains a JSON representation of the complete Sharp LR35902 instruction set. Inside the `bin` folder you will find the script used to generate the `opcodes.json` file from the pastraiser.com site.
 
+> The opcodes.json file includes some minor fixes in the opcode length and timmings not present on the pastraiser.com site.
+
 ## Reference documentation
 
 http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html
