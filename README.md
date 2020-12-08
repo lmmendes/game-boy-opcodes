@@ -35,26 +35,27 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
 ```
 
 
-Instruction **STOP** has according to manuals opcode **10 00** and thus is 2 bytes long. Anyhow it seems there is no reason for it so some assemblers code it simply as one byte instruction **10**.
+The instruction **STOP** has according to manuals opcode **10 00** and thus is 2 bytes long. Anyhow it seems there is no reason for it so some assemblers code it simply as one byte instruction **10**.
 Flags affected are always shown in **Z H N C** order. If flag is marked by "**0**" it means it is reset after the instruction. If it is marked by "**1**" it is set. If it is marked by "-" it is not changed. If it is marked by "**Z**", "**N**", "**H**" or "**C**" corresponding flag is affected as expected by its function.
 
-**d8**  means immediate 8 bit data
-**d16** means immediate 16 bit data
-**a8**  means 8 bit unsigned data, which are added to $FF00 in certain instructions (replacement for missing **IN** and **OUT** instructions)
-**a16** means 16 bit address
-**r8**  means 8 bit signed data, which are added to program counter
+- **d8**  means immediate 8 bit data
+- **d16** means immediate 16 bit data
+- **a8**  means 8 bit unsigned data, which are added to $FF00 in certain instructions (replacement for missing **IN** and **OUT** instructions)
+- **a16** means 16 bit address
+- **r8**  means 8 bit signed data, which are added to program counter
 
-**LD A,(C)** has alternative mnemonic **LD A,($FF00+C)**
-**LD C,(A)** has alternative mnemonic **LD ($FF00+C),A**
-**LDH A,(a8)** has alternative mnemonic **LD A,($FF00+a8)**
-**LDH (a8),A** has alternative mnemonic **LD ($FF00+a8),A**
-**LD A,(HL+)** has alternative mnemonic **LD A,(HLI)** or **LDI A,(HL)**
-**LD (HL+),A** has alternative mnemonic **LD (HLI),A** or **LDI (HL),A**
-**LD A,(HL-)** has alternative mnemonic **LD A,(HLD)** or **LDD A,(HL)**
-**LD (HL-),A** has alternative mnemonic **LD (HLD),A** or **LDD (HL),A**
-**LD HL,SP+r8** has alternative mnemonic **LDHL SP,r8**
+- **LD A,(C)** has alternative mnemonic **LD A,($FF00+C)**
+- **LD C,(A)** has alternative mnemonic **LD ($FF00+C),A**
+- **LDH A,(a8)** has alternative mnemonic **LD A,($FF00+a8)**
+- **LDH (a8),A** has alternative mnemonic **LD ($FF00+a8),A**
+- **LD A,(HL+)** has alternative mnemonic **LD A,(HLI)** or **LDI A,(HL)**
+- **LD (HL+),A** has alternative mnemonic **LD (HLI),A** or **LDI (HL),A**
+- **LD A,(HL-)** has alternative mnemonic **LD A,(HLD)** or **LDD A,(HL)**
+- **LD (HL-),A** has alternative mnemonic **LD (HLD),A** or **LDD (HL),A**
+- **LD HL,SP+r8** has alternative mnemonic **LDHL SP,r8**
 
-|group            |description|
+
+|op group         |description|
 |-----------------|-----------------------------|
 |x8/lsm           |8-bit Load/Store/Move|
 |x16/lsm          |16-bit Load/Store/Move|
