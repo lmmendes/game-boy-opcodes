@@ -69,11 +69,11 @@ def meta
   <meta property="og:locale" content="en_US" />
   <meta name="description" content="Game Boy CPU (Sharp LR35902) instruction set" />
   <meta property="og:description" content="Game Boy CPU (Sharp LR35902) instruction set" />
-  <link rel="canonical" href="https://gameboy.insertcoin.dev/" />
-  <meta property="og:url" content="https://gameboy.insertcoin.dev/" />
+  <link rel="canonical" href="https://gb.insertcoin.dev/" />
+  <meta property="og:url" content="https://gb.insertcoin.dev/" />
   <meta property="og:site_name" content="Game Boy opcode table" />
   <script type="application/ld+json">
-    {"url":"https://gameboy.insertcoin.dev/","@type":"WebSite","headline":"ink","author":{"@type":"Person","name":"Luís Mendes"},"description":"Game Boy CPU (Sharp LR35902) instruction set","name":"Game Boy opcode table","@context":"https://schema.org"}
+    {"url":"https://gb.insertcoin.dev/","@type":"WebSite","headline":"ink","author":{"@type":"Person","name":"Luís Mendes"},"description":"Game Boy CPU (Sharp LR35902) instruction set","name":"Game Boy opcode table","@context":"https://schema.org"}
   </script>
 )
 end
