@@ -1,6 +1,6 @@
 {
   "unprefixed": {
-    "0x0": {
+    "0x00": {
       "mnemonic": "NOP",
       "length": 1,
       "cycles": [
@@ -12,9 +12,10 @@
         "-",
         "-"
       ],
-      "addr": "0x0"
+      "addr": "0x00",
+      "group": "control/misc"
     },
-    "0x1": {
+    "0x01": {
       "mnemonic": "LD",
       "length": 3,
       "cycles": [
@@ -26,11 +27,12 @@
         "-",
         "-"
       ],
-      "addr": "0x1",
+      "addr": "0x01",
+      "group": "x16/lsm",
       "operand1": "BC",
       "operand2": "d16"
     },
-    "0x2": {
+    "0x02": {
       "mnemonic": "LD",
       "length": 1,
       "cycles": [
@@ -42,11 +44,12 @@
         "-",
         "-"
       ],
-      "addr": "0x2",
+      "addr": "0x02",
+      "group": "x8/lsm",
       "operand1": "(BC)",
       "operand2": "A"
     },
-    "0x3": {
+    "0x03": {
       "mnemonic": "INC",
       "length": 1,
       "cycles": [
@@ -58,10 +61,11 @@
         "-",
         "-"
       ],
-      "addr": "0x3",
+      "addr": "0x03",
+      "group": "x16/alu",
       "operand1": "BC"
     },
-    "0x4": {
+    "0x04": {
       "mnemonic": "INC",
       "length": 1,
       "cycles": [
@@ -73,10 +77,11 @@
         "H",
         "-"
       ],
-      "addr": "0x4",
+      "addr": "0x04",
+      "group": "x8/alu",
       "operand1": "B"
     },
-    "0x5": {
+    "0x05": {
       "mnemonic": "DEC",
       "length": 1,
       "cycles": [
@@ -88,10 +93,11 @@
         "H",
         "-"
       ],
-      "addr": "0x5",
+      "addr": "0x05",
+      "group": "x8/alu",
       "operand1": "B"
     },
-    "0x6": {
+    "0x06": {
       "mnemonic": "LD",
       "length": 2,
       "cycles": [
@@ -103,11 +109,12 @@
         "-",
         "-"
       ],
-      "addr": "0x6",
+      "addr": "0x06",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "d8"
     },
-    "0x7": {
+    "0x07": {
       "mnemonic": "RLCA",
       "length": 1,
       "cycles": [
@@ -119,9 +126,10 @@
         "0",
         "C"
       ],
-      "addr": "0x7"
+      "addr": "0x07",
+      "group": "x8/rsb"
     },
-    "0x8": {
+    "0x08": {
       "mnemonic": "LD",
       "length": 3,
       "cycles": [
@@ -133,11 +141,12 @@
         "-",
         "-"
       ],
-      "addr": "0x8",
+      "addr": "0x08",
+      "group": "x16/lsm",
       "operand1": "(a16)",
       "operand2": "SP"
     },
-    "0x9": {
+    "0x09": {
       "mnemonic": "ADD",
       "length": 1,
       "cycles": [
@@ -149,11 +158,12 @@
         "H",
         "C"
       ],
-      "addr": "0x9",
+      "addr": "0x09",
+      "group": "x16/alu",
       "operand1": "HL",
       "operand2": "BC"
     },
-    "0xa": {
+    "0x0a": {
       "mnemonic": "LD",
       "length": 1,
       "cycles": [
@@ -165,11 +175,12 @@
         "-",
         "-"
       ],
-      "addr": "0xa",
+      "addr": "0x0a",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(BC)"
     },
-    "0xb": {
+    "0x0b": {
       "mnemonic": "DEC",
       "length": 1,
       "cycles": [
@@ -181,10 +192,11 @@
         "-",
         "-"
       ],
-      "addr": "0xb",
+      "addr": "0x0b",
+      "group": "x16/alu",
       "operand1": "BC"
     },
-    "0xc": {
+    "0x0c": {
       "mnemonic": "INC",
       "length": 1,
       "cycles": [
@@ -196,10 +208,11 @@
         "H",
         "-"
       ],
-      "addr": "0xc",
+      "addr": "0x0c",
+      "group": "x8/alu",
       "operand1": "C"
     },
-    "0xd": {
+    "0x0d": {
       "mnemonic": "DEC",
       "length": 1,
       "cycles": [
@@ -211,10 +224,11 @@
         "H",
         "-"
       ],
-      "addr": "0xd",
+      "addr": "0x0d",
+      "group": "x8/alu",
       "operand1": "C"
     },
-    "0xe": {
+    "0x0e": {
       "mnemonic": "LD",
       "length": 2,
       "cycles": [
@@ -226,11 +240,12 @@
         "-",
         "-"
       ],
-      "addr": "0xe",
+      "addr": "0x0e",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "d8"
     },
-    "0xf": {
+    "0x0f": {
       "mnemonic": "RRCA",
       "length": 1,
       "cycles": [
@@ -242,7 +257,8 @@
         "0",
         "C"
       ],
-      "addr": "0xf"
+      "addr": "0x0f",
+      "group": "x8/rsb"
     },
     "0x10": {
       "mnemonic": "STOP",
@@ -257,6 +273,7 @@
         "-"
       ],
       "addr": "0x10",
+      "group": "control/misc",
       "operand1": "0"
     },
     "0x11": {
@@ -272,6 +289,7 @@
         "-"
       ],
       "addr": "0x11",
+      "group": "x16/lsm",
       "operand1": "DE",
       "operand2": "d16"
     },
@@ -288,6 +306,7 @@
         "-"
       ],
       "addr": "0x12",
+      "group": "x8/lsm",
       "operand1": "(DE)",
       "operand2": "A"
     },
@@ -304,6 +323,7 @@
         "-"
       ],
       "addr": "0x13",
+      "group": "x16/alu",
       "operand1": "DE"
     },
     "0x14": {
@@ -319,6 +339,7 @@
         "-"
       ],
       "addr": "0x14",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0x15": {
@@ -334,6 +355,7 @@
         "-"
       ],
       "addr": "0x15",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0x16": {
@@ -349,6 +371,7 @@
         "-"
       ],
       "addr": "0x16",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "d8"
     },
@@ -364,7 +387,8 @@
         "0",
         "C"
       ],
-      "addr": "0x17"
+      "addr": "0x17",
+      "group": "x8/rsb"
     },
     "0x18": {
       "mnemonic": "JR",
@@ -379,6 +403,7 @@
         "-"
       ],
       "addr": "0x18",
+      "group": "control/br",
       "operand1": "r8"
     },
     "0x19": {
@@ -394,6 +419,7 @@
         "C"
       ],
       "addr": "0x19",
+      "group": "x16/alu",
       "operand1": "HL",
       "operand2": "DE"
     },
@@ -410,6 +436,7 @@
         "-"
       ],
       "addr": "0x1a",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(DE)"
     },
@@ -426,6 +453,7 @@
         "-"
       ],
       "addr": "0x1b",
+      "group": "x16/alu",
       "operand1": "DE"
     },
     "0x1c": {
@@ -441,6 +469,7 @@
         "-"
       ],
       "addr": "0x1c",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0x1d": {
@@ -456,6 +485,7 @@
         "-"
       ],
       "addr": "0x1d",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0x1e": {
@@ -471,6 +501,7 @@
         "-"
       ],
       "addr": "0x1e",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "d8"
     },
@@ -486,7 +517,8 @@
         "0",
         "C"
       ],
-      "addr": "0x1f"
+      "addr": "0x1f",
+      "group": "x8/rsb"
     },
     "0x20": {
       "mnemonic": "JR",
@@ -502,6 +534,7 @@
         "-"
       ],
       "addr": "0x20",
+      "group": "control/br",
       "operand1": "NZ",
       "operand2": "r8"
     },
@@ -518,6 +551,7 @@
         "-"
       ],
       "addr": "0x21",
+      "group": "x16/lsm",
       "operand1": "HL",
       "operand2": "d16"
     },
@@ -534,6 +568,7 @@
         "-"
       ],
       "addr": "0x22",
+      "group": "x8/lsm",
       "operand1": "(HL+)",
       "operand2": "A"
     },
@@ -550,6 +585,7 @@
         "-"
       ],
       "addr": "0x23",
+      "group": "x16/alu",
       "operand1": "HL"
     },
     "0x24": {
@@ -565,6 +601,7 @@
         "-"
       ],
       "addr": "0x24",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0x25": {
@@ -580,6 +617,7 @@
         "-"
       ],
       "addr": "0x25",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0x26": {
@@ -595,6 +633,7 @@
         "-"
       ],
       "addr": "0x26",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "d8"
     },
@@ -610,7 +649,8 @@
         "0",
         "C"
       ],
-      "addr": "0x27"
+      "addr": "0x27",
+      "group": "x8/alu"
     },
     "0x28": {
       "mnemonic": "JR",
@@ -626,6 +666,7 @@
         "-"
       ],
       "addr": "0x28",
+      "group": "control/br",
       "operand1": "Z",
       "operand2": "r8"
     },
@@ -642,6 +683,7 @@
         "C"
       ],
       "addr": "0x29",
+      "group": "x16/alu",
       "operand1": "HL",
       "operand2": "HL"
     },
@@ -658,6 +700,7 @@
         "-"
       ],
       "addr": "0x2a",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(HL+)"
     },
@@ -674,6 +717,7 @@
         "-"
       ],
       "addr": "0x2b",
+      "group": "x16/alu",
       "operand1": "HL"
     },
     "0x2c": {
@@ -689,6 +733,7 @@
         "-"
       ],
       "addr": "0x2c",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0x2d": {
@@ -704,6 +749,7 @@
         "-"
       ],
       "addr": "0x2d",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0x2e": {
@@ -719,6 +765,7 @@
         "-"
       ],
       "addr": "0x2e",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "d8"
     },
@@ -734,7 +781,8 @@
         "1",
         "-"
       ],
-      "addr": "0x2f"
+      "addr": "0x2f",
+      "group": "x8/alu"
     },
     "0x30": {
       "mnemonic": "JR",
@@ -750,6 +798,7 @@
         "-"
       ],
       "addr": "0x30",
+      "group": "control/br",
       "operand1": "NC",
       "operand2": "r8"
     },
@@ -766,6 +815,7 @@
         "-"
       ],
       "addr": "0x31",
+      "group": "x16/lsm",
       "operand1": "SP",
       "operand2": "d16"
     },
@@ -782,6 +832,7 @@
         "-"
       ],
       "addr": "0x32",
+      "group": "x8/lsm",
       "operand1": "(HL-)",
       "operand2": "A"
     },
@@ -798,6 +849,7 @@
         "-"
       ],
       "addr": "0x33",
+      "group": "x16/alu",
       "operand1": "SP"
     },
     "0x34": {
@@ -813,6 +865,7 @@
         "-"
       ],
       "addr": "0x34",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0x35": {
@@ -828,6 +881,7 @@
         "-"
       ],
       "addr": "0x35",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0x36": {
@@ -843,6 +897,7 @@
         "-"
       ],
       "addr": "0x36",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "d8"
     },
@@ -858,7 +913,8 @@
         "0",
         "1"
       ],
-      "addr": "0x37"
+      "addr": "0x37",
+      "group": "x8/alu"
     },
     "0x38": {
       "mnemonic": "JR",
@@ -874,6 +930,7 @@
         "-"
       ],
       "addr": "0x38",
+      "group": "control/br",
       "operand1": "C",
       "operand2": "r8"
     },
@@ -890,6 +947,7 @@
         "C"
       ],
       "addr": "0x39",
+      "group": "x16/alu",
       "operand1": "HL",
       "operand2": "SP"
     },
@@ -906,6 +964,7 @@
         "-"
       ],
       "addr": "0x3a",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(HL-)"
     },
@@ -922,6 +981,7 @@
         "-"
       ],
       "addr": "0x3b",
+      "group": "x16/alu",
       "operand1": "SP"
     },
     "0x3c": {
@@ -937,6 +997,7 @@
         "-"
       ],
       "addr": "0x3c",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0x3d": {
@@ -952,6 +1013,7 @@
         "-"
       ],
       "addr": "0x3d",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0x3e": {
@@ -967,6 +1029,7 @@
         "-"
       ],
       "addr": "0x3e",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "d8"
     },
@@ -982,7 +1045,8 @@
         "0",
         "C"
       ],
-      "addr": "0x3f"
+      "addr": "0x3f",
+      "group": "x8/alu"
     },
     "0x40": {
       "mnemonic": "LD",
@@ -997,6 +1061,7 @@
         "-"
       ],
       "addr": "0x40",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "B"
     },
@@ -1013,6 +1078,7 @@
         "-"
       ],
       "addr": "0x41",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "C"
     },
@@ -1029,6 +1095,7 @@
         "-"
       ],
       "addr": "0x42",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "D"
     },
@@ -1045,6 +1112,7 @@
         "-"
       ],
       "addr": "0x43",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "E"
     },
@@ -1061,6 +1129,7 @@
         "-"
       ],
       "addr": "0x44",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "H"
     },
@@ -1077,6 +1146,7 @@
         "-"
       ],
       "addr": "0x45",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "L"
     },
@@ -1093,6 +1163,7 @@
         "-"
       ],
       "addr": "0x46",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "(HL)"
     },
@@ -1109,6 +1180,7 @@
         "-"
       ],
       "addr": "0x47",
+      "group": "x8/lsm",
       "operand1": "B",
       "operand2": "A"
     },
@@ -1125,6 +1197,7 @@
         "-"
       ],
       "addr": "0x48",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "B"
     },
@@ -1141,6 +1214,7 @@
         "-"
       ],
       "addr": "0x49",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "C"
     },
@@ -1157,6 +1231,7 @@
         "-"
       ],
       "addr": "0x4a",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "D"
     },
@@ -1173,6 +1248,7 @@
         "-"
       ],
       "addr": "0x4b",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "E"
     },
@@ -1189,6 +1265,7 @@
         "-"
       ],
       "addr": "0x4c",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "H"
     },
@@ -1205,6 +1282,7 @@
         "-"
       ],
       "addr": "0x4d",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "L"
     },
@@ -1221,6 +1299,7 @@
         "-"
       ],
       "addr": "0x4e",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "(HL)"
     },
@@ -1237,6 +1316,7 @@
         "-"
       ],
       "addr": "0x4f",
+      "group": "x8/lsm",
       "operand1": "C",
       "operand2": "A"
     },
@@ -1253,6 +1333,7 @@
         "-"
       ],
       "addr": "0x50",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "B"
     },
@@ -1269,6 +1350,7 @@
         "-"
       ],
       "addr": "0x51",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "C"
     },
@@ -1285,6 +1367,7 @@
         "-"
       ],
       "addr": "0x52",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "D"
     },
@@ -1301,6 +1384,7 @@
         "-"
       ],
       "addr": "0x53",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "E"
     },
@@ -1317,6 +1401,7 @@
         "-"
       ],
       "addr": "0x54",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "H"
     },
@@ -1333,6 +1418,7 @@
         "-"
       ],
       "addr": "0x55",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "L"
     },
@@ -1349,6 +1435,7 @@
         "-"
       ],
       "addr": "0x56",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "(HL)"
     },
@@ -1365,6 +1452,7 @@
         "-"
       ],
       "addr": "0x57",
+      "group": "x8/lsm",
       "operand1": "D",
       "operand2": "A"
     },
@@ -1381,6 +1469,7 @@
         "-"
       ],
       "addr": "0x58",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "B"
     },
@@ -1397,6 +1486,7 @@
         "-"
       ],
       "addr": "0x59",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "C"
     },
@@ -1413,6 +1503,7 @@
         "-"
       ],
       "addr": "0x5a",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "D"
     },
@@ -1429,6 +1520,7 @@
         "-"
       ],
       "addr": "0x5b",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "E"
     },
@@ -1445,6 +1537,7 @@
         "-"
       ],
       "addr": "0x5c",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "H"
     },
@@ -1461,6 +1554,7 @@
         "-"
       ],
       "addr": "0x5d",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "L"
     },
@@ -1477,6 +1571,7 @@
         "-"
       ],
       "addr": "0x5e",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "(HL)"
     },
@@ -1493,6 +1588,7 @@
         "-"
       ],
       "addr": "0x5f",
+      "group": "x8/lsm",
       "operand1": "E",
       "operand2": "A"
     },
@@ -1509,6 +1605,7 @@
         "-"
       ],
       "addr": "0x60",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "B"
     },
@@ -1525,6 +1622,7 @@
         "-"
       ],
       "addr": "0x61",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "C"
     },
@@ -1541,6 +1639,7 @@
         "-"
       ],
       "addr": "0x62",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "D"
     },
@@ -1557,6 +1656,7 @@
         "-"
       ],
       "addr": "0x63",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "E"
     },
@@ -1573,6 +1673,7 @@
         "-"
       ],
       "addr": "0x64",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "H"
     },
@@ -1589,6 +1690,7 @@
         "-"
       ],
       "addr": "0x65",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "L"
     },
@@ -1605,6 +1707,7 @@
         "-"
       ],
       "addr": "0x66",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "(HL)"
     },
@@ -1621,6 +1724,7 @@
         "-"
       ],
       "addr": "0x67",
+      "group": "x8/lsm",
       "operand1": "H",
       "operand2": "A"
     },
@@ -1637,6 +1741,7 @@
         "-"
       ],
       "addr": "0x68",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "B"
     },
@@ -1653,6 +1758,7 @@
         "-"
       ],
       "addr": "0x69",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "C"
     },
@@ -1669,6 +1775,7 @@
         "-"
       ],
       "addr": "0x6a",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "D"
     },
@@ -1685,6 +1792,7 @@
         "-"
       ],
       "addr": "0x6b",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "E"
     },
@@ -1701,6 +1809,7 @@
         "-"
       ],
       "addr": "0x6c",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "H"
     },
@@ -1717,6 +1826,7 @@
         "-"
       ],
       "addr": "0x6d",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "L"
     },
@@ -1733,6 +1843,7 @@
         "-"
       ],
       "addr": "0x6e",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "(HL)"
     },
@@ -1749,6 +1860,7 @@
         "-"
       ],
       "addr": "0x6f",
+      "group": "x8/lsm",
       "operand1": "L",
       "operand2": "A"
     },
@@ -1765,6 +1877,7 @@
         "-"
       ],
       "addr": "0x70",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "B"
     },
@@ -1781,6 +1894,7 @@
         "-"
       ],
       "addr": "0x71",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "C"
     },
@@ -1797,6 +1911,7 @@
         "-"
       ],
       "addr": "0x72",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "D"
     },
@@ -1813,6 +1928,7 @@
         "-"
       ],
       "addr": "0x73",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "E"
     },
@@ -1829,6 +1945,7 @@
         "-"
       ],
       "addr": "0x74",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "H"
     },
@@ -1845,6 +1962,7 @@
         "-"
       ],
       "addr": "0x75",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "L"
     },
@@ -1860,7 +1978,8 @@
         "-",
         "-"
       ],
-      "addr": "0x76"
+      "addr": "0x76",
+      "group": "control/misc"
     },
     "0x77": {
       "mnemonic": "LD",
@@ -1875,6 +1994,7 @@
         "-"
       ],
       "addr": "0x77",
+      "group": "x8/lsm",
       "operand1": "(HL)",
       "operand2": "A"
     },
@@ -1891,6 +2011,7 @@
         "-"
       ],
       "addr": "0x78",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "B"
     },
@@ -1907,6 +2028,7 @@
         "-"
       ],
       "addr": "0x79",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "C"
     },
@@ -1923,6 +2045,7 @@
         "-"
       ],
       "addr": "0x7a",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "D"
     },
@@ -1939,6 +2062,7 @@
         "-"
       ],
       "addr": "0x7b",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "E"
     },
@@ -1955,6 +2079,7 @@
         "-"
       ],
       "addr": "0x7c",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "H"
     },
@@ -1971,6 +2096,7 @@
         "-"
       ],
       "addr": "0x7d",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "L"
     },
@@ -1987,6 +2113,7 @@
         "-"
       ],
       "addr": "0x7e",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(HL)"
     },
@@ -2003,6 +2130,7 @@
         "-"
       ],
       "addr": "0x7f",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "A"
     },
@@ -2019,6 +2147,7 @@
         "C"
       ],
       "addr": "0x80",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "B"
     },
@@ -2035,6 +2164,7 @@
         "C"
       ],
       "addr": "0x81",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "C"
     },
@@ -2051,6 +2181,7 @@
         "C"
       ],
       "addr": "0x82",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "D"
     },
@@ -2067,6 +2198,7 @@
         "C"
       ],
       "addr": "0x83",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "E"
     },
@@ -2083,6 +2215,7 @@
         "C"
       ],
       "addr": "0x84",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "H"
     },
@@ -2099,6 +2232,7 @@
         "C"
       ],
       "addr": "0x85",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "L"
     },
@@ -2115,6 +2249,7 @@
         "C"
       ],
       "addr": "0x86",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "(HL)"
     },
@@ -2131,6 +2266,7 @@
         "C"
       ],
       "addr": "0x87",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "A"
     },
@@ -2147,6 +2283,7 @@
         "C"
       ],
       "addr": "0x88",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "B"
     },
@@ -2163,6 +2300,7 @@
         "C"
       ],
       "addr": "0x89",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "C"
     },
@@ -2179,6 +2317,7 @@
         "C"
       ],
       "addr": "0x8a",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "D"
     },
@@ -2195,6 +2334,7 @@
         "C"
       ],
       "addr": "0x8b",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "E"
     },
@@ -2211,6 +2351,7 @@
         "C"
       ],
       "addr": "0x8c",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "H"
     },
@@ -2227,6 +2368,7 @@
         "C"
       ],
       "addr": "0x8d",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "L"
     },
@@ -2243,6 +2385,7 @@
         "C"
       ],
       "addr": "0x8e",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "(HL)"
     },
@@ -2259,6 +2402,7 @@
         "C"
       ],
       "addr": "0x8f",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "A"
     },
@@ -2275,6 +2419,7 @@
         "C"
       ],
       "addr": "0x90",
+      "group": "x8/alu",
       "operand1": "B"
     },
     "0x91": {
@@ -2290,6 +2435,7 @@
         "C"
       ],
       "addr": "0x91",
+      "group": "x8/alu",
       "operand1": "C"
     },
     "0x92": {
@@ -2305,6 +2451,7 @@
         "C"
       ],
       "addr": "0x92",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0x93": {
@@ -2320,6 +2467,7 @@
         "C"
       ],
       "addr": "0x93",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0x94": {
@@ -2335,6 +2483,7 @@
         "C"
       ],
       "addr": "0x94",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0x95": {
@@ -2350,6 +2499,7 @@
         "C"
       ],
       "addr": "0x95",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0x96": {
@@ -2365,6 +2515,7 @@
         "C"
       ],
       "addr": "0x96",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0x97": {
@@ -2380,6 +2531,7 @@
         "C"
       ],
       "addr": "0x97",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0x98": {
@@ -2395,6 +2547,7 @@
         "C"
       ],
       "addr": "0x98",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "B"
     },
@@ -2411,6 +2564,7 @@
         "C"
       ],
       "addr": "0x99",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "C"
     },
@@ -2427,6 +2581,7 @@
         "C"
       ],
       "addr": "0x9a",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "D"
     },
@@ -2443,6 +2598,7 @@
         "C"
       ],
       "addr": "0x9b",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "E"
     },
@@ -2459,6 +2615,7 @@
         "C"
       ],
       "addr": "0x9c",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "H"
     },
@@ -2475,6 +2632,7 @@
         "C"
       ],
       "addr": "0x9d",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "L"
     },
@@ -2491,6 +2649,7 @@
         "C"
       ],
       "addr": "0x9e",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "(HL)"
     },
@@ -2507,6 +2666,7 @@
         "C"
       ],
       "addr": "0x9f",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "A"
     },
@@ -2523,6 +2683,7 @@
         "0"
       ],
       "addr": "0xa0",
+      "group": "x8/alu",
       "operand1": "B"
     },
     "0xa1": {
@@ -2538,6 +2699,7 @@
         "0"
       ],
       "addr": "0xa1",
+      "group": "x8/alu",
       "operand1": "C"
     },
     "0xa2": {
@@ -2553,6 +2715,7 @@
         "0"
       ],
       "addr": "0xa2",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0xa3": {
@@ -2568,6 +2731,7 @@
         "0"
       ],
       "addr": "0xa3",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0xa4": {
@@ -2583,6 +2747,7 @@
         "0"
       ],
       "addr": "0xa4",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0xa5": {
@@ -2598,6 +2763,7 @@
         "0"
       ],
       "addr": "0xa5",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0xa6": {
@@ -2613,6 +2779,7 @@
         "0"
       ],
       "addr": "0xa6",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0xa7": {
@@ -2628,6 +2795,7 @@
         "0"
       ],
       "addr": "0xa7",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0xa8": {
@@ -2643,6 +2811,7 @@
         "0"
       ],
       "addr": "0xa8",
+      "group": "x8/alu",
       "operand1": "B"
     },
     "0xa9": {
@@ -2658,6 +2827,7 @@
         "0"
       ],
       "addr": "0xa9",
+      "group": "x8/alu",
       "operand1": "C"
     },
     "0xaa": {
@@ -2673,6 +2843,7 @@
         "0"
       ],
       "addr": "0xaa",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0xab": {
@@ -2688,6 +2859,7 @@
         "0"
       ],
       "addr": "0xab",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0xac": {
@@ -2703,6 +2875,7 @@
         "0"
       ],
       "addr": "0xac",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0xad": {
@@ -2718,6 +2891,7 @@
         "0"
       ],
       "addr": "0xad",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0xae": {
@@ -2733,6 +2907,7 @@
         "0"
       ],
       "addr": "0xae",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0xaf": {
@@ -2748,6 +2923,7 @@
         "0"
       ],
       "addr": "0xaf",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0xb0": {
@@ -2763,6 +2939,7 @@
         "0"
       ],
       "addr": "0xb0",
+      "group": "x8/alu",
       "operand1": "B"
     },
     "0xb1": {
@@ -2778,6 +2955,7 @@
         "0"
       ],
       "addr": "0xb1",
+      "group": "x8/alu",
       "operand1": "C"
     },
     "0xb2": {
@@ -2793,6 +2971,7 @@
         "0"
       ],
       "addr": "0xb2",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0xb3": {
@@ -2808,6 +2987,7 @@
         "0"
       ],
       "addr": "0xb3",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0xb4": {
@@ -2823,6 +3003,7 @@
         "0"
       ],
       "addr": "0xb4",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0xb5": {
@@ -2838,6 +3019,7 @@
         "0"
       ],
       "addr": "0xb5",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0xb6": {
@@ -2853,6 +3035,7 @@
         "0"
       ],
       "addr": "0xb6",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0xb7": {
@@ -2868,6 +3051,7 @@
         "0"
       ],
       "addr": "0xb7",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0xb8": {
@@ -2883,6 +3067,7 @@
         "C"
       ],
       "addr": "0xb8",
+      "group": "x8/alu",
       "operand1": "B"
     },
     "0xb9": {
@@ -2898,6 +3083,7 @@
         "C"
       ],
       "addr": "0xb9",
+      "group": "x8/alu",
       "operand1": "C"
     },
     "0xba": {
@@ -2913,6 +3099,7 @@
         "C"
       ],
       "addr": "0xba",
+      "group": "x8/alu",
       "operand1": "D"
     },
     "0xbb": {
@@ -2928,6 +3115,7 @@
         "C"
       ],
       "addr": "0xbb",
+      "group": "x8/alu",
       "operand1": "E"
     },
     "0xbc": {
@@ -2943,6 +3131,7 @@
         "C"
       ],
       "addr": "0xbc",
+      "group": "x8/alu",
       "operand1": "H"
     },
     "0xbd": {
@@ -2958,6 +3147,7 @@
         "C"
       ],
       "addr": "0xbd",
+      "group": "x8/alu",
       "operand1": "L"
     },
     "0xbe": {
@@ -2973,6 +3163,7 @@
         "C"
       ],
       "addr": "0xbe",
+      "group": "x8/alu",
       "operand1": "(HL)"
     },
     "0xbf": {
@@ -2988,6 +3179,7 @@
         "C"
       ],
       "addr": "0xbf",
+      "group": "x8/alu",
       "operand1": "A"
     },
     "0xc0": {
@@ -3004,6 +3196,7 @@
         "-"
       ],
       "addr": "0xc0",
+      "group": "control/br",
       "operand1": "NZ"
     },
     "0xc1": {
@@ -3019,6 +3212,7 @@
         "-"
       ],
       "addr": "0xc1",
+      "group": "x16/lsm",
       "operand1": "BC"
     },
     "0xc2": {
@@ -3035,6 +3229,7 @@
         "-"
       ],
       "addr": "0xc2",
+      "group": "control/br",
       "operand1": "NZ",
       "operand2": "a16"
     },
@@ -3051,6 +3246,7 @@
         "-"
       ],
       "addr": "0xc3",
+      "group": "control/br",
       "operand1": "a16"
     },
     "0xc4": {
@@ -3067,6 +3263,7 @@
         "-"
       ],
       "addr": "0xc4",
+      "group": "control/br",
       "operand1": "NZ",
       "operand2": "a16"
     },
@@ -3083,6 +3280,7 @@
         "-"
       ],
       "addr": "0xc5",
+      "group": "x16/lsm",
       "operand1": "BC"
     },
     "0xc6": {
@@ -3098,6 +3296,7 @@
         "C"
       ],
       "addr": "0xc6",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "d8"
     },
@@ -3114,6 +3313,7 @@
         "-"
       ],
       "addr": "0xc7",
+      "group": "control/br",
       "operand1": "00H"
     },
     "0xc8": {
@@ -3130,6 +3330,7 @@
         "-"
       ],
       "addr": "0xc8",
+      "group": "control/br",
       "operand1": "Z"
     },
     "0xc9": {
@@ -3144,7 +3345,8 @@
         "-",
         "-"
       ],
-      "addr": "0xc9"
+      "addr": "0xc9",
+      "group": "control/br"
     },
     "0xca": {
       "mnemonic": "JP",
@@ -3160,6 +3362,7 @@
         "-"
       ],
       "addr": "0xca",
+      "group": "control/br",
       "operand1": "Z",
       "operand2": "a16"
     },
@@ -3176,6 +3379,7 @@
         "-"
       ],
       "addr": "0xcb",
+      "group": "control/misc",
       "operand1": "CB"
     },
     "0xcc": {
@@ -3192,6 +3396,7 @@
         "-"
       ],
       "addr": "0xcc",
+      "group": "control/br",
       "operand1": "Z",
       "operand2": "a16"
     },
@@ -3208,6 +3413,7 @@
         "-"
       ],
       "addr": "0xcd",
+      "group": "control/br",
       "operand1": "a16"
     },
     "0xce": {
@@ -3223,6 +3429,7 @@
         "C"
       ],
       "addr": "0xce",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "d8"
     },
@@ -3239,6 +3446,7 @@
         "-"
       ],
       "addr": "0xcf",
+      "group": "control/br",
       "operand1": "08H"
     },
     "0xd0": {
@@ -3255,6 +3463,7 @@
         "-"
       ],
       "addr": "0xd0",
+      "group": "control/br",
       "operand1": "NC"
     },
     "0xd1": {
@@ -3270,6 +3479,7 @@
         "-"
       ],
       "addr": "0xd1",
+      "group": "x16/lsm",
       "operand1": "DE"
     },
     "0xd2": {
@@ -3286,6 +3496,7 @@
         "-"
       ],
       "addr": "0xd2",
+      "group": "control/br",
       "operand1": "NC",
       "operand2": "a16"
     },
@@ -3303,6 +3514,7 @@
         "-"
       ],
       "addr": "0xd4",
+      "group": "control/br",
       "operand1": "NC",
       "operand2": "a16"
     },
@@ -3319,6 +3531,7 @@
         "-"
       ],
       "addr": "0xd5",
+      "group": "x16/lsm",
       "operand1": "DE"
     },
     "0xd6": {
@@ -3334,6 +3547,7 @@
         "C"
       ],
       "addr": "0xd6",
+      "group": "x8/alu",
       "operand1": "d8"
     },
     "0xd7": {
@@ -3349,6 +3563,7 @@
         "-"
       ],
       "addr": "0xd7",
+      "group": "control/br",
       "operand1": "10H"
     },
     "0xd8": {
@@ -3365,6 +3580,7 @@
         "-"
       ],
       "addr": "0xd8",
+      "group": "control/br",
       "operand1": "C"
     },
     "0xd9": {
@@ -3379,7 +3595,8 @@
         "-",
         "-"
       ],
-      "addr": "0xd9"
+      "addr": "0xd9",
+      "group": "control/br"
     },
     "0xda": {
       "mnemonic": "JP",
@@ -3395,6 +3612,7 @@
         "-"
       ],
       "addr": "0xda",
+      "group": "control/br",
       "operand1": "C",
       "operand2": "a16"
     },
@@ -3412,6 +3630,7 @@
         "-"
       ],
       "addr": "0xdc",
+      "group": "control/br",
       "operand1": "C",
       "operand2": "a16"
     },
@@ -3428,6 +3647,7 @@
         "C"
       ],
       "addr": "0xde",
+      "group": "x8/alu",
       "operand1": "A",
       "operand2": "d8"
     },
@@ -3444,6 +3664,7 @@
         "-"
       ],
       "addr": "0xdf",
+      "group": "control/br",
       "operand1": "18H"
     },
     "0xe0": {
@@ -3459,6 +3680,7 @@
         "-"
       ],
       "addr": "0xe0",
+      "group": "x8/lsm",
       "operand1": "(a8)",
       "operand2": "A"
     },
@@ -3475,6 +3697,7 @@
         "-"
       ],
       "addr": "0xe1",
+      "group": "x16/lsm",
       "operand1": "HL"
     },
     "0xe2": {
@@ -3490,6 +3713,7 @@
         "-"
       ],
       "addr": "0xe2",
+      "group": "x8/lsm",
       "operand1": "(C)",
       "operand2": "A"
     },
@@ -3506,6 +3730,7 @@
         "-"
       ],
       "addr": "0xe5",
+      "group": "x16/lsm",
       "operand1": "HL"
     },
     "0xe6": {
@@ -3521,6 +3746,7 @@
         "0"
       ],
       "addr": "0xe6",
+      "group": "x8/alu",
       "operand1": "d8"
     },
     "0xe7": {
@@ -3536,6 +3762,7 @@
         "-"
       ],
       "addr": "0xe7",
+      "group": "control/br",
       "operand1": "20H"
     },
     "0xe8": {
@@ -3551,6 +3778,7 @@
         "C"
       ],
       "addr": "0xe8",
+      "group": "x16/alu",
       "operand1": "SP",
       "operand2": "r8"
     },
@@ -3567,6 +3795,7 @@
         "-"
       ],
       "addr": "0xe9",
+      "group": "control/br",
       "operand1": "(HL)"
     },
     "0xea": {
@@ -3582,6 +3811,7 @@
         "-"
       ],
       "addr": "0xea",
+      "group": "x8/lsm",
       "operand1": "(a16)",
       "operand2": "A"
     },
@@ -3598,6 +3828,7 @@
         "0"
       ],
       "addr": "0xee",
+      "group": "x8/alu",
       "operand1": "d8"
     },
     "0xef": {
@@ -3613,6 +3844,7 @@
         "-"
       ],
       "addr": "0xef",
+      "group": "control/br",
       "operand1": "28H"
     },
     "0xf0": {
@@ -3628,6 +3860,7 @@
         "-"
       ],
       "addr": "0xf0",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(a8)"
     },
@@ -3644,6 +3877,7 @@
         "C"
       ],
       "addr": "0xf1",
+      "group": "x16/lsm",
       "operand1": "AF"
     },
     "0xf2": {
@@ -3659,6 +3893,7 @@
         "-"
       ],
       "addr": "0xf2",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(C)"
     },
@@ -3674,7 +3909,8 @@
         "-",
         "-"
       ],
-      "addr": "0xf3"
+      "addr": "0xf3",
+      "group": "control/misc"
     },
     "0xf5": {
       "mnemonic": "PUSH",
@@ -3689,6 +3925,7 @@
         "-"
       ],
       "addr": "0xf5",
+      "group": "x16/lsm",
       "operand1": "AF"
     },
     "0xf6": {
@@ -3704,6 +3941,7 @@
         "0"
       ],
       "addr": "0xf6",
+      "group": "x8/alu",
       "operand1": "d8"
     },
     "0xf7": {
@@ -3719,6 +3957,7 @@
         "-"
       ],
       "addr": "0xf7",
+      "group": "control/br",
       "operand1": "30H"
     },
     "0xf8": {
@@ -3734,6 +3973,7 @@
         "C"
       ],
       "addr": "0xf8",
+      "group": "x16/lsm",
       "operand1": "HL",
       "operand2": "SP+r8"
     },
@@ -3750,6 +3990,7 @@
         "-"
       ],
       "addr": "0xf9",
+      "group": "x16/lsm",
       "operand1": "SP",
       "operand2": "HL"
     },
@@ -3766,6 +4007,7 @@
         "-"
       ],
       "addr": "0xfa",
+      "group": "x8/lsm",
       "operand1": "A",
       "operand2": "(a16)"
     },
@@ -3781,7 +4023,8 @@
         "-",
         "-"
       ],
-      "addr": "0xfb"
+      "addr": "0xfb",
+      "group": "control/misc"
     },
     "0xfe": {
       "mnemonic": "CP",
@@ -3796,6 +4039,7 @@
         "C"
       ],
       "addr": "0xfe",
+      "group": "x8/alu",
       "operand1": "d8"
     },
     "0xff": {
@@ -3811,11 +4055,12 @@
         "-"
       ],
       "addr": "0xff",
+      "group": "control/br",
       "operand1": "38H"
     }
   },
   "cbprefixed": {
-    "0x0": {
+    "0x00": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3827,10 +4072,11 @@
         "0",
         "C"
       ],
-      "addr": "0x0",
+      "addr": "0x00",
+      "group": "x8/rsb",
       "operand1": "B"
     },
-    "0x1": {
+    "0x01": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3842,10 +4088,11 @@
         "0",
         "C"
       ],
-      "addr": "0x1",
+      "addr": "0x01",
+      "group": "x8/rsb",
       "operand1": "C"
     },
-    "0x2": {
+    "0x02": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3857,10 +4104,11 @@
         "0",
         "C"
       ],
-      "addr": "0x2",
+      "addr": "0x02",
+      "group": "x8/rsb",
       "operand1": "D"
     },
-    "0x3": {
+    "0x03": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3872,10 +4120,11 @@
         "0",
         "C"
       ],
-      "addr": "0x3",
+      "addr": "0x03",
+      "group": "x8/rsb",
       "operand1": "E"
     },
-    "0x4": {
+    "0x04": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3887,10 +4136,11 @@
         "0",
         "C"
       ],
-      "addr": "0x4",
+      "addr": "0x04",
+      "group": "x8/rsb",
       "operand1": "H"
     },
-    "0x5": {
+    "0x05": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3902,10 +4152,11 @@
         "0",
         "C"
       ],
-      "addr": "0x5",
+      "addr": "0x05",
+      "group": "x8/rsb",
       "operand1": "L"
     },
-    "0x6": {
+    "0x06": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3917,10 +4168,11 @@
         "0",
         "C"
       ],
-      "addr": "0x6",
+      "addr": "0x06",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
-    "0x7": {
+    "0x07": {
       "mnemonic": "RLC",
       "length": 2,
       "cycles": [
@@ -3932,10 +4184,11 @@
         "0",
         "C"
       ],
-      "addr": "0x7",
+      "addr": "0x07",
+      "group": "x8/rsb",
       "operand1": "A"
     },
-    "0x8": {
+    "0x08": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -3947,10 +4200,11 @@
         "0",
         "C"
       ],
-      "addr": "0x8",
+      "addr": "0x08",
+      "group": "x8/rsb",
       "operand1": "B"
     },
-    "0x9": {
+    "0x09": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -3962,10 +4216,11 @@
         "0",
         "C"
       ],
-      "addr": "0x9",
+      "addr": "0x09",
+      "group": "x8/rsb",
       "operand1": "C"
     },
-    "0xa": {
+    "0x0a": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -3977,10 +4232,11 @@
         "0",
         "C"
       ],
-      "addr": "0xa",
+      "addr": "0x0a",
+      "group": "x8/rsb",
       "operand1": "D"
     },
-    "0xb": {
+    "0x0b": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -3992,10 +4248,11 @@
         "0",
         "C"
       ],
-      "addr": "0xb",
+      "addr": "0x0b",
+      "group": "x8/rsb",
       "operand1": "E"
     },
-    "0xc": {
+    "0x0c": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -4007,10 +4264,11 @@
         "0",
         "C"
       ],
-      "addr": "0xc",
+      "addr": "0x0c",
+      "group": "x8/rsb",
       "operand1": "H"
     },
-    "0xd": {
+    "0x0d": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -4022,10 +4280,11 @@
         "0",
         "C"
       ],
-      "addr": "0xd",
+      "addr": "0x0d",
+      "group": "x8/rsb",
       "operand1": "L"
     },
-    "0xe": {
+    "0x0e": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -4037,10 +4296,11 @@
         "0",
         "C"
       ],
-      "addr": "0xe",
+      "addr": "0x0e",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
-    "0xf": {
+    "0x0f": {
       "mnemonic": "RRC",
       "length": 2,
       "cycles": [
@@ -4052,7 +4312,8 @@
         "0",
         "C"
       ],
-      "addr": "0xf",
+      "addr": "0x0f",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x10": {
@@ -4068,6 +4329,7 @@
         "C"
       ],
       "addr": "0x10",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x11": {
@@ -4083,6 +4345,7 @@
         "C"
       ],
       "addr": "0x11",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x12": {
@@ -4098,6 +4361,7 @@
         "C"
       ],
       "addr": "0x12",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x13": {
@@ -4113,6 +4377,7 @@
         "C"
       ],
       "addr": "0x13",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x14": {
@@ -4128,6 +4393,7 @@
         "C"
       ],
       "addr": "0x14",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x15": {
@@ -4143,6 +4409,7 @@
         "C"
       ],
       "addr": "0x15",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x16": {
@@ -4158,6 +4425,7 @@
         "C"
       ],
       "addr": "0x16",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x17": {
@@ -4173,6 +4441,7 @@
         "C"
       ],
       "addr": "0x17",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x18": {
@@ -4188,6 +4457,7 @@
         "C"
       ],
       "addr": "0x18",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x19": {
@@ -4203,6 +4473,7 @@
         "C"
       ],
       "addr": "0x19",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x1a": {
@@ -4218,6 +4489,7 @@
         "C"
       ],
       "addr": "0x1a",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x1b": {
@@ -4233,6 +4505,7 @@
         "C"
       ],
       "addr": "0x1b",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x1c": {
@@ -4248,6 +4521,7 @@
         "C"
       ],
       "addr": "0x1c",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x1d": {
@@ -4263,6 +4537,7 @@
         "C"
       ],
       "addr": "0x1d",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x1e": {
@@ -4278,6 +4553,7 @@
         "C"
       ],
       "addr": "0x1e",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x1f": {
@@ -4293,6 +4569,7 @@
         "C"
       ],
       "addr": "0x1f",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x20": {
@@ -4308,6 +4585,7 @@
         "C"
       ],
       "addr": "0x20",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x21": {
@@ -4323,6 +4601,7 @@
         "C"
       ],
       "addr": "0x21",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x22": {
@@ -4338,6 +4617,7 @@
         "C"
       ],
       "addr": "0x22",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x23": {
@@ -4353,6 +4633,7 @@
         "C"
       ],
       "addr": "0x23",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x24": {
@@ -4368,6 +4649,7 @@
         "C"
       ],
       "addr": "0x24",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x25": {
@@ -4383,6 +4665,7 @@
         "C"
       ],
       "addr": "0x25",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x26": {
@@ -4398,6 +4681,7 @@
         "C"
       ],
       "addr": "0x26",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x27": {
@@ -4413,6 +4697,7 @@
         "C"
       ],
       "addr": "0x27",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x28": {
@@ -4428,6 +4713,7 @@
         "0"
       ],
       "addr": "0x28",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x29": {
@@ -4443,6 +4729,7 @@
         "0"
       ],
       "addr": "0x29",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x2a": {
@@ -4458,6 +4745,7 @@
         "0"
       ],
       "addr": "0x2a",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x2b": {
@@ -4473,6 +4761,7 @@
         "0"
       ],
       "addr": "0x2b",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x2c": {
@@ -4488,6 +4777,7 @@
         "0"
       ],
       "addr": "0x2c",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x2d": {
@@ -4503,6 +4793,7 @@
         "0"
       ],
       "addr": "0x2d",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x2e": {
@@ -4518,6 +4809,7 @@
         "0"
       ],
       "addr": "0x2e",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x2f": {
@@ -4533,6 +4825,7 @@
         "0"
       ],
       "addr": "0x2f",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x30": {
@@ -4548,6 +4841,7 @@
         "0"
       ],
       "addr": "0x30",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x31": {
@@ -4563,6 +4857,7 @@
         "0"
       ],
       "addr": "0x31",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x32": {
@@ -4578,6 +4873,7 @@
         "0"
       ],
       "addr": "0x32",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x33": {
@@ -4593,6 +4889,7 @@
         "0"
       ],
       "addr": "0x33",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x34": {
@@ -4608,6 +4905,7 @@
         "0"
       ],
       "addr": "0x34",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x35": {
@@ -4623,6 +4921,7 @@
         "0"
       ],
       "addr": "0x35",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x36": {
@@ -4638,6 +4937,7 @@
         "0"
       ],
       "addr": "0x36",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x37": {
@@ -4653,6 +4953,7 @@
         "0"
       ],
       "addr": "0x37",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x38": {
@@ -4668,6 +4969,7 @@
         "C"
       ],
       "addr": "0x38",
+      "group": "x8/rsb",
       "operand1": "B"
     },
     "0x39": {
@@ -4683,6 +4985,7 @@
         "C"
       ],
       "addr": "0x39",
+      "group": "x8/rsb",
       "operand1": "C"
     },
     "0x3a": {
@@ -4698,6 +5001,7 @@
         "C"
       ],
       "addr": "0x3a",
+      "group": "x8/rsb",
       "operand1": "D"
     },
     "0x3b": {
@@ -4713,6 +5017,7 @@
         "C"
       ],
       "addr": "0x3b",
+      "group": "x8/rsb",
       "operand1": "E"
     },
     "0x3c": {
@@ -4728,6 +5033,7 @@
         "C"
       ],
       "addr": "0x3c",
+      "group": "x8/rsb",
       "operand1": "H"
     },
     "0x3d": {
@@ -4743,6 +5049,7 @@
         "C"
       ],
       "addr": "0x3d",
+      "group": "x8/rsb",
       "operand1": "L"
     },
     "0x3e": {
@@ -4758,6 +5065,7 @@
         "C"
       ],
       "addr": "0x3e",
+      "group": "x8/rsb",
       "operand1": "(HL)"
     },
     "0x3f": {
@@ -4773,6 +5081,7 @@
         "C"
       ],
       "addr": "0x3f",
+      "group": "x8/rsb",
       "operand1": "A"
     },
     "0x40": {
@@ -4788,6 +5097,7 @@
         "-"
       ],
       "addr": "0x40",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "B"
     },
@@ -4804,6 +5114,7 @@
         "-"
       ],
       "addr": "0x41",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "C"
     },
@@ -4820,6 +5131,7 @@
         "-"
       ],
       "addr": "0x42",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "D"
     },
@@ -4836,6 +5148,7 @@
         "-"
       ],
       "addr": "0x43",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "E"
     },
@@ -4852,6 +5165,7 @@
         "-"
       ],
       "addr": "0x44",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "H"
     },
@@ -4868,6 +5182,7 @@
         "-"
       ],
       "addr": "0x45",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "L"
     },
@@ -4884,6 +5199,7 @@
         "-"
       ],
       "addr": "0x46",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "(HL)"
     },
@@ -4900,6 +5216,7 @@
         "-"
       ],
       "addr": "0x47",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "A"
     },
@@ -4916,6 +5233,7 @@
         "-"
       ],
       "addr": "0x48",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "B"
     },
@@ -4932,6 +5250,7 @@
         "-"
       ],
       "addr": "0x49",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "C"
     },
@@ -4948,6 +5267,7 @@
         "-"
       ],
       "addr": "0x4a",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "D"
     },
@@ -4964,6 +5284,7 @@
         "-"
       ],
       "addr": "0x4b",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "E"
     },
@@ -4980,6 +5301,7 @@
         "-"
       ],
       "addr": "0x4c",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "H"
     },
@@ -4996,6 +5318,7 @@
         "-"
       ],
       "addr": "0x4d",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "L"
     },
@@ -5012,6 +5335,7 @@
         "-"
       ],
       "addr": "0x4e",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "(HL)"
     },
@@ -5028,6 +5352,7 @@
         "-"
       ],
       "addr": "0x4f",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "A"
     },
@@ -5044,6 +5369,7 @@
         "-"
       ],
       "addr": "0x50",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "B"
     },
@@ -5060,6 +5386,7 @@
         "-"
       ],
       "addr": "0x51",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "C"
     },
@@ -5076,6 +5403,7 @@
         "-"
       ],
       "addr": "0x52",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "D"
     },
@@ -5092,6 +5420,7 @@
         "-"
       ],
       "addr": "0x53",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "E"
     },
@@ -5108,6 +5437,7 @@
         "-"
       ],
       "addr": "0x54",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "H"
     },
@@ -5124,6 +5454,7 @@
         "-"
       ],
       "addr": "0x55",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "L"
     },
@@ -5140,6 +5471,7 @@
         "-"
       ],
       "addr": "0x56",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "(HL)"
     },
@@ -5156,6 +5488,7 @@
         "-"
       ],
       "addr": "0x57",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "A"
     },
@@ -5172,6 +5505,7 @@
         "-"
       ],
       "addr": "0x58",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "B"
     },
@@ -5188,6 +5522,7 @@
         "-"
       ],
       "addr": "0x59",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "C"
     },
@@ -5204,6 +5539,7 @@
         "-"
       ],
       "addr": "0x5a",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "D"
     },
@@ -5220,6 +5556,7 @@
         "-"
       ],
       "addr": "0x5b",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "E"
     },
@@ -5236,6 +5573,7 @@
         "-"
       ],
       "addr": "0x5c",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "H"
     },
@@ -5252,6 +5590,7 @@
         "-"
       ],
       "addr": "0x5d",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "L"
     },
@@ -5268,6 +5607,7 @@
         "-"
       ],
       "addr": "0x5e",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "(HL)"
     },
@@ -5284,6 +5624,7 @@
         "-"
       ],
       "addr": "0x5f",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "A"
     },
@@ -5300,6 +5641,7 @@
         "-"
       ],
       "addr": "0x60",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "B"
     },
@@ -5316,6 +5658,7 @@
         "-"
       ],
       "addr": "0x61",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "C"
     },
@@ -5332,6 +5675,7 @@
         "-"
       ],
       "addr": "0x62",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "D"
     },
@@ -5348,6 +5692,7 @@
         "-"
       ],
       "addr": "0x63",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "E"
     },
@@ -5364,6 +5709,7 @@
         "-"
       ],
       "addr": "0x64",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "H"
     },
@@ -5380,6 +5726,7 @@
         "-"
       ],
       "addr": "0x65",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "L"
     },
@@ -5396,6 +5743,7 @@
         "-"
       ],
       "addr": "0x66",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "(HL)"
     },
@@ -5412,6 +5760,7 @@
         "-"
       ],
       "addr": "0x67",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "A"
     },
@@ -5428,6 +5777,7 @@
         "-"
       ],
       "addr": "0x68",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "B"
     },
@@ -5444,6 +5794,7 @@
         "-"
       ],
       "addr": "0x69",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "C"
     },
@@ -5460,6 +5811,7 @@
         "-"
       ],
       "addr": "0x6a",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "D"
     },
@@ -5476,6 +5828,7 @@
         "-"
       ],
       "addr": "0x6b",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "E"
     },
@@ -5492,6 +5845,7 @@
         "-"
       ],
       "addr": "0x6c",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "H"
     },
@@ -5508,6 +5862,7 @@
         "-"
       ],
       "addr": "0x6d",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "L"
     },
@@ -5524,6 +5879,7 @@
         "-"
       ],
       "addr": "0x6e",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "(HL)"
     },
@@ -5540,6 +5896,7 @@
         "-"
       ],
       "addr": "0x6f",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "A"
     },
@@ -5556,6 +5913,7 @@
         "-"
       ],
       "addr": "0x70",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "B"
     },
@@ -5572,6 +5930,7 @@
         "-"
       ],
       "addr": "0x71",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "C"
     },
@@ -5588,6 +5947,7 @@
         "-"
       ],
       "addr": "0x72",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "D"
     },
@@ -5604,6 +5964,7 @@
         "-"
       ],
       "addr": "0x73",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "E"
     },
@@ -5620,6 +5981,7 @@
         "-"
       ],
       "addr": "0x74",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "H"
     },
@@ -5636,6 +5998,7 @@
         "-"
       ],
       "addr": "0x75",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "L"
     },
@@ -5652,6 +6015,7 @@
         "-"
       ],
       "addr": "0x76",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "(HL)"
     },
@@ -5668,6 +6032,7 @@
         "-"
       ],
       "addr": "0x77",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "A"
     },
@@ -5684,6 +6049,7 @@
         "-"
       ],
       "addr": "0x78",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "B"
     },
@@ -5700,6 +6066,7 @@
         "-"
       ],
       "addr": "0x79",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "C"
     },
@@ -5716,6 +6083,7 @@
         "-"
       ],
       "addr": "0x7a",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "D"
     },
@@ -5732,6 +6100,7 @@
         "-"
       ],
       "addr": "0x7b",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "E"
     },
@@ -5748,6 +6117,7 @@
         "-"
       ],
       "addr": "0x7c",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "H"
     },
@@ -5764,6 +6134,7 @@
         "-"
       ],
       "addr": "0x7d",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "L"
     },
@@ -5780,6 +6151,7 @@
         "-"
       ],
       "addr": "0x7e",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "(HL)"
     },
@@ -5796,6 +6168,7 @@
         "-"
       ],
       "addr": "0x7f",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "A"
     },
@@ -5812,6 +6185,7 @@
         "-"
       ],
       "addr": "0x80",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "B"
     },
@@ -5828,6 +6202,7 @@
         "-"
       ],
       "addr": "0x81",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "C"
     },
@@ -5844,6 +6219,7 @@
         "-"
       ],
       "addr": "0x82",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "D"
     },
@@ -5860,6 +6236,7 @@
         "-"
       ],
       "addr": "0x83",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "E"
     },
@@ -5876,6 +6253,7 @@
         "-"
       ],
       "addr": "0x84",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "H"
     },
@@ -5892,6 +6270,7 @@
         "-"
       ],
       "addr": "0x85",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "L"
     },
@@ -5908,6 +6287,7 @@
         "-"
       ],
       "addr": "0x86",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "(HL)"
     },
@@ -5924,6 +6304,7 @@
         "-"
       ],
       "addr": "0x87",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "A"
     },
@@ -5940,6 +6321,7 @@
         "-"
       ],
       "addr": "0x88",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "B"
     },
@@ -5956,6 +6338,7 @@
         "-"
       ],
       "addr": "0x89",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "C"
     },
@@ -5972,6 +6355,7 @@
         "-"
       ],
       "addr": "0x8a",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "D"
     },
@@ -5988,6 +6372,7 @@
         "-"
       ],
       "addr": "0x8b",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "E"
     },
@@ -6004,6 +6389,7 @@
         "-"
       ],
       "addr": "0x8c",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "H"
     },
@@ -6020,6 +6406,7 @@
         "-"
       ],
       "addr": "0x8d",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "L"
     },
@@ -6036,6 +6423,7 @@
         "-"
       ],
       "addr": "0x8e",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "(HL)"
     },
@@ -6052,6 +6440,7 @@
         "-"
       ],
       "addr": "0x8f",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "A"
     },
@@ -6068,6 +6457,7 @@
         "-"
       ],
       "addr": "0x90",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "B"
     },
@@ -6084,6 +6474,7 @@
         "-"
       ],
       "addr": "0x91",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "C"
     },
@@ -6100,6 +6491,7 @@
         "-"
       ],
       "addr": "0x92",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "D"
     },
@@ -6116,6 +6508,7 @@
         "-"
       ],
       "addr": "0x93",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "E"
     },
@@ -6132,6 +6525,7 @@
         "-"
       ],
       "addr": "0x94",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "H"
     },
@@ -6148,6 +6542,7 @@
         "-"
       ],
       "addr": "0x95",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "L"
     },
@@ -6164,6 +6559,7 @@
         "-"
       ],
       "addr": "0x96",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "(HL)"
     },
@@ -6180,6 +6576,7 @@
         "-"
       ],
       "addr": "0x97",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "A"
     },
@@ -6196,6 +6593,7 @@
         "-"
       ],
       "addr": "0x98",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "B"
     },
@@ -6212,6 +6610,7 @@
         "-"
       ],
       "addr": "0x99",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "C"
     },
@@ -6228,6 +6627,7 @@
         "-"
       ],
       "addr": "0x9a",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "D"
     },
@@ -6244,6 +6644,7 @@
         "-"
       ],
       "addr": "0x9b",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "E"
     },
@@ -6260,6 +6661,7 @@
         "-"
       ],
       "addr": "0x9c",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "H"
     },
@@ -6276,6 +6678,7 @@
         "-"
       ],
       "addr": "0x9d",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "L"
     },
@@ -6292,6 +6695,7 @@
         "-"
       ],
       "addr": "0x9e",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "(HL)"
     },
@@ -6308,6 +6712,7 @@
         "-"
       ],
       "addr": "0x9f",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "A"
     },
@@ -6324,6 +6729,7 @@
         "-"
       ],
       "addr": "0xa0",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "B"
     },
@@ -6340,6 +6746,7 @@
         "-"
       ],
       "addr": "0xa1",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "C"
     },
@@ -6356,6 +6763,7 @@
         "-"
       ],
       "addr": "0xa2",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "D"
     },
@@ -6372,6 +6780,7 @@
         "-"
       ],
       "addr": "0xa3",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "E"
     },
@@ -6388,6 +6797,7 @@
         "-"
       ],
       "addr": "0xa4",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "H"
     },
@@ -6404,6 +6814,7 @@
         "-"
       ],
       "addr": "0xa5",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "L"
     },
@@ -6420,6 +6831,7 @@
         "-"
       ],
       "addr": "0xa6",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "(HL)"
     },
@@ -6436,6 +6848,7 @@
         "-"
       ],
       "addr": "0xa7",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "A"
     },
@@ -6452,6 +6865,7 @@
         "-"
       ],
       "addr": "0xa8",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "B"
     },
@@ -6468,6 +6882,7 @@
         "-"
       ],
       "addr": "0xa9",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "C"
     },
@@ -6484,6 +6899,7 @@
         "-"
       ],
       "addr": "0xaa",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "D"
     },
@@ -6500,6 +6916,7 @@
         "-"
       ],
       "addr": "0xab",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "E"
     },
@@ -6516,6 +6933,7 @@
         "-"
       ],
       "addr": "0xac",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "H"
     },
@@ -6532,6 +6950,7 @@
         "-"
       ],
       "addr": "0xad",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "L"
     },
@@ -6548,6 +6967,7 @@
         "-"
       ],
       "addr": "0xae",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "(HL)"
     },
@@ -6564,6 +6984,7 @@
         "-"
       ],
       "addr": "0xaf",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "A"
     },
@@ -6580,6 +7001,7 @@
         "-"
       ],
       "addr": "0xb0",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "B"
     },
@@ -6596,6 +7018,7 @@
         "-"
       ],
       "addr": "0xb1",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "C"
     },
@@ -6612,6 +7035,7 @@
         "-"
       ],
       "addr": "0xb2",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "D"
     },
@@ -6628,6 +7052,7 @@
         "-"
       ],
       "addr": "0xb3",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "E"
     },
@@ -6644,6 +7069,7 @@
         "-"
       ],
       "addr": "0xb4",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "H"
     },
@@ -6660,6 +7086,7 @@
         "-"
       ],
       "addr": "0xb5",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "L"
     },
@@ -6676,6 +7103,7 @@
         "-"
       ],
       "addr": "0xb6",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "(HL)"
     },
@@ -6692,6 +7120,7 @@
         "-"
       ],
       "addr": "0xb7",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "A"
     },
@@ -6708,6 +7137,7 @@
         "-"
       ],
       "addr": "0xb8",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "B"
     },
@@ -6724,6 +7154,7 @@
         "-"
       ],
       "addr": "0xb9",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "C"
     },
@@ -6740,6 +7171,7 @@
         "-"
       ],
       "addr": "0xba",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "D"
     },
@@ -6756,6 +7188,7 @@
         "-"
       ],
       "addr": "0xbb",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "E"
     },
@@ -6772,6 +7205,7 @@
         "-"
       ],
       "addr": "0xbc",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "H"
     },
@@ -6788,6 +7222,7 @@
         "-"
       ],
       "addr": "0xbd",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "L"
     },
@@ -6804,6 +7239,7 @@
         "-"
       ],
       "addr": "0xbe",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "(HL)"
     },
@@ -6820,6 +7256,7 @@
         "-"
       ],
       "addr": "0xbf",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "A"
     },
@@ -6836,6 +7273,7 @@
         "-"
       ],
       "addr": "0xc0",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "B"
     },
@@ -6852,6 +7290,7 @@
         "-"
       ],
       "addr": "0xc1",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "C"
     },
@@ -6868,6 +7307,7 @@
         "-"
       ],
       "addr": "0xc2",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "D"
     },
@@ -6884,6 +7324,7 @@
         "-"
       ],
       "addr": "0xc3",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "E"
     },
@@ -6900,6 +7341,7 @@
         "-"
       ],
       "addr": "0xc4",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "H"
     },
@@ -6916,6 +7358,7 @@
         "-"
       ],
       "addr": "0xc5",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "L"
     },
@@ -6932,6 +7375,7 @@
         "-"
       ],
       "addr": "0xc6",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "(HL)"
     },
@@ -6948,6 +7392,7 @@
         "-"
       ],
       "addr": "0xc7",
+      "group": "x8/rsb",
       "operand1": "0",
       "operand2": "A"
     },
@@ -6964,6 +7409,7 @@
         "-"
       ],
       "addr": "0xc8",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "B"
     },
@@ -6980,6 +7426,7 @@
         "-"
       ],
       "addr": "0xc9",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "C"
     },
@@ -6996,6 +7443,7 @@
         "-"
       ],
       "addr": "0xca",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "D"
     },
@@ -7012,6 +7460,7 @@
         "-"
       ],
       "addr": "0xcb",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "E"
     },
@@ -7028,6 +7477,7 @@
         "-"
       ],
       "addr": "0xcc",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "H"
     },
@@ -7044,6 +7494,7 @@
         "-"
       ],
       "addr": "0xcd",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "L"
     },
@@ -7060,6 +7511,7 @@
         "-"
       ],
       "addr": "0xce",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "(HL)"
     },
@@ -7076,6 +7528,7 @@
         "-"
       ],
       "addr": "0xcf",
+      "group": "x8/rsb",
       "operand1": "1",
       "operand2": "A"
     },
@@ -7092,6 +7545,7 @@
         "-"
       ],
       "addr": "0xd0",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "B"
     },
@@ -7108,6 +7562,7 @@
         "-"
       ],
       "addr": "0xd1",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "C"
     },
@@ -7124,6 +7579,7 @@
         "-"
       ],
       "addr": "0xd2",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "D"
     },
@@ -7140,6 +7596,7 @@
         "-"
       ],
       "addr": "0xd3",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "E"
     },
@@ -7156,6 +7613,7 @@
         "-"
       ],
       "addr": "0xd4",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "H"
     },
@@ -7172,6 +7630,7 @@
         "-"
       ],
       "addr": "0xd5",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "L"
     },
@@ -7188,6 +7647,7 @@
         "-"
       ],
       "addr": "0xd6",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "(HL)"
     },
@@ -7204,6 +7664,7 @@
         "-"
       ],
       "addr": "0xd7",
+      "group": "x8/rsb",
       "operand1": "2",
       "operand2": "A"
     },
@@ -7220,6 +7681,7 @@
         "-"
       ],
       "addr": "0xd8",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "B"
     },
@@ -7236,6 +7698,7 @@
         "-"
       ],
       "addr": "0xd9",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "C"
     },
@@ -7252,6 +7715,7 @@
         "-"
       ],
       "addr": "0xda",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "D"
     },
@@ -7268,6 +7732,7 @@
         "-"
       ],
       "addr": "0xdb",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "E"
     },
@@ -7284,6 +7749,7 @@
         "-"
       ],
       "addr": "0xdc",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "H"
     },
@@ -7300,6 +7766,7 @@
         "-"
       ],
       "addr": "0xdd",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "L"
     },
@@ -7316,6 +7783,7 @@
         "-"
       ],
       "addr": "0xde",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "(HL)"
     },
@@ -7332,6 +7800,7 @@
         "-"
       ],
       "addr": "0xdf",
+      "group": "x8/rsb",
       "operand1": "3",
       "operand2": "A"
     },
@@ -7348,6 +7817,7 @@
         "-"
       ],
       "addr": "0xe0",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "B"
     },
@@ -7364,6 +7834,7 @@
         "-"
       ],
       "addr": "0xe1",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "C"
     },
@@ -7380,6 +7851,7 @@
         "-"
       ],
       "addr": "0xe2",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "D"
     },
@@ -7396,6 +7868,7 @@
         "-"
       ],
       "addr": "0xe3",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "E"
     },
@@ -7412,6 +7885,7 @@
         "-"
       ],
       "addr": "0xe4",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "H"
     },
@@ -7428,6 +7902,7 @@
         "-"
       ],
       "addr": "0xe5",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "L"
     },
@@ -7444,6 +7919,7 @@
         "-"
       ],
       "addr": "0xe6",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "(HL)"
     },
@@ -7460,6 +7936,7 @@
         "-"
       ],
       "addr": "0xe7",
+      "group": "x8/rsb",
       "operand1": "4",
       "operand2": "A"
     },
@@ -7476,6 +7953,7 @@
         "-"
       ],
       "addr": "0xe8",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "B"
     },
@@ -7492,6 +7970,7 @@
         "-"
       ],
       "addr": "0xe9",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "C"
     },
@@ -7508,6 +7987,7 @@
         "-"
       ],
       "addr": "0xea",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "D"
     },
@@ -7524,6 +8004,7 @@
         "-"
       ],
       "addr": "0xeb",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "E"
     },
@@ -7540,6 +8021,7 @@
         "-"
       ],
       "addr": "0xec",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "H"
     },
@@ -7556,6 +8038,7 @@
         "-"
       ],
       "addr": "0xed",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "L"
     },
@@ -7572,6 +8055,7 @@
         "-"
       ],
       "addr": "0xee",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "(HL)"
     },
@@ -7588,6 +8072,7 @@
         "-"
       ],
       "addr": "0xef",
+      "group": "x8/rsb",
       "operand1": "5",
       "operand2": "A"
     },
@@ -7604,6 +8089,7 @@
         "-"
       ],
       "addr": "0xf0",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "B"
     },
@@ -7620,6 +8106,7 @@
         "-"
       ],
       "addr": "0xf1",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "C"
     },
@@ -7636,6 +8123,7 @@
         "-"
       ],
       "addr": "0xf2",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "D"
     },
@@ -7652,6 +8140,7 @@
         "-"
       ],
       "addr": "0xf3",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "E"
     },
@@ -7668,6 +8157,7 @@
         "-"
       ],
       "addr": "0xf4",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "H"
     },
@@ -7684,6 +8174,7 @@
         "-"
       ],
       "addr": "0xf5",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "L"
     },
@@ -7700,6 +8191,7 @@
         "-"
       ],
       "addr": "0xf6",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "(HL)"
     },
@@ -7716,6 +8208,7 @@
         "-"
       ],
       "addr": "0xf7",
+      "group": "x8/rsb",
       "operand1": "6",
       "operand2": "A"
     },
@@ -7732,6 +8225,7 @@
         "-"
       ],
       "addr": "0xf8",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "B"
     },
@@ -7748,6 +8242,7 @@
         "-"
       ],
       "addr": "0xf9",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "C"
     },
@@ -7764,6 +8259,7 @@
         "-"
       ],
       "addr": "0xfa",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "D"
     },
@@ -7780,6 +8276,7 @@
         "-"
       ],
       "addr": "0xfb",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "E"
     },
@@ -7796,6 +8293,7 @@
         "-"
       ],
       "addr": "0xfc",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "H"
     },
@@ -7812,6 +8310,7 @@
         "-"
       ],
       "addr": "0xfd",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "L"
     },
@@ -7828,6 +8327,7 @@
         "-"
       ],
       "addr": "0xfe",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "(HL)"
     },
@@ -7844,6 +8344,7 @@
         "-"
       ],
       "addr": "0xff",
+      "group": "x8/rsb",
       "operand1": "7",
       "operand2": "A"
     }
