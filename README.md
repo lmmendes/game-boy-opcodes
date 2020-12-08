@@ -4,6 +4,8 @@ Game Boy CPU (Sharp LR35902) instruction set (opcodes)
 
 The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/master/opcodes.json) contains a JSON representation of the complete Sharp LR35902 instruction set. Inside the `bin` folder you will find the script used to generate the `opcodes.json` file from the pastraiser.com site.
 
+## Description of opcodes.json
+
 > The opcodes.json file includes some minor fixes in the opcode length and timings not present on the pastraiser.com site.
 
 ```
@@ -32,7 +34,25 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
 }
 ```
 
-## Opcode groups
+
+Instruction **STOP** has according to manuals opcode **10 00** and thus is 2 bytes long. Anyhow it seems there is no reason for it so some assemblers code it simply as one byte instruction **10**.
+Flags affected are always shown in **Z H N C** order. If flag is marked by "**0**" it means it is reset after the instruction. If it is marked by "**1**" it is set. If it is marked by "-" it is not changed. If it is marked by "**Z**", "**N**", "**H**" or "**C**" corresponding flag is affected as expected by its function.
+
+**d8**  means immediate 8 bit data
+**d16** means immediate 16 bit data
+**a8**  means 8 bit unsigned data, which are added to $FF00 in certain instructions (replacement for missing **IN** and **OUT** instructions)
+**a16** means 16 bit address
+**r8**  means 8 bit signed data, which are added to program counter
+
+**LD A,(C)** has alternative mnemonic **LD A,($FF00+C)**
+**LD C,(A)** has alternative mnemonic **LD ($FF00+C),A**
+**LDH A,(a8)** has alternative mnemonic **LD A,($FF00+a8)**
+**LDH (a8),A** has alternative mnemonic **LD ($FF00+a8),A**
+**LD A,(HL+)** has alternative mnemonic **LD A,(HLI)** or **LDI A,(HL)**
+**LD (HL+),A** has alternative mnemonic **LD (HLI),A** or **LDI (HL),A**
+**LD A,(HL-)** has alternative mnemonic **LD A,(HLD)** or **LDD A,(HL)**
+**LD (HL-),A** has alternative mnemonic **LD (HLD),A** or **LDD (HL),A**
+**LD HL,SP+r8** has alternative mnemonic **LDHL SP,r8**
 
 |group            |description|
 |-----------------|-----------------------------|
@@ -42,7 +62,9 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
 |x16/alu          |16-bit Arithmetic Logic Unit|
 |x8/rsb           |8-bit ???|
 |control/br       |branch|
-|control/mis      |misc|
+|control/misc     |misc|
+
+
 
 ## Reference documentation
 
