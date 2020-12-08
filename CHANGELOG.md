@@ -1,7 +1,12 @@
-## [Version 1.0.1](https://github.com/lmmendes/game-boy-opcodes/releases/tag/v1.0.1) (2019-04-20)
+## 1.1.0
 
-- Fix instruction timings for LD (C),A and LD A,(C) and STOP: [`merge request 1`](https://github.com/lmmendes/game-boy-opcodes/pull/1/files/0db27cd5f98e273ff7e0ad08fada43bd9e79d632)
+* Fixed a huge bug with the opcode addresses
+* Added opcode group
 
-## [Version 1.0.0](https://github.com/lmmendes/game-boy-opcodes/releases/tag/v1.0.0) (2018-03-19)
+## 1.0.1
 
-- Initial release.
+* Fix instruction timings for LD (C),A and LD A,(C) and STOP (#1)
+
+## 1.0.0
+
+* Initial release.

@@ -22,6 +22,7 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
         "-"                   <-- C - Carry Flag
       ],
       "addr": "0xc0",         <-- Address
+      "group": "control/misc" <-- Opcode group
       "operand1": "0",        <-- Operand 1
       "operand2": "B"         <-- Operand 2
     },
@@ -30,6 +31,18 @@ The [opcodes.json](https://raw.githubusercontent.com/lmmendes/game-boy-opcodes/m
   ...
 }
 ```
+
+## Opcode groups
+
+|group            |description|
+|-----------------|-----------------------------|
+|x8/lsm           |8-bit Load/Store/Move|
+|x16/lsm          |16-bit Load/Store/Move|
+|x8/alu           |8-bit Arithmetic Logic Unit|
+|x16/alu          |16-bit Arithmetic Logic Unit|
+|x8/rsb           |8-bit ???|
+|control/br       |branch|
+|control/mis      |misc|
 
 ## Reference documentation
 

@@ -14,7 +14,31 @@ if !File.exists? 'opcodes.html'
   end
 end
 
-def table_extractor(table)
+COLOR_GROUP_TABLE = {
+  "#ccccff" => "x8/lsm",
+  "#ccffcc" => "x16/lsm",
+  "#ffff99" => "x8/alu",
+  "#ffcccc" => "x16/alu",
+  "#80ffff" => "x8/rsb",
+  "#ffcc99" => "control/br",
+  "#ff99cc" => "control/misc"
+}
+
+PATCH_OPCODES = {
+  "unprefixed" =>{
+    "0x10" => {
+      "length" => 1
+    },
+    "0xe2" => {
+      "length" => 1
+    },
+    "0xf2" => {
+      "length" => 1
+    }
+  }
+}
+
+def table_extractor(table, table_name)
   opcodes = {}
   op_index = 0
   table.css('tr').each_with_index do |tr, tr_index|
@@ -30,7 +54,8 @@ def table_extractor(table)
       operand1, operand2 = operators.to_s.split(',')
       length, cycles = td.children[2].text.split(/[[:space:]]+/)
       flags = td.children[4].text.split(/[[:space:]]+/)
-      addr  = "0x#{op_index.to_s(16)}"
+      addr  = "0x#{(tr_index-1).to_s(16)}#{(td_index-1).to_s(16)}"
+      opcolor = td["bgcolor"]
       opcodes[ addr ] = {
         "mnemonic" => opcode,
         "length"   => length.to_i,
@@ -38,9 +63,16 @@ def table_extractor(table)
         "flags"    => flags,
         "addr"     => addr
       }
+      opcodes[ addr ]["group"]    = COLOR_GROUP_TABLE[opcolor] if COLOR_GROUP_TABLE[opcolor]
       opcodes[ addr ]["operand1"] = operand1.to_s if operand1
       opcodes[ addr ]["operand2"] = operand2.to_s if operand2
       op_index+=1
+
+      # apply patches id needed
+      if PATCH_OPCODES[table_name] && PATCH_OPCODES[table_name][addr]
+        puts "patching #{addr} on #{table_name}"
+        opcodes[ addr ] = opcodes[ addr ].merge(PATCH_OPCODES[table_name][addr])
+      end
     end
   end
   opcodes
@@ -50,8 +82,8 @@ end
 html = Oga.parse_html File.open('opcodes.html').read
 tables = html.css('table')
 opcodes = {
-  'unprefixed' => table_extractor(tables[0]),
-  'cbprefixed' => table_extractor(tables[1])
+  'unprefixed' => table_extractor(tables[0], "unprefixed"),
+  'cbprefixed' => table_extractor(tables[1], "cbprefixed")
 }
 
 File.open('opcodes.json', 'w').write JSON.pretty_generate(opcodes)
