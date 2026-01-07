@@ -50,12 +50,12 @@ Operation group table:
 
 ## Reference documentation
 
-http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html
+https://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/lmmendes/game-boy-opcodes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/lmmendes/game-boy-opcodes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://contributor-covenant.org) code of conduct.
 
 ## License
 
-The code is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The code is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
