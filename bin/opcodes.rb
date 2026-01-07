@@ -1,14 +1,14 @@
 #!/usr/bin/env ruby
-# encoding: utf-8
 
 require 'bundler'
 Bundler.require(:default)
 
 require 'open-uri'
 require 'json'
+require 'ostruct'
 
-if !File.exists? 'opcodes.html'
-  html = open 'http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html'
+unless File.exist?('opcodes.html')
+  html = URI.open('https://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html')
   File.open('opcodes.html', 'w') do |f|
     f.write html.read.force_encoding('UTF-8')
   end
