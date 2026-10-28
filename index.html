@@ -13,7 +13,10 @@
 <body>
   <header class="topbar">
     <a href="./" class="brand" aria-label="Game Boy Opcodes home"><span class="brand-icon" aria-hidden="true">▦</span> GB<span class="brand-light"> / OPCODES</span></a>
-    <nav aria-label="Project links"><a href="opcodes.json" download>Download JSON <span aria-hidden="true">↓</span></a><a href="https://github.com/lmmendes/game-boy-opcodes">GitHub <span aria-hidden="true">↗</span></a></nav>
+    <div class="export-bar" role="group" aria-label="Download and print reference">
+      <button id="print-reference" disabled>Print / Save PDF</button>
+    </div>
+    <nav aria-label="Downloads and project links"><div class="download-links"><a id="download-reference" href="#" aria-disabled="true">Download HTML <span aria-hidden="true">↓</span></a><a href="opcodes.json" download>Download JSON <span aria-hidden="true">↓</span></a></div><a href="https://github.com/lmmendes/game-boy-opcodes">GitHub <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main>
     <section class="hero" aria-labelledby="page-title">
@@ -47,5 +50,6 @@
   <footer><span><b>GB / OPCODES</b> <span class="footer-divider">·</span> Built for the curious. And the emulator builders.</span><span><a href="https://github.com/lmmendes/game-boy-opcodes/issues">Report a data issue ↗</a><span class="footer-divider">·</span><a href="LICENSE">MIT License</a></span></footer>
   <dialog id="help-dialog" aria-labelledby="help-title"><button class="dialog-close" id="help-close" aria-label="Close help">×</button><div class="eyebrow">A QUICK FIELD GUIDE</div><h2 id="help-title">Reading the opcode map</h2><p>The row gives the high nibble and the column gives the low nibble. Row 3 + column E is opcode <code>0x3E</code>. CB instructions start with the prefix byte <code>0xCB</code>.</p><h3>Inside each cell</h3><p>The instruction is followed by its byte length and timing. T-cycles are CPU clock cycles; one M-cycle equals four T-cycles. For conditional instructions, two timings mean taken / not taken.</p><h3>CPU flags: Z · N · H · C</h3><p>Zero, subtract, half carry, and carry. <code>—</code> means unchanged, <code>0</code> means cleared, <code>1</code> means set, and a letter means the result determines the flag.</p><h3>Operands</h3><p><code>d8 / d16</code> = immediate data; <code>a8 / a16</code> = address; <code>r8</code> = signed relative offset. Parentheses indicate a memory operand.</p><h3>Keyboard shortcuts</h3><p><kbd>/</kbd> focus search · <kbd>Esc</kbd> clear search or close help.<br>Focus a map cell and use arrow keys to move through the table.</p><p class="data-note">This viewer displays opcodes.json as supplied, including its group classifications and timings. Empty addresses are absent from the dataset. It is a data explorer, not a CPU simulator.</p></dialog>
   <noscript><p class="noscript">Enable JavaScript to explore the opcode map, or <a href="opcodes.json">view the JSON data</a>.</p></noscript>
+  <section id="print-reference-content" class="reference-output" aria-label="Printable opcode reference"></section>
 </body>
 </html>
