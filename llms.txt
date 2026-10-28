@@ -1,0 +1,34 @@
+# Game Boy Opcodes
+
+> A searchable reference for the Game Boy instruction set, with machine-readable opcode data for emulator builders and developers.
+
+The website explores the Sharp LR35902 instruction set. The supplied dataset contains 501 entries: 245 base instructions and 256 CB-prefixed instructions. The interface supports search, instruction group filters, grid and list views, an instruction inspector, JSON download, an offline HTML reference, and printing or saving as PDF.
+
+## Primary resources
+
+- [Opcode dataset](https://gb.insertcoin.dev/opcodes.json): The complete JSON dataset. Prefer this over extracting data from the interactive page.
+- [Interactive explorer](https://gb.insertcoin.dev/): Browse both opcode tables, inspect instruction bytes and flags, and download or print the reference.
+- [Source repository](https://github.com/lmmendes/game-boy-opcodes): Project source and history.
+- [Report a data issue](https://github.com/lmmendes/game-boy-opcodes/issues): Report suspected errors in the supplied data.
+
+## Dataset format
+
+The JSON object has two top-level keys: `unprefixed` and `cbprefixed`. Each maps hexadecimal opcode keys such as `0x00` to instruction objects.
+
+Instruction fields:
+
+- `mnemonic`: Instruction name, such as `LD` or `NOP`.
+- `operand1`, `operand2`: Optional operand strings, in assembly order.
+- `length`: Instruction length in bytes, including the CB prefix where applicable.
+- `cycles`: An array of timings in T-cycles. The viewer presents conditional timings in taken / not-taken order. One M-cycle equals four T-cycles.
+- `flags`: Four strings in Z, N, H, C order (zero, subtract, half carry, carry). `-` means unchanged, `0` means cleared, `1` means set, and a letter means the result determines the flag.
+- `addr`: Hexadecimal opcode address within its table. CB-prefixed entries require the leading `0xCB` byte in the instruction encoding.
+- `group`: The supplied instruction classification: `x8/lsm`, `x16/lsm`, `x8/alu`, `x16/alu`, `x8/rsb`, `control/br`, or `control/misc`.
+
+Operand notation used by the viewer includes `d8` / `d16` for immediate data, `a8` / `a16` for addresses, `r8` for signed relative offsets, and parentheses for memory operands.
+
+## Interpretation
+
+The explorer displays `opcodes.json` as supplied, including its classifications and timing values. It is a data reference, not a CPU simulator. Missing opcode addresses are absent from this dataset; do not invent entries for them. When reporting an instruction, identify its table as well as its opcode, and distinguish dataset values from independently verified hardware behavior.
+
+Instruction links use fragments such as `https://gb.insertcoin.dev/#base-3e` and `https://gb.insertcoin.dev/#cb-00`.

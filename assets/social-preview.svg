@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8f2"/>
+  <rect x="32" y="32" width="1136" height="566" rx="22" fill="none" stroke="#dfe3d8" stroke-width="2"/>
+  <g font-family="monospace">
+    <rect x="76" y="76" width="46" height="46" rx="8" fill="#285b43"/>
+    <text x="83" y="107" font-size="25" fill="#e4edc9" font-weight="bold">GB</text>
+    <text x="140" y="107" font-size="19" fill="#285b43">/ OPCODES</text>
+    <circle cx="82" cy="181" r="5" fill="#82a568"/>
+    <text x="100" y="187" font-size="14" letter-spacing="2" fill="#72796f">A POCKET-SIZED CPU. EVERY INSTRUCTION.</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="bold" font-size="84" letter-spacing="-4">
+    <text x="76" y="288" fill="#263c31">Game Boy</text>
+    <text x="76" y="382" fill="#285b43">Opcodes<tspan fill="#8ba66d">.</tspan></text>
+  </g>
+  <text x="80" y="432" font-family="Arial, sans-serif" font-size="23" fill="#72796f">The instruction set, at your fingertips.</text>
+  <g font-family="monospace" text-anchor="middle">
+    <g fill="#e2ebd7"><rect x="760" y="170" width="148" height="112" rx="8"/><rect x="924" y="170" width="148" height="112" rx="8"/></g>
+    <rect x="760" y="298" width="148" height="112" rx="8" fill="#f5eac9"/>
+    <rect x="924" y="298" width="148" height="112" rx="8" fill="#ecdfee"/>
+    <g font-size="26" font-weight="bold" fill="#426038"><text x="834" y="217">LD</text><text x="998" y="217">PUSH</text></g>
+    <text x="834" y="251" font-size="18" fill="#426038">A, (HL)</text><text x="998" y="251" font-size="18" fill="#426038">BC</text>
+    <text x="834" y="345" font-size="26" font-weight="bold" fill="#846721">ADD</text><text x="834" y="379" font-size="18" fill="#846721">A, B</text>
+    <text x="998" y="345" font-size="26" font-weight="bold" fill="#815b85">JP</text><text x="998" y="379" font-size="18" fill="#815b85">a16</text>
+  </g>
+  <path d="M80 482H1120" stroke="#dfe3d8"/>
+  <text x="80" y="533" font-family="monospace" font-size="17" fill="#285b43">501 instructions · 2 tables · Timing &amp; flags</text>
+  <text x="1120" y="533" text-anchor="end" font-family="monospace" font-size="17" fill="#72796f">gb.insertcoin.dev</text>
+</svg>
